@@ -16,7 +16,8 @@ Game project of [Quest Platform](https://www.linkedin.com/company/quest-platform
 # Contrubition
 Please contact with [Musa Sina ERTUĞRUL](https://www.linkedin.com/in/musa-sina-ertu%C4%9Frul-922416229/)
 # Addition
-* [Check this link for Push Requests](https://github.com/firstcontributions/first-contributions)
+* Check this [link](https://github.com/firstcontributions/first-contributions) for Push Requests
+* Check this [link](https://www.youtube.com/@ClearCode) for learning Pygame
 # Developers
 * [Musa Sina ERTUĞRUL](https://github.com/Musa-Sina-Ertugrul)
 * [İrem Demir](https://github.com/Iremmd)
