@@ -1,5 +1,5 @@
 # QuestGame
-Game project of [Quest Platform](https://www.linkedin.com/company/quest-platform1) Student Organization in Celal Bayar University. 
+Game project of [Quest Platform](https://www.linkedin.com/company/quest-platform1) Student Organization in Celal Bayar University. Main porpuse of this project understanding design patterns.
 # Contents
 * [Requerid Softwares](#Requerid-Softwares)
 * [Rules](#Rules)
