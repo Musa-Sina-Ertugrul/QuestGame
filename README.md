@@ -19,6 +19,7 @@ Please contact with [Musa Sina ERTUĞRUL](https://www.linkedin.com/in/musa-sina-
 * Check this [link](https://github.com/firstcontributions/first-contributions) for Push Requests
 * Check this [link](https://www.youtube.com/@ClearCode) for learning Pygame
 * Check this [link](http://www.javier8a.com/itc/bd1/articulo.pdf) for design patterns
+* Check this [link](https://www.visual-paradigm.com/guide/uml-unified-modeling-language/uml-class-diagram-tutorial/) for UML Diagram
 # Developers
 * [Musa Sina ERTUĞRUL](https://github.com/Musa-Sina-Ertugrul)
 * [İrem DEMİR](https://github.com/Iremmd)
