@@ -12,6 +12,7 @@ Game project of [Quest Platform](https://www.linkedin.com/company/quest-platform
 # Rules
 * In this project developers will use [Google Doc String](https://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_google.html)
 * Commits will be named with [this guideline](https://gist.github.com/tonibardina/9290fbc7d605b4f86919426e614fe692)
+* Types of variable will be typed [like this](https://mypy.readthedocs.io/en/stable/cheat_sheet_py3.html) or with [typing module](https://docs.python.org/3/library/typing.html)
 # Contrubition
 Please contact with [Musa Sina ERTUĞRUL](https://www.linkedin.com/in/musa-sina-ertu%C4%9Frul-922416229/)
 # Addition
