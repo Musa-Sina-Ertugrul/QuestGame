@@ -18,6 +18,7 @@ Please contact with [Musa Sina ERTUĞRUL](https://www.linkedin.com/in/musa-sina-
 # Addition
 * Check this [link](https://github.com/firstcontributions/first-contributions) for Push Requests
 * Check this [link](https://www.youtube.com/@ClearCode) for learning Pygame
+* Check this [link](http://www.javier8a.com/itc/bd1/articulo.pdf) for design patterns
 # Developers
 * [Musa Sina ERTUĞRUL](https://github.com/Musa-Sina-Ertugrul)
-* [İrem Demir](https://github.com/Iremmd)
+* [İrem DEMİR](https://github.com/Iremmd)
