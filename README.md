@@ -32,3 +32,4 @@ Please contact with [Musa Sina ERTUĞRUL](https://www.linkedin.com/in/musa-sina-
 * [Ayşe ŞAHİN](https://github.com/aysesn)
 * [Kıymet NAZLIM](https://github.com/kiymetnazlim)
 * [Yağmur ÖZLER](https://github.com/YagmurOzler)
+* [Nursena ZENGİN](https://github.com/nursenazengin)
