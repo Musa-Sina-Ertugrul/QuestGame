@@ -1,11 +1,14 @@
 # QuestGame
 Game project of [Quest Platform](https://www.linkedin.com/company/quest-platform1) Student Organization in Celal Bayar University. Main porpuse of this project understanding design patterns.
 # Contents
+* [Design Proposal](#Design-Proposal)
 * [Requerid Softwares](#Requerid-Softwares)
 * [Rules](#Rules)
 * [Contrubition](#Contrubition)
 * [Addition](#Addition)
 * [Developers](#Developers)
+# Design Proposal
+![alt text](https://github.com/Musa-Sina-Ertugrul/QuestGame/blob/main/QuestGame.jpg)
 # Requerid Softwares
 * [Black Formatter](https://github.com/psf/black)
 * [Pylint](https://www.pylint.org/)
