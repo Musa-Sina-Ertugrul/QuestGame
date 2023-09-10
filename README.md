@@ -27,3 +27,4 @@ Please contact with [Musa Sina ERTUĞRUL](https://www.linkedin.com/in/musa-sina-
 * [İrem DEMİR](https://github.com/Iremmd)
 * [İkram Celal KESKİN](https://github.com/icelal-kskn)
 * [Ayşe ŞAHİN](https://github.com/aysesn)
+* [Kıymet NAZLIM](https://github.com/kiymetnazlim)
