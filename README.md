@@ -11,7 +11,7 @@ Game project of [Quest Platform](https://www.linkedin.com/company/quest-platform
 ![alt text](https://github.com/Musa-Sina-Ertugrul/QuestGame/blob/main/QuestGame.jpg)
 # Requerid Softwares
 * [Black Formatter](https://github.com/psf/black)
-* [Pylint](https://www.pylint.org/)
+* [Pylint](https://www.pylint.org/) ( install from vscode extensions )
 # Rules
 * In this project developers will use [Google Doc String](https://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_google.html)
 * Commits will be named with [this guideline](https://gist.github.com/tonibardina/9290fbc7d605b4f86919426e614fe692)
