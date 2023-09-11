@@ -51,5 +51,5 @@ Please contact with [Musa Sina ERTUĞRUL](https://www.linkedin.com/in/musa-sina-
 * [Mert KARDAŞ](https://github.com/MertKardas)
 
 <p align="center">
-  <img src="https://github.com/Musa-Sina-Ertugrul/QuestGame/blob/main/img/quest_catch_phrase.png" />
+  <img width="500px", height="500px" src="https://github.com/Musa-Sina-Ertugrul/QuestGame/blob/main/img/quest_catch_phrase.png" />
 </p>
