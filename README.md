@@ -19,7 +19,7 @@ Game project of [Quest Platform](https://www.linkedin.com/company/quest-platform
 * Commits will be named with [this guideline](https://gist.github.com/tonibardina/9290fbc7d605b4f86919426e614fe692)
 * Types of variable will be typed [like this](https://mypy.readthedocs.io/en/stable/cheat_sheet_py3.html) or with [typing module](https://docs.python.org/3/library/typing.html)
 * Developers will use [snake case](https://www.pluralsight.com/blog/software-development/programming-naming-conventions-explained#snake-case)
-* In this project developers must use [pointers](https://realpython.com/pointers-in-python/) for information that is more than 4 bytes
+* In this project developers must use [pointers](https://realpython.com/pointers-in-python/) for information that is more than 8 bytes
 * Developers will use [Black Formatter](https://github.com/psf/black)
 # Contrubition
 Please contact with [Musa Sina ERTUĞRUL](https://www.linkedin.com/in/musa-sina-ertu%C4%9Frul-922416229/)
