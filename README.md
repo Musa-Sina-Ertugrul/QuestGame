@@ -23,6 +23,7 @@ Game project of [Quest Platform](https://www.linkedin.com/company/quest-platform
 * [Black Formatter](https://github.com/psf/black)
 * [Pylint](https://www.pylint.org/) ( install from [vscode extensions](https://marketplace.visualstudio.com/items?itemName=ms-python.pylint) )
 * [Blank Line Organizer](https://marketplace.visualstudio.com/items?itemName=rintoj.blank-line-organizer)
+* [Anaconda](https://www.anaconda.com/download)
 # Rules
 * In this project developers will use [Google Doc String](https://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_google.html)
 * Commits will be named with [this guideline](https://gist.github.com/tonibardina/9290fbc7d605b4f86919426e614fe692)
@@ -30,6 +31,7 @@ Game project of [Quest Platform](https://www.linkedin.com/company/quest-platform
 * Developers will use [snake case](https://www.pluralsight.com/blog/software-development/programming-naming-conventions-explained#snake-case)
 * In this project developers must use [pointers](https://realpython.com/pointers-in-python/) for information that is more than 8 bytes
 * Developers will use [Black Formatter](https://github.com/psf/black)
+* Everyone will [create a new environment](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html) for this project and everyone will [install packages from requirements.txt](https://note.nkmk.me/en/python-pip-install-requirements/)
 # Contrubition
 Please contact with [Musa Sina ERTUĞRUL](https://www.linkedin.com/in/musa-sina-ertu%C4%9Frul-922416229/)
 # Addition
