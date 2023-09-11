@@ -49,3 +49,7 @@ Please contact with [Musa Sina ERTUĞRUL](https://www.linkedin.com/in/musa-sina-
 * [Nursena ZENGİN](https://github.com/nursenazengin)
 * [Cengizhan BAYRAM](https://github.com/CengizhanBayram)
 * [Mert KARDAŞ](https://github.com/MertKardas)
+
+<p align="center">
+  <img src="https://github.com/Musa-Sina-Ertugrul/QuestGame/blob/main/img/quest_catch_phrase.png" />
+</p>
