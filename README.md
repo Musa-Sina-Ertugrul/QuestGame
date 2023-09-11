@@ -5,7 +5,7 @@
 </p>
 
 # [![linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/company/quest-platform1) ![vscode](https://img.shields.io/badge/VSCode-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white) ![python](https://img.shields.io/badge/Python_3.12-FFD43B?style=for-the-badge&logo=python&logoColor=blue) ![linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black) ![windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white) ![mac](https://img.shields.io/badge/mac%20os-000000?style=for-the-badge&logo=apple&logoColor=white) ![itch.io](https://img.shields.io/badge/Itch.io-FA5C5C?style=for-the-badge&logo=itchdotio&logoColor=white) ![black](https://img.shields.io/badge/code_style_black-000?style=for-the-badge) ![docstring](https://img.shields.io/badge/Google_Doc_String-4285F4.svg?style=for-the-badge&logo=Google&logoColor=white)
-Game project of [Quest Platform](https://www.linkedin.com/company/quest-platform1) Student Organization in Celal Bayar University. Main porpuse of this project understanding design patterns.
+Game project of [Quest Platform](https://www.linkedin.com/company/quest-platform1) Student Organization in Celal Bayar University. Main porpuse of this project understanding design patterns and industrial standart code.
 # Contents
 * [Design Proposal](#Design-Proposal)
 * [Requerid Softwares](#Requerid-Softwares)
