@@ -11,7 +11,8 @@ Game project of [Quest Platform](https://www.linkedin.com/company/quest-platform
 ![alt text](https://github.com/Musa-Sina-Ertugrul/QuestGame/blob/main/QuestGame.jpg)
 # Requerid Softwares
 * [Black Formatter](https://github.com/psf/black)
-* [Pylint](https://www.pylint.org/) ( install from vscode extensions )
+* [Pylint](https://www.pylint.org/) ( install from [vscode extensions](https://marketplace.visualstudio.com/items?itemName=ms-python.pylint) )
+* [Blank Line Organizer](https://marketplace.visualstudio.com/items?itemName=rintoj.blank-line-organizer)
 # Rules
 * In this project developers will use [Google Doc String](https://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_google.html)
 * Commits will be named with [this guideline](https://gist.github.com/tonibardina/9290fbc7d605b4f86919426e614fe692)
