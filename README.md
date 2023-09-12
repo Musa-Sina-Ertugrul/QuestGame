@@ -25,11 +25,15 @@ Game project of [Quest Platform](https://www.linkedin.com/company/quest-platform
 * [Pylint](https://www.pylint.org/) ( install from [vscode extensions](https://marketplace.visualstudio.com/items?itemName=ms-python.pylint) )
 * [Blank Line Organizer](https://marketplace.visualstudio.com/items?itemName=rintoj.blank-line-organizer)
 * [Anaconda](https://www.anaconda.com/download)
+
 #### ![exclamation](https://cdn.jsdelivr.net/gh/Readme-Workflows/Readme-Icons@main/icons/octicons/IssueOpenedOld.svg) Warning use these options on anaconda windows installation ![exclamation](https://cdn.jsdelivr.net/gh/Readme-Workflows/Readme-Icons@main/icons/octicons/IssueOpenedOld.svg)
 
 <p align="left">
   <img src="https://github.com/Musa-Sina-Ertugrul/QuestGame/blob/main/img/anaconda.png" />
 </p>
+
+
+* [Tiled](https://www.mapeditor.org/)
 
 # ![repisotery](https://cdn.jsdelivr.net/gh/Readme-Workflows/Readme-Icons@main/icons/octicons/Repository.svg) Rules
 * In this project developers will use [Google Doc String](https://sphinxcontrib-napoleon.readthedocs.io/en/latest/example_google.html)
@@ -49,7 +53,8 @@ Please contact with [Musa Sina ERTUĞRUL](https://www.linkedin.com/in/musa-sina-
 * [Link](https://realpython.com/pointers-in-python/) for Pointers
 * [Link](http://www.javier8a.com/itc/bd1/articulo.pdf) for Design Patterns 
 * [Link](https://www.visual-paradigm.com/guide/uml-unified-modeling-language/uml-class-diagram-tutorial/) for UML Diagram
-* [Link 1](https://www.udemy.com/course/parallel-computing-in-python/?kw=python+paralle&src=sac) , [Link 2](https://docs.google.com/viewer?a=v&pid=sites&srcid=b2JqZWN0bWFnZS5jb218cHJpdmF0ZS10cmFpbmluZ3xneDoyZjU2M2U4NGJiN2M0NWU2) ( Chapter 1, 2, 3 ) for Parallel Programming 
+* [Link 1](https://www.udemy.com/course/parallel-computing-in-python/?kw=python+paralle&src=sac) , [Link 2](https://docs.google.com/viewer?a=v&pid=sites&srcid=b2JqZWN0bWFnZS5jb218cHJpdmF0ZS10cmFpbmluZ3xneDoyZjU2M2U4NGJiN2M0NWU2) ( Chapter 1, 2, 3 ) for Parallel Programming
+* [Link](https://github.com/bitcraft/PyTMX) for pytmx
 # ![star](https://cdn.jsdelivr.net/gh/Readme-Workflows/Readme-Icons@main/icons/octicons/StarredRepositoryYellow.svg) Developers
 * [Musa Sina ERTUĞRUL](https://github.com/Musa-Sina-Ertugrul)
 * [İrem DEMİR](https://github.com/Iremmd)
