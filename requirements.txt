@@ -1,1 +1,6 @@
 pygame==2.5.1
+inliner==0.4.1
+typing==3.7.4.3
+python-abc==0.2.0
+numpy==1.25.2
+pytmx==3.32
