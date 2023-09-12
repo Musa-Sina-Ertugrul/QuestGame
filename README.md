@@ -40,6 +40,7 @@ Game project of [Quest Platform](https://www.linkedin.com/company/quest-platform
 * Developers will use [Black Formatter](https://github.com/psf/black)
 * Everyone will [create a new environment](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html) for this project and everyone will [install packages from requirements.txt](https://note.nkmk.me/en/python-pip-install-requirements/)
 * Project maintainers will use [anaconda](https://www.anaconda.com/download) to handle environments
+* All paths must be relative
 # ![pull_request](https://cdn.jsdelivr.net/gh/Readme-Workflows/Readme-Icons@main/icons/octicons/PullRequestMerged.svg) Contrubition
 Please contact with [Musa Sina ERTUĞRUL](https://www.linkedin.com/in/musa-sina-ertu%C4%9Frul-922416229/)
 # ![book](https://cdn.jsdelivr.net/gh/Readme-Workflows/Readme-Icons@main/icons/octicons/Wiki.svg) Addition
