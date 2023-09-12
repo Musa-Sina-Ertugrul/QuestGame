@@ -8,7 +8,7 @@
 Game project of [Quest Platform](https://www.linkedin.com/company/quest-platform1) Student Organization in Celal Bayar University. Main porpuse of this project understanding design patterns and industrial standart code.
 # ![realese](https://cdn.jsdelivr.net/gh/Readme-Workflows/Readme-Icons@main/icons/octicons/Release.svg) Contents
 * [Design Proposal](#Design-Proposal)
-* [Requerid Softwares](#Requerid-Softwares)
+* [Required Softwares](#Required_Softwares)
 * [Rules](#Rules)
 * [Contrubition](#Contrubition)
 * [Addition](#Addition)
@@ -19,7 +19,7 @@ Game project of [Quest Platform](https://www.linkedin.com/company/quest-platform
   <img src="https://github.com/Musa-Sina-Ertugrul/QuestGame/blob/main/img/QuestGame.jpg" />
 </p>
 
-# ![issue](https://cdn.jsdelivr.net/gh/Readme-Workflows/Readme-Icons@main/icons/octicons/IssueClosed.svg) Requerid Softwares
+# ![issue](https://cdn.jsdelivr.net/gh/Readme-Workflows/Readme-Icons@main/icons/octicons/IssueClosed.svg) Required Softwares
 * [Black Formatter](https://github.com/psf/black)
 * [Pylint](https://www.pylint.org/) ( install from [vscode extensions](https://marketplace.visualstudio.com/items?itemName=ms-python.pylint) )
 * [Blank Line Organizer](https://marketplace.visualstudio.com/items?itemName=rintoj.blank-line-organizer)
