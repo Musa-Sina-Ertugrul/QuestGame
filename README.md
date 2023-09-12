@@ -1,7 +1,7 @@
 # ![check](https://cdn.jsdelivr.net/gh/Readme-Workflows/Readme-Icons@main/icons/octicons/ApprovedChanges.svg) QuestGame
 
 <p align="center">
-  <img src="https://github.com/Musa-Sina-Ertugrul/QuestGame/blob/main/img/quest_logo.png" />
+  <img src="https://github.com/Musa-Sina-Ertugrul/QuestGame/blob/main/.img/quest_logo.png" />
 </p>
 
 # [![linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/company/quest-platform1) ![vscode](https://img.shields.io/badge/VSCode-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white) ![python](https://img.shields.io/badge/Python_3.11-FFD43B?style=for-the-badge&logo=python&logoColor=blue) ![linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black) ![windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white) ![mac](https://img.shields.io/badge/mac%20os-000000?style=for-the-badge&logo=apple&logoColor=white) ![itch.io](https://img.shields.io/badge/Itch.io-FA5C5C?style=for-the-badge&logo=itchdotio&logoColor=white) ![black](https://img.shields.io/badge/code_style_black-000?style=for-the-badge) ![docstring](https://img.shields.io/badge/Google_Doc_String-4285F4.svg?style=for-the-badge&logo=Google&logoColor=white) [![sponsor](https://img.shields.io/badge/GitHub%20Sponsors-EA4AAA.svg?style=for-the-badge&logo=GitHub-Sponsors&logoColor=white)](https://www.patreon.com/QuestPlatform)
@@ -16,7 +16,7 @@ Game project of [Quest Platform](https://www.linkedin.com/company/quest-platform
 # ![messages](https://cdn.jsdelivr.net/gh/Readme-Workflows/Readme-Icons@main/icons/octicons/Discussions.svg) Design Proposal
 
 <p align="center">
-  <img src="https://github.com/Musa-Sina-Ertugrul/QuestGame/blob/main/img/QuestGame.jpg" />
+  <img src="https://github.com/Musa-Sina-Ertugrul/QuestGame/blob/main/.img/QuestGame.jpg" />
 </p>
 
 # ![issue](https://cdn.jsdelivr.net/gh/Readme-Workflows/Readme-Icons@main/icons/octicons/IssueClosed.svg) Required Softwares
@@ -29,7 +29,7 @@ Game project of [Quest Platform](https://www.linkedin.com/company/quest-platform
 #### ![exclamation](https://cdn.jsdelivr.net/gh/Readme-Workflows/Readme-Icons@main/icons/octicons/IssueOpenedOld.svg) Warning use these options on anaconda windows installation ![exclamation](https://cdn.jsdelivr.net/gh/Readme-Workflows/Readme-Icons@main/icons/octicons/IssueOpenedOld.svg)
 
 <p align="left">
-  <img src="https://github.com/Musa-Sina-Ertugrul/QuestGame/blob/main/img/anaconda.png" />
+  <img src="https://github.com/Musa-Sina-Ertugrul/QuestGame/blob/main/.img/anaconda.png" />
 </p>
 
 
@@ -67,5 +67,5 @@ Please contact with [Musa Sina ERTUĞRUL](https://www.linkedin.com/in/musa-sina-
 * [Mert KARDAŞ](https://github.com/MertKardas)
 
 <p align="center">
-  <img width="500px", height="500px" src="https://github.com/Musa-Sina-Ertugrul/QuestGame/blob/main/img/quest_catch_phrase.png" />
+  <img width="500px", height="500px" src="https://github.com/Musa-Sina-Ertugrul/QuestGame/blob/main/.img/quest_catch_phrase.png" />
 </p>
