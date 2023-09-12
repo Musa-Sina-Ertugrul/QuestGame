@@ -8,13 +8,13 @@
 Game project of [Quest Platform](https://www.linkedin.com/company/quest-platform1) Student Organization in Celal Bayar University. Main porpuse of this project understanding design patterns and industrial standart code.
 
 # :round_pushpin: Contents
-* [Design Proposal](#Design-Proposal)
-* [Required Softwares](#Required_Softwares)
-* [Rules](#Rules)
-* [Contrubition](#Contrubition)
-* [Addition](#Addition)
-* [Assets](#Assets)
-* [Developers](#Developers)
+* [Design Proposal](#:bulb:_Design-Proposal)
+* [Required Softwares](#:minidisc:_Required_Softwares)
+* [Rules](#:scroll:_Rules)
+* [Contrubition](#:handshake:_Contrubition)
+* [Addition](#:open_book:_Addition)
+* [Assets](#:art:_Assets)
+* [Developers](#:computer:_Developers)
 # :bulb: Design Proposal
 
 <p align="center">
@@ -46,8 +46,10 @@ Game project of [Quest Platform](https://www.linkedin.com/company/quest-platform
 * Everyone will [create a new environment](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html) for this project and everyone will [install packages from requirements.txt](https://note.nkmk.me/en/python-pip-install-requirements/)
 * Project maintainers will use [anaconda](https://www.anaconda.com/download) to handle environments
 * All paths must be relative
+
 # :handshake: Contrubition
 Please contact with [Musa Sina ERTUĞRUL](https://www.linkedin.com/in/musa-sina-ertu%C4%9Frul-922416229/)
+
 # :open_book: Addition
 * [Link](https://github.com/firstcontributions/first-contributions) for Push Requests
 * [Link](https://www.youtube.com/@ClearCode) for learning Pygame
@@ -56,6 +58,7 @@ Please contact with [Musa Sina ERTUĞRUL](https://www.linkedin.com/in/musa-sina-
 * [Link](https://www.visual-paradigm.com/guide/uml-unified-modeling-language/uml-class-diagram-tutorial/) for UML Diagram
 * [Link 1](https://www.udemy.com/course/parallel-computing-in-python/?kw=python+paralle&src=sac) , [Link 2](https://docs.google.com/viewer?a=v&pid=sites&srcid=b2JqZWN0bWFnZS5jb218cHJpdmF0ZS10cmFpbmluZ3xneDoyZjU2M2U4NGJiN2M0NWU2) ( Chapter 1, 2, 3 ) for Parallel Programming
 * [Link](https://github.com/bitcraft/PyTMX) for pytmx
+
 # :art: Assets
 * [Free Pixel Effects Pack](https://xyezawr.itch.io/free)
 * [Ice Spell Effect 01](https://pimen.itch.io/ice-spell-effect-01)
