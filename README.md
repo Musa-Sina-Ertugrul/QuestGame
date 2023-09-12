@@ -8,13 +8,13 @@
 Game project of [Quest Platform](https://www.linkedin.com/company/quest-platform1) Student Organization in Celal Bayar University. Main porpuse of this project understanding design patterns and industrial standart code.
 
 # :round_pushpin: Contents
-* [Design Proposal](#_:bulb:_Design-Proposal)
-* [Required Softwares](#:_minidisc:_Required_Softwares)
-* [Rules](#_:scroll:_Rules)
-* [Contrubition](#_:handshake:_Contrubition)
-* [Addition](#_:open_book:_Addition)
-* [Assets](#_:art:_Assets)
-* [Developers](#_:computer:_Developers)
+* [Design Proposal](#bulb_Design-Proposal)
+* [Required Softwares](#minidisc_Required_Softwares)
+* [Rules](#scroll_Rules)
+* [Contrubition](#handshake_Contrubition)
+* [Addition](#open_book_Addition)
+* [Assets](#art_Assets)
+* [Developers](#computer_Developers)
 # :bulb: Design Proposal
 
 <p align="center">
