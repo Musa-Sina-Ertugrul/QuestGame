@@ -20,6 +20,7 @@ Game project of [Quest Platform](https://www.linkedin.com/company/quest-platform
 </p>
 
 # ![issue](https://cdn.jsdelivr.net/gh/Readme-Workflows/Readme-Icons@main/icons/octicons/IssueClosed.svg) Required Softwares
+* [VS Code](https://code.visualstudio.com/download)
 * [Black Formatter](https://github.com/psf/black)
 * [Pylint](https://www.pylint.org/) ( install from [vscode extensions](https://marketplace.visualstudio.com/items?itemName=ms-python.pylint) )
 * [Blank Line Organizer](https://marketplace.visualstudio.com/items?itemName=rintoj.blank-line-organizer)
