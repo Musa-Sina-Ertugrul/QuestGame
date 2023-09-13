@@ -56,7 +56,7 @@ Please contact with [Musa Sina ERTUĞRUL](https://www.linkedin.com/in/musa-sina-
 * [Link](https://realpython.com/pointers-in-python/) for Pointers
 * [Link](http://www.javier8a.com/itc/bd1/articulo.pdf) for Design Patterns 
 * [Link](https://www.visual-paradigm.com/guide/uml-unified-modeling-language/uml-class-diagram-tutorial/) for UML Diagram
-* [Link 1](https://www.udemy.com/course/parallel-computing-in-python/?kw=python+paralle&src=sac) , [Link 2](https://docs.google.com/viewer?a=v&pid=sites&srcid=b2JqZWN0bWFnZS5jb218cHJpdmF0ZS10cmFpbmluZ3xneDoyZjU2M2U4NGJiN2M0NWU2) ( Chapter 1, 2, 3 ) for Parallel Programming
+* [Link :one:](https://www.udemy.com/course/parallel-computing-in-python/?kw=python+paralle&src=sac) , [Link :two:](https://docs.google.com/viewer?a=v&pid=sites&srcid=b2JqZWN0bWFnZS5jb218cHJpdmF0ZS10cmFpbmluZ3xneDoyZjU2M2U4NGJiN2M0NWU2) ( Chapter :one: :two: :three: :four: ) for Parallel Programming
 * [Link](https://github.com/bitcraft/PyTMX) for pytmx
 
 # :art: Assets
@@ -99,6 +99,7 @@ Please contact with [Musa Sina ERTUĞRUL](https://www.linkedin.com/in/musa-sina-
 * [Nursena ZENGİN](https://github.com/nursenazengin)
 * [Cengizhan BAYRAM](https://github.com/CengizhanBayram)
 * [Mert KARDAŞ](https://github.com/MertKardas)
+* [İrem BOYALIOĞLU](https://github.com/iremboyalioglu)
 
 <p align="center">
   <img width="500px", height="500px" src="https://github.com/Musa-Sina-Ertugrul/QuestGame/blob/main/.img/quest_catch_phrase.png" />
