@@ -63,7 +63,6 @@ class Animated(Flyweight):
         "npc_witch"
         "npc_king"
         "npc_monk"
-        "npc_trader"
         "npc_fairy"
         "moonpie_front_idle"
         "moonpie_left_idle"
@@ -714,20 +713,6 @@ class Animated(Flyweight):
         ),
         image.load(
             ".assets/Lively_NPCs_v3.0/individual sprites/elementals/ground_monk/ground_monk_4.png"
-        ),
-    ]
-    Flyweight.data["npc_trader"] = [
-        image.load(
-            ".assets/Lively_NPCs_v3.0/individual sprites/steampunk/trader/trader_1.png"
-        ),
-        image.load(
-            ".assets/Lively_NPCs_v3.0/individual sprites/steampunk/trader/trader_2.png"
-        ),
-        image.load(
-            ".assets/Lively_NPCs_v3.0/individual sprites/steampunk/trader/trader_3.png"
-        ),
-        image.load(
-            ".assets/Lively_NPCs_v3.0/individual sprites/steampunk/trader/trader_4.png"
         ),
     ]
     Flyweight.data["npc_fairy"] = [
