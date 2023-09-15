@@ -2,7 +2,7 @@
     Pass for linting
 """
 import sys
-from pygame import pygame
+import pygame
 
 from src.flyweights.animated import Animated
 
