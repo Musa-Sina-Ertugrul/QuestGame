@@ -37,6 +37,6 @@ jobs:
     - name: Runtime Errors
       run: |
         python main/main.py
-    # - name: Test with pytest
-      # run: |
-        # pytest
+    - name: Test with pytest
+      run: |
+        python -m pytest main/test/main_test.py 
