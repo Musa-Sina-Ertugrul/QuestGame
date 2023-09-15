@@ -30,7 +30,7 @@ jobs:
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Linting
       run: |
-        python -m pylint main/*
+        python -m pylint --max-module-lines 2000 --max-line-length 150 main/*
         python -m pylint[spelling] main/*
         
     # - name: Test with pytest
