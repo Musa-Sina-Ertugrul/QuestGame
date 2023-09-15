@@ -32,6 +32,7 @@ jobs:
     - name: Linting
       run: |
         python -m pylint --max-module-lines 2000 --max-line-length 150 main/*.py
+        python -m pylint --disable all --enable spelling --spelling-dict en_US main/*.py
     - name: Runtime Errors
       run: |
         python main/main.py
