@@ -1,7 +1,7 @@
 """
     Pass for linting
 """
-import sys
+# import sys
 import pygame
 
 from src.flyweights.animated import Animated
@@ -17,4 +17,4 @@ while True:
     screen.blit(Animated.data["crazy_chest"][0], (100, 100))
     clock.tick(60)
     raise SystemExit
-    sys.exit()
+    # sys.exit()
