@@ -7,7 +7,8 @@ on:
   push:
     branches: [ "main" ]
   pull_request:
-    branches: [ "main" ]
+    branches: 
+    - /*
 
 permissions:
   contents: read
@@ -30,9 +31,11 @@ jobs:
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Linting
       run: |
-        python -m pylint --max-module-lines 2000 --max-line-length 150 main/*
-        python -m pylint[spelling] main/*
-        
+        python -m pylint --max-module-lines 2000 --max-line-length 150 main/*.py
+        python -m pylint[spelling] main/*.py
+    - name: Runtime Errors
+      run: |
+        python main/main.py
     # - name: Test with pytest
       # run: |
         # pytest
