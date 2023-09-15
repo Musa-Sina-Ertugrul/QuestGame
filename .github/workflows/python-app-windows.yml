@@ -30,10 +30,6 @@ jobs:
         # pip install pytest
         pip install -r requirements.txt
         pip install -r requirements_dev.txt
-    - name: Linting
-      run: |
-        python -m pylint --max-module-lines 2000 --max-line-length 150 main/*.py
-        python -m pylint --disable all --enable spelling --spelling-dict en_US --spelling-ignore-words "sys" main/*.py
     - name: Runtime Errors
       run: |
         python main/main.py
