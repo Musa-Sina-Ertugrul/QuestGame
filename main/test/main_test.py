@@ -10,4 +10,4 @@ def test_main():
     Test for game loop
     """
     with pytest.raises(SystemExit):
-        os.system("python main.py")
+        os.system("python main/main.py")
