@@ -8,15 +8,16 @@ import pygame
 
 from src.flyweights.animated import Animated
 
-# pylint: disable=no-member
-pygame.init()
-# pylint: enable=no-member
-screen = pygame.display.set_mode((800, 800))
-clock = pygame.time.Clock()
+
 def main():
     """
-        Game loop
+    Game loop
     """
+    # pylint: disable=no-member
+    pygame.init()
+    # pylint: enable=no-member
+    screen = pygame.display.set_mode((800, 800))
+    clock = pygame.time.Clock()
     while True:
         pygame.display.flip()
         screen.fill((0, 0, 0))
