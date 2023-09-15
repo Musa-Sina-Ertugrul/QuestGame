@@ -3,7 +3,7 @@
 """
 import os
 import pytest
-
+from main import main
 
 def test_main():
     """
@@ -11,3 +11,4 @@ def test_main():
     """
     with pytest.raises(SystemExit):
         os.system("python main/main.py")
+        main()
