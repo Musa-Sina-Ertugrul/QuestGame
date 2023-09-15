@@ -4,7 +4,7 @@ This module contains Animated flyweight class
 """
 from pygame import image
 
-from .flyweight import Flyweight
+from .Flyweight import Flyweight
 
 
 class Animated(Flyweight):

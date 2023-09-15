@@ -7,7 +7,7 @@ from pygame.mixer import Sound
 from pygame.font import Font
 from pygame import image
 
-from .flyweight import Flyweight
+from .Flyweight import Flyweight
 
 
 class NotAnimated(Flyweight):
