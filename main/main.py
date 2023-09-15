@@ -1,4 +1,6 @@
+import sys
 import pygame
+
 from src.flyweights.animated import Animated
 pygame.init()
 
@@ -9,3 +11,4 @@ while True:
     screen.fill((0,0,0))
     screen.blit(Animated.data["crazy_chest"][0],(100,100))
     clock.tick(60)
+    sys.exit()
