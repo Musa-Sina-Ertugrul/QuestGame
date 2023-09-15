@@ -1,7 +1,9 @@
 """
     Pass for linting
 """
+# pylint: disable=no-member
 # import sys
+# pylint: enable=no-member
 import pygame
 
 from src.flyweights.animated import Animated
@@ -17,4 +19,6 @@ while True:
     screen.blit(Animated.data["crazy_chest"][0], (100, 100))
     clock.tick(60)
     raise SystemExit
+    # pylint: disable=no-member
     # sys.exit()
+    # pylint: enable=no-member
