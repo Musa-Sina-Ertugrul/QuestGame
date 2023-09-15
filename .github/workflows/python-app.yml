@@ -29,6 +29,7 @@ jobs:
         python -m pip install --upgrade pip
         # pip install pytest
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+        if [ -f requirements_dev.txt ]; then pip install -r requirements_dev.txt; fi
     - name: Linting
       run: |
         python -m pylint --max-module-lines 2000 --max-line-length 150 main/*.py
