@@ -1,5 +1,5 @@
 import pygame
-from src.flyweights.Flyweight import Animated
+from src.flyweights.animated import Animated
 pygame.init()
 
 screen = pygame.display.set_mode((800,800))
