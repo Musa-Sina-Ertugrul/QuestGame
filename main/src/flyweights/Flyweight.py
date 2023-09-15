@@ -24,9 +24,3 @@ class Flyweight(ABC):
     """
 
     data: Dict[str, List[Optional[Font | Sound | Surface]]] = {}
-
-
-
-
-
-

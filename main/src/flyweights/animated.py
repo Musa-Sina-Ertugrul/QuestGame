@@ -448,8 +448,7 @@ class Animated(Flyweight):
         image.load(".assets/enemies/sprites/Ghost/ghost1.png"),
         image.load(".assets/enemies/sprites/Ghost/ghost2.png"),
         image.load(".assets/enemies/sprites/Ghost/ghost3.png"),
-        image.load(".assets/enemies/sprites/Ghost/ghost4.png"),
-        image.load(".assets/enemies/sprites/Ghost/ghost5.png"),
+        image.load(".assets/enemies/sprites/Ghost/ghost4.png")
     ]
     Flyweight.data["lizard"] = [
         image.load(".assets/enemies/sprites/lizard moves/lizard-move1.png"),
