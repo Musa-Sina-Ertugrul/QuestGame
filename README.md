@@ -18,7 +18,7 @@ Game project of [Quest Platform](https://www.linkedin.com/company/quest-platform
 # :bulb: Design Proposal
 
 <p align="center">
-  <img src="https://github.com/Musa-Sina-Ertugrul/QuestGame/blob/main/.img/QuestGame.png" />
+  <img src="https://github.com/Musa-Sina-Ertugrul/QuestGame/blob/main/.img/QuestGameDesign.png" />
 </p>
 
 # :minidisc: Required Softwares
