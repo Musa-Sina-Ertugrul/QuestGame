@@ -1,4 +1,4 @@
-FuzzyTM==0.4.0
+FuzzyTM>=0.4.0
 blosc2==2.0.0
 cython==0.29.21
 pygame==2.5.1
