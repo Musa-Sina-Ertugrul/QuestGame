@@ -27,6 +27,7 @@ class Prototype:
     data["shop_menu"] = Factory.create_shop_menu()
     data["npc_menu"] = Factory.create_npc_menu()
     data["game_play"] = Factory.create_game_play()
+    data["icon_template"] = Factory.create_icon_template()
 
     @staticmethod
     @property.getter
@@ -99,3 +100,25 @@ class Prototype:
         """
 
         return Prototype.data["game_play"]
+    @staticmethod
+    @property.getter
+    def get_icon_template() -> List[object]:
+        """sumary_line
+
+        Keyword arguments:
+        argument -- description
+        Return: return_description
+        """
+
+        return Prototype.data["icon_template"]
+    @staticmethod
+    @property.getter
+    def get_skill_img(icon:str) -> List[object]:
+        """sumary_line
+
+        Keyword arguments:
+        argument -- description
+        Return: return_description
+        """
+
+        return Prototype.data[icon]
