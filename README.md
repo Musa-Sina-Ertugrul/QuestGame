@@ -18,7 +18,7 @@ Game project of [Quest Platform](https://www.linkedin.com/company/quest-platform
 # :bulb: Design Proposal
 
 <p align="center">
-  <img src="https://github.com/Musa-Sina-Ertugrul/QuestGame/blob/main/.img/QuestGame.png" />
+  <img src="https://github.com/Musa-Sina-Ertugrul/QuestGame/blob/main/.img/QuestGameDesign.png" />
 </p>
 
 # :minidisc: Required Softwares
@@ -43,7 +43,7 @@ Game project of [Quest Platform](https://www.linkedin.com/company/quest-platform
 * Developers will use [snake case](https://www.pluralsight.com/blog/software-development/programming-naming-conventions-explained#snake-case)
 * In this project developers must use [pointers](https://realpython.com/pointers-in-python/) for information that is more than 8 bytes
 * Developers will use [Black Formatter](https://github.com/psf/black)
-* Everyone will [create a new environment](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html) for this project and everyone will [install packages from requirements.txt](https://note.nkmk.me/en/python-pip-install-requirements/)
+* Everyone will [create a new environment](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html) for this project and everyone will [install packages from requirements.txt and requirements_dev.txt](https://note.nkmk.me/en/python-pip-install-requirements/)
 * Project maintainers will use [anaconda](https://www.anaconda.com/download) to handle environments
 * All paths must be relative
 
@@ -58,6 +58,7 @@ Please contact with [Musa Sina ERTUĞRUL](https://www.linkedin.com/in/musa-sina-
 * [Link](https://www.visual-paradigm.com/guide/uml-unified-modeling-language/uml-class-diagram-tutorial/) for UML Diagram
 * [Link :one:](https://www.udemy.com/course/parallel-computing-in-python/?kw=python+paralle&src=sac) [Link :two:](https://docs.google.com/viewer?a=v&pid=sites&srcid=b2JqZWN0bWFnZS5jb218cHJpdmF0ZS10cmFpbmluZ3xneDoyZjU2M2U4NGJiN2M0NWU2) ( Chapter :one: :two: :three: :four: ) for Parallel Programming
 * [Link](https://github.com/bitcraft/PyTMX) for pytmx
+* [Link](https://www.mapeditor.org/) for Tiled
 
 # :art: Assets
 * [Free Pixel Effects Pack](https://xyezawr.itch.io/free)
