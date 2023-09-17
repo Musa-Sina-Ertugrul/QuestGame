@@ -30,8 +30,8 @@ class Gui(Run):
         self.__game_play_ptr: List[object] = Prototype.get_game_play()
         self.__cv_ptr_list: List[Condition] = []
         self.__cv_ptr_list = [Condition() for _ in range(6)]
-        self._width = 1920
-        self._height = 1080
+        self.width = 1920
+        self.height = 1080
 
     def run(self):
         """sumary_line
