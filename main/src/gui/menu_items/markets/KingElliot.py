@@ -4,14 +4,14 @@ Keyword arguments:
 argument -- description
 Return: return_description
 
-TODO: Update Docstring
+TODO: Update Docstrings
 
 """
-from typing import NoReturn, Tuple
-from abc import ABC, abstractmethod
-from ..Menu import Menu
 
-class Market(Menu, ABC):
+from typing import NoReturn, Tuple, List
+from ..Market import Market
+
+class KingElliot(Market):
     """sumary_line
 
     Keyword arguments:
@@ -20,9 +20,10 @@ class Market(Menu, ABC):
     """
 
     def __init__(self):
-        super().__init__(self)  # pylint: disable=W,E
+        super().__init__()
+        super.elements = self._init_market()
+        self.items: List[List[int]] = [[]]  # TODO: Hardcode items
 
-    @abstractmethod
     def buy_level(self, skill: int):
         """sumary_line
 
@@ -32,7 +33,6 @@ class Market(Menu, ABC):
         """
         raise NotImplementedError
 
-    @abstractmethod
     def reset_levels(self):
         """sumary_line
 
