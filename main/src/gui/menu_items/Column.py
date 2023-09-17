@@ -4,15 +4,16 @@ Keyword arguments:
 argument -- description
 Return: return_description
 
-TODO: Update Docstring
+TODO: Update Docstrings
 
 """
-from typing import List, Tuple, NoReturn
-from .Column import Column  # pylint: disable= W
+from typing import Tuple, NoReturn, List
+from .Icon import Icon
 from ..Menu import Menu
 
 
-class MenuLabel(Menu):
+class Column(Menu):
+
     """sumary_line
 
     Keyword arguments:
@@ -20,9 +21,10 @@ class MenuLabel(Menu):
     Return: return_description
     """
 
-    def __init__(self, item_list: List[List[int]]):
-        super().__init__()
-        super().elements = self.init_columns(item_list)
+    def __init__(self,item_list: List[List[int]]):
+        super().__init__(self) # pylint: disable=E
+        super.elements = self._init_icons(item_list)
+        super.states = self._init_states()
 
     @property
     def pos_x(self) -> int:
@@ -118,6 +120,9 @@ class MenuLabel(Menu):
         """
         return (self._x, self._y)
 
+    def __add_icon(self, icon: List[Icon]): # pylint: disable=W
+        super.elements.append(icon)
+
     def run(self):
         """sumary_line
 
@@ -127,5 +132,8 @@ class MenuLabel(Menu):
         """
         raise NotImplementedError
 
-    def _init_columns(self, item_list: List[List[int]]):
+    def _init_icons(self, item_list: List[List[int]]):
+        raise NotImplementedError
+
+    def _init_states(self):
         raise NotImplementedError

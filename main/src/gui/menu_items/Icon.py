@@ -4,15 +4,17 @@ Keyword arguments:
 argument -- description
 Return: return_description
 
-TODO: Update Docstring
+TODO: Update Docstrings
 
 """
-from typing import List, Tuple, NoReturn
-from .Column import Column  # pylint: disable= W
-from ..Menu import Menu
+from typing import Tuple, NoReturn, List, Final # pylint: disable=W,E
+from pygame import Surface, transform # pylint: disable=W,E
+from .Menu import Menu  # pylint: disable=W,E
+from ..not_animated import NotAnimated  # pylint: disable=W,E
+from ..State import StateLookUpTable  # pylint: disable=W,E
 
 
-class MenuLabel(Menu):
+class Icon(Menu):
     """sumary_line
 
     Keyword arguments:
@@ -20,9 +22,10 @@ class MenuLabel(Menu):
     Return: return_description
     """
 
-    def __init__(self, item_list: List[List[int]]):
-        super().__init__()
-        super().elements = self.init_columns(item_list)
+    def __init__(self, icon: int):
+        super().__init__(self)
+        super.elements = self._init_icon(icon)
+        super.states = self._init_states()
 
     @property
     def pos_x(self) -> int:
@@ -127,5 +130,8 @@ class MenuLabel(Menu):
         """
         raise NotImplementedError
 
-    def _init_columns(self, item_list: List[List[int]]):
+    def _init_icon(self,icon:int) -> List[List[object]]:
+        raise NotImplementedError
+
+    def _init_states(self):
         raise NotImplementedError
