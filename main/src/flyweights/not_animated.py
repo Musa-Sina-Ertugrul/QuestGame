@@ -5,7 +5,7 @@ This module contains NotAnimated flyweight class
 
 from pygame.mixer import Sound
 from pygame.font import Font
-from pygame import image
+from pygame import image,transform
 
 from .Flyweight import Flyweight
 
@@ -154,9 +154,9 @@ class NotAnimated(Flyweight):
     Flyweight.data["menu_shop"] = image.load(
         ".assets/Simple UI Pack/Menu/64x64/SHOP.png"
     )
-    Flyweight.data["icon_template"] = image.load(
+    Flyweight.data["icon_template"] = transform.scale_by(image.load(
         ".assets/Simple UI Pack/Icons and Vectors/64x64/Icons/IconTemplate.png"
-    )
+    ),1.6)
     Flyweight.data["icon_random"] = image.load(
         ".assets/Simple UI Pack/Icons and Vectors/64x64/Icons/RandomBox.png"
     )
