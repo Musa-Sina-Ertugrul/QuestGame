@@ -43,7 +43,7 @@ Game project of [Quest Platform](https://www.linkedin.com/company/quest-platform
 * Developers will use [snake case](https://www.pluralsight.com/blog/software-development/programming-naming-conventions-explained#snake-case)
 * In this project developers must use [pointers](https://realpython.com/pointers-in-python/) for information that is more than 8 bytes
 * Developers will use [Black Formatter](https://github.com/psf/black)
-* Everyone will [create a new environment](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html) for this project and everyone will [install packages from requirements.txt](https://note.nkmk.me/en/python-pip-install-requirements/)
+* Everyone will [create a new environment](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html) for this project and everyone will [install packages from requirements.txt and requirements_dev.txt](https://note.nkmk.me/en/python-pip-install-requirements/)
 * Project maintainers will use [anaconda](https://www.anaconda.com/download) to handle environments
 * All paths must be relative
 
