@@ -6,7 +6,7 @@
 """
 
 from abc import ABC
-from typing import Dict, List, Optional
+from typing import Dict, Tuple, Optional
 from pygame import Surface
 from pygame.mixer import Sound
 from pygame.font import Font
@@ -23,4 +23,4 @@ class Flyweight(ABC):
         data (Dict[str, List[Surface]]) : contains Surface objects
     """
 
-    data: Dict[str, List[Optional[Font | Sound | Surface]]] = {}
+    data: Dict[str, Tuple[Optional[Font | Sound | Surface]]] = {}

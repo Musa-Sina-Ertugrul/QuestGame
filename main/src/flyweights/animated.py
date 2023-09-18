@@ -1,6 +1,8 @@
 """
 This module contains Animated flyweight class
 
+TODO: Scale everthing when coding started
+
 """
 from pygame import image
 
@@ -83,11 +85,9 @@ class Animated(Flyweight):
         "pause_button"
         "sound_button"
         "star_button"
-        "shop_button"
-        "you_button"
     """
 
-    Flyweight.data["fire_cast"] = [  # use / instead of / if you are in windows !!!
+    Flyweight.data["fire_cast"] = (  # use / instead of / if you are in windows !!!
         image.load(".assets/casts/fire_cast/FireCast_96x96_1.png"),
         image.load(".assets/casts/fire_cast/FireCast_96x96_2.png"),
         image.load(".assets/casts/fire_cast/FireCast_96x96_3.png"),
@@ -116,8 +116,8 @@ class Animated(Flyweight):
         image.load(".assets/casts/fire_cast/FireCast_96x96_26.png"),
         image.load(".assets/casts/fire_cast/FireCast_96x96_27.png"),
         image.load(".assets/casts/fire_cast/FireCast_96x96_28.png"),
-    ]
-    Flyweight.data["ice_cast"] = [
+    )
+    Flyweight.data["ice_cast"] = (
         image.load(".assets/casts/ice_shatter/IceShatter_96x96_1.png"),
         image.load(".assets/casts/ice_shatter/IceShatter_96x96_2.png"),
         image.load(".assets/casts/ice_shatter/IceShatter_96x96_3.png"),
@@ -167,8 +167,8 @@ class Animated(Flyweight):
         image.load(".assets/casts/ice_shatter/IceShatter_96x96_47.png"),
         image.load(".assets/casts/ice_shatter/IceShatter_96x96_48.png"),
         image.load(".assets/casts/ice_shatter/IceShatter_96x96_49.png"),
-    ]
-    Flyweight.data["light_cast"] = [
+    )
+    Flyweight.data["light_cast"] = (
         image.load(".assets/casts/light_cast/LightCast_96_1.png"),
         image.load(".assets/casts/light_cast/LightCast_96_2.png"),
         image.load(".assets/casts/light_cast/LightCast_96_3.png"),
@@ -217,8 +217,8 @@ class Animated(Flyweight):
         image.load(".assets/casts/light_cast/LightCast_96_46.png"),
         image.load(".assets/casts/light_cast/LightCast_96_47.png"),
         image.load(".assets/casts/light_cast/LightCast_96_48.png"),
-    ]
-    Flyweight.data["magic_cast"] = [
+    )
+    Flyweight.data["magic_cast"] = (
         image.load(".assets/casts/magic_barrier/MagicBarrier_64x64_1.png"),
         image.load(".assets/casts/magic_barrier/MagicBarrier_64x64_2.png"),
         image.load(".assets/casts/magic_barrier/MagicBarrier_64x64_3.png"),
@@ -253,8 +253,8 @@ class Animated(Flyweight):
         image.load(".assets/casts/magic_barrier/MagicBarrier_64x64_31.png"),
         image.load(".assets/casts/magic_barrier/MagicBarrier_64x64_32.png"),
         image.load(".assets/casts/magic_barrier/MagicBarrier_64x64_33.png"),
-    ]
-    Flyweight.data["crazy_chest"] = [
+    )
+    Flyweight.data["crazy_chest"] = (
         image.load(".assets/chests/crazy/Layer-1.png"),
         image.load(".assets/chests/crazy/Layer-2.png"),
         image.load(".assets/chests/crazy/Layer-3.png"),
@@ -263,8 +263,8 @@ class Animated(Flyweight):
         image.load(".assets/chests/crazy/Layer-6.png"),
         image.load(".assets/chests/crazy/Layer-7.png"),
         image.load(".assets/chests/crazy/Layer-8.png"),
-    ]
-    Flyweight.data["gold_chest"] = [
+    )
+    Flyweight.data["gold_chest"] = (
         image.load(".assets/chests/gold/Layer-1.png"),
         image.load(".assets/chests/gold/Layer-2.png"),
         image.load(".assets/chests/gold/Layer-3.png"),
@@ -273,8 +273,8 @@ class Animated(Flyweight):
         image.load(".assets/chests/gold/Layer-6.png"),
         image.load(".assets/chests/gold/Layer-7.png"),
         image.load(".assets/chests/gold/Layer-8.png"),
-    ]
-    Flyweight.data["king_chest"] = [
+    )
+    Flyweight.data["king_chest"] = (
         image.load(".assets/chests/KING/Layer-1.png"),
         image.load(".assets/chests/KING/Layer-2.png"),
         image.load(".assets/chests/KING/Layer-3.png"),
@@ -283,8 +283,8 @@ class Animated(Flyweight):
         image.load(".assets/chests/KING/Layer-6.png"),
         image.load(".assets/chests/KING/Layer-7.png"),
         image.load(".assets/chests/KING/Layer-8.png"),
-    ]
-    Flyweight.data["silver_chest"] = [
+    )
+    Flyweight.data["silver_chest"] = (
         image.load(".assets/chests/Silver/Layer-1.png"),
         image.load(".assets/chests/Silver/Layer-2.png"),
         image.load(".assets/chests/Silver/Layer-3.png"),
@@ -293,8 +293,8 @@ class Animated(Flyweight):
         image.load(".assets/chests/Silver/Layer-6.png"),
         image.load(".assets/chests/Silver/Layer-7.png"),
         image.load(".assets/chests/Silver/Layer-8.png"),
-    ]
-    Flyweight.data["dark_spell_1"] = [
+    )
+    Flyweight.data["dark_spell_1"] = (
         image.load(
             ".assets/Dark VFX 01 - 02/Dark VFX 1/Separeted frames/Dark VFX 1 (40x32)1.png"
         ),
@@ -346,8 +346,8 @@ class Animated(Flyweight):
         image.load(
             ".assets/Dark VFX 01 - 02/Dark VFX 1/Separeted frames/Dark VFX 1 (40x32)17.png"
         ),
-    ]
-    Flyweight.data["dark_spell_2"] = [
+    )
+    Flyweight.data["dark_spell_2"] = (
         image.load(
             ".assets/Dark VFX 01 - 02/Dark VFX 2/Separated Frames/Dark VFX 2 (48x64)1.png"
         ),
@@ -396,8 +396,8 @@ class Animated(Flyweight):
         image.load(
             ".assets/Dark VFX 01 - 02/Dark VFX 2/Separated Frames/Dark VFX 2 (48x64)16.png"
         ),
-    ]
-    Flyweight.data["elenore"] = [
+    )
+    Flyweight.data["elenore"] = (
         image.load(".assets/Elenore/Idle/Idle1.png"),
         image.load(".assets/Elenore/Idle/Idle2.png"),
         image.load(".assets/Elenore/Idle/Idle3.png"),
@@ -407,8 +407,8 @@ class Animated(Flyweight):
         image.load(".assets/Elenore/Idle/Idle7.png"),
         image.load(".assets/Elenore/Idle/Idle8.png"),
         image.load(".assets/Elenore/Idle/Idle9.png"),
-    ]
-    Flyweight.data["elenore_shadow"] = [
+    )
+    Flyweight.data["elenore_shadow"] = (
         image.load(".assets/Elenore/Idle/Shadow/Shadow1.png"),
         image.load(".assets/Elenore/Idle/Shadow/Shadow2.png"),
         image.load(".assets/Elenore/Idle/Shadow/Shadow3.png"),
@@ -418,8 +418,8 @@ class Animated(Flyweight):
         image.load(".assets/Elenore/Idle/Shadow/Shadow7.png"),
         image.load(".assets/Elenore/Idle/Shadow/Shadow8.png"),
         image.load(".assets/Elenore/Idle/Shadow/Shadow9.png"),
-    ]
-    Flyweight.data["eye_fire_blue"] = [
+    )
+    Flyweight.data["eye_fire_blue"] = (
         image.load(".assets/enemies/Eye Fire Blue/eye fire blue1.png"),
         image.load(".assets/enemies/Eye Fire Blue/eye fire blue2.png"),
         image.load(".assets/enemies/Eye Fire Blue/eye fire blue3.png"),
@@ -427,8 +427,8 @@ class Animated(Flyweight):
         image.load(".assets/enemies/Eye Fire Blue/eye fire blue5.png"),
         image.load(".assets/enemies/Eye Fire Blue/eye fire blue6.png"),
         image.load(".assets/enemies/Eye Fire Blue/eye fire blue7.png"),
-    ]
-    Flyweight.data["eye_fire_red"] = [
+    )
+    Flyweight.data["eye_fire_red"] = (
         image.load(".assets/enemies/Eye Fire Red/eye fire1.png"),
         image.load(".assets/enemies/Eye Fire Red/eye fire2.png"),
         image.load(".assets/enemies/Eye Fire Red/eye fire3.png"),
@@ -436,26 +436,26 @@ class Animated(Flyweight):
         image.load(".assets/enemies/Eye Fire Red/eye fire5.png"),
         image.load(".assets/enemies/Eye Fire Red/eye fire6.png"),
         image.load(".assets/enemies/Eye Fire Red/eye fire7.png"),
-    ]
-    Flyweight.data["bat"] = [
+    )
+    Flyweight.data["bat"] = (
         image.load(".assets/enemies/sprites/Bat/bat1.png"),
         image.load(".assets/enemies/sprites/Bat/bat2.png"),
         image.load(".assets/enemies/sprites/Bat/bat3.png"),
         image.load(".assets/enemies/sprites/Bat/bat4.png"),
         image.load(".assets/enemies/sprites/Bat/bat5.png"),
-    ]
-    Flyweight.data["ghost"] = [
+    )
+    Flyweight.data["ghost"] = (
         image.load(".assets/enemies/sprites/Ghost/ghost1.png"),
         image.load(".assets/enemies/sprites/Ghost/ghost2.png"),
         image.load(".assets/enemies/sprites/Ghost/ghost3.png"),
         image.load(".assets/enemies/sprites/Ghost/ghost4.png")
-    ]
-    Flyweight.data["lizard"] = [
+    )
+    Flyweight.data["lizard"] = (
         image.load(".assets/enemies/sprites/lizard moves/lizard-move1.png"),
         image.load(".assets/enemies/sprites/lizard moves/lizard-move2.png"),
         image.load(".assets/enemies/sprites/lizard moves/lizard-move3.png"),
-    ]
-    Flyweight.data["skeleton"] = [
+    )
+    Flyweight.data["skeleton"] = (
         image.load(".assets/enemies/sprites/Skeleton-Walk/skeleton-walk1.png"),
         image.load(".assets/enemies/sprites/Skeleton-Walk/skeleton-walk2.png"),
         image.load(".assets/enemies/sprites/Skeleton-Walk/skeleton-walk3.png"),
@@ -464,23 +464,23 @@ class Animated(Flyweight):
         image.load(".assets/enemies/sprites/Skeleton-Walk/skeleton-walk6.png"),
         image.load(".assets/enemies/sprites/Skeleton-Walk/skeleton-walk7.png"),
         image.load(".assets/enemies/sprites/Skeleton-Walk/skeleton-walk8.png"),
-    ]
-    Flyweight.data["slime"] = [
+    )
+    Flyweight.data["slime"] = (
         image.load(".assets/enemies/sprites/Slime/slime1.png"),
         image.load(".assets/enemies/sprites/Slime/slime2.png"),
         image.load(".assets/enemies/sprites/Slime/slime3.png"),
         image.load(".assets/enemies/sprites/Slime/slime4.png"),
         image.load(".assets/enemies/sprites/Slime/slime5.png"),
-    ]
-    Flyweight.data["crab"] = [
+    )
+    Flyweight.data["crab"] = (
         image.load(".assets/enemies/sprites/Walk/crab-walk1.png"),
         image.load(".assets/enemies/sprites/Walk/crab-walk2.png"),
         image.load(".assets/enemies/sprites/Walk/crab-walk3.png"),
         image.load(".assets/enemies/sprites/Walk/crab-walk4.png"),
         image.load(".assets/enemies/sprites/Walk/crab-walk5.png"),
         image.load(".assets/enemies/sprites/Walk/crab-walk6.png"),
-    ]
-    Flyweight.data["reaper"] = [
+    )
+    Flyweight.data["reaper"] = (
         image.load(".assets/enemies/reaper/PassiveRunningReaper_1.png"),
         image.load(".assets/enemies/reaper/PassiveRunningReaper_2.png"),
         image.load(".assets/enemies/reaper/PassiveRunningReaper_3.png"),
@@ -489,14 +489,14 @@ class Animated(Flyweight):
         image.load(".assets/enemies/reaper/PassiveRunningReaper_6.png"),
         image.load(".assets/enemies/reaper/PassiveRunningReaper_7.png"),
         image.load(".assets/enemies/reaper/PassiveRunningReaper_8.png"),
-    ]
-    Flyweight.data["skeleton_big_idle"] = [
+    )
+    Flyweight.data["skeleton_big_idle"] = (
         image.load(".assets/enemies/SkeletonBi/SkeletonBig_1.png"),
         image.load(".assets/enemies/SkeletonBi/SkeletonBig_2.png"),
         image.load(".assets/enemies/SkeletonBi/SkeletonBig_3.png"),
         image.load(".assets/enemies/SkeletonBi/SkeletonBig_4.png"),
-    ]
-    Flyweight.data["skeleton_big_attack"] = [
+    )
+    Flyweight.data["skeleton_big_attack"] = (
         image.load(".assets/enemies/SkeletonBi/SkeletonBig_5.png"),
         image.load(".assets/enemies/SkeletonBi/SkeletonBig_6.png"),
         image.load(".assets/enemies/SkeletonBi/SkeletonBig_7.png"),
@@ -510,13 +510,13 @@ class Animated(Flyweight):
         image.load(".assets/enemies/SkeletonBi/SkeletonBig_15.png"),
         image.load(".assets/enemies/SkeletonBi/SkeletonBig_16.png"),
         image.load(".assets/enemies/SkeletonBi/SkeletonBig_17.png"),
-    ]
-    Flyweight.data["skeleton_big_hit"] = [
+    )
+    Flyweight.data["skeleton_big_hit"] = (
         image.load(".assets/enemies/SkeletonBi/SkeletonBig_18.png"),
         image.load(".assets/enemies/SkeletonBi/SkeletonBig_19.png"),
         image.load(".assets/enemies/SkeletonBi/SkeletonBig_20.png"),
-    ]
-    Flyweight.data["skeleton_big_walk"] = [
+    )
+    Flyweight.data["skeleton_big_walk"] = (
         image.load(".assets/enemies/SkeletonBi/SkeletonBig_21.png"),
         image.load(".assets/enemies/SkeletonBi/SkeletonBig_22.png"),
         image.load(".assets/enemies/SkeletonBi/SkeletonBig_23.png"),
@@ -529,8 +529,8 @@ class Animated(Flyweight):
         image.load(".assets/enemies/SkeletonBi/SkeletonBig_30.png"),
         image.load(".assets/enemies/SkeletonBi/SkeletonBig_31.png"),
         image.load(".assets/enemies/SkeletonBi/SkeletonBig_32.png"),
-    ]
-    Flyweight.data["skeleton_big_death"] = [
+    )
+    Flyweight.data["skeleton_big_death"] = (
         image.load(".assets/enemies/SkeletonBi/SkeletonBig_33.png"),
         image.load(".assets/enemies/SkeletonBi/SkeletonBig_34.png"),
         image.load(".assets/enemies/SkeletonBi/SkeletonBig_35.png"),
@@ -544,8 +544,8 @@ class Animated(Flyweight):
         image.load(".assets/enemies/SkeletonBi/SkeletonBig_43.png"),
         image.load(".assets/enemies/SkeletonBi/SkeletonBig_44.png"),
         image.load(".assets/enemies/SkeletonBi/SkeletonBig_45.png"),
-    ]
-    Flyweight.data["skeleton_big_attack"] = [
+    )
+    Flyweight.data["skeleton_big_attack"] = (
         image.load(".assets/enemies/SkeletonBi/SkeletonBig_21.png"),
         image.load(".assets/enemies/SkeletonBi/SkeletonBig_22.png"),
         image.load(".assets/enemies/SkeletonBi/SkeletonBig_23.png"),
@@ -558,8 +558,8 @@ class Animated(Flyweight):
         image.load(".assets/enemies/SkeletonBi/SkeletonBig_30.png"),
         image.load(".assets/enemies/SkeletonBi/SkeletonBig_31.png"),
         image.load(".assets/enemies/SkeletonBi/SkeletonBig_32.png"),
-    ]
-    Flyweight.data["bringer_of_death_attack"] = [
+    )
+    Flyweight.data["bringer_of_death_attack"] = (
         image.load(
             ".assets/enemies/Bringer-Of-Death/Individual Sprite/Attack/Bringer-of-Death_Attack_1.png"
         ),
@@ -590,8 +590,8 @@ class Animated(Flyweight):
         image.load(
             ".assets/enemies/Bringer-Of-Death/Individual Sprite/Attack/Bringer-of-Death_Attack_10.png"
         ),
-    ]
-    Flyweight.data["bringer_of_death_cast"] = [
+    )
+    Flyweight.data["bringer_of_death_cast"] = (
         image.load(
             ".assets/enemies/Bringer-Of-Death/Individual Sprite/Cast/Bringer-of-Death_Cast_1.png"
         ),
@@ -619,8 +619,8 @@ class Animated(Flyweight):
         image.load(
             ".assets/enemies/Bringer-Of-Death/Individual Sprite/Cast/Bringer-of-Death_Cast_9.png"
         ),
-    ]
-    Flyweight.data["bringer_of_death_death"] = [
+    )
+    Flyweight.data["bringer_of_death_death"] = (
         image.load(
             ".assets/enemies/Bringer-Of-Death/Individual Sprite/Death/Bringer-of-Death_Death_1.png"
         ),
@@ -651,8 +651,8 @@ class Animated(Flyweight):
         image.load(
             ".assets/enemies/Bringer-Of-Death/Individual Sprite/Death/Bringer-of-Death_Death_10.png"
         ),
-    ]
-    Flyweight.data["bringer_of_death_hurt"] = [
+    )
+    Flyweight.data["bringer_of_death_hurt"] = (
         image.load(
             ".assets/enemies/Bringer-Of-Death/Individual Sprite/Hurt/Bringer-of-Death_Hurt_1.png"
         ),
@@ -662,8 +662,8 @@ class Animated(Flyweight):
         image.load(
             ".assets/enemies/Bringer-Of-Death/Individual Sprite/Hurt/Bringer-of-Death_Hurt_3.png"
         ),
-    ]
-    Flyweight.data["bringer_of_death_idle"] = [
+    )
+    Flyweight.data["bringer_of_death_idle"] = (
         image.load(
             ".assets/enemies/Bringer-Of-Death/Individual Sprite/Idle/Bringer-of-Death_Idle_1.png"
         ),
@@ -688,8 +688,8 @@ class Animated(Flyweight):
         image.load(
             ".assets/enemies/Bringer-Of-Death/Individual Sprite/Idle/Bringer-of-Death_Idle_8.png"
         ),
-    ]
-    Flyweight.data["bringer_of_death_spell"] = [
+    )
+    Flyweight.data["bringer_of_death_spell"] = (
         image.load(
             ".assets/enemies/Bringer-Of-Death/Individual Sprite/Spell/Bringer-of-Death_Spell_1.png"
         ),
@@ -738,8 +738,8 @@ class Animated(Flyweight):
         image.load(
             ".assets/enemies/Bringer-Of-Death/Individual Sprite/Spell/Bringer-of-Death_Spell_16.png"
         ),
-    ]
-    Flyweight.data["bringer_of_death_walk"] = [
+    )
+    Flyweight.data["bringer_of_death_walk"] = (
         image.load(
             ".assets/enemies/Bringer-Of-Death/Individual Sprite/Walk/Bringer-of-Death_Walk_1.png"
         ),
@@ -764,8 +764,8 @@ class Animated(Flyweight):
         image.load(
             ".assets/enemies/Bringer-Of-Death/Individual Sprite/Walk/Bringer-of-Death_Walk_8.png"
         ),
-    ]
-    Flyweight.data["boss_demon_idle"] = [
+    )
+    Flyweight.data["boss_demon_idle"] = (
         image.load(
             ".assets/enemies/boss_demon_slime_FREE_v1.0/individual sprites/01_demon_idle/demon_idle_1.png"
         ),
@@ -784,8 +784,8 @@ class Animated(Flyweight):
         image.load(
             ".assets/enemies/boss_demon_slime_FREE_v1.0/individual sprites/01_demon_idle/demon_idle_6.png"
         ),
-    ]
-    Flyweight.data["boss_demon_walk"] = [
+    )
+    Flyweight.data["boss_demon_walk"] = (
         image.load(
             ".assets/enemies/boss_demon_slime_FREE_v1.0/individual sprites/02_demon_walk/demon_walk_1.png"
         ),
@@ -822,8 +822,8 @@ class Animated(Flyweight):
         image.load(
             ".assets/enemies/boss_demon_slime_FREE_v1.0/individual sprites/02_demon_walk/demon_walk_12.png"
         ),
-    ]
-    Flyweight.data["boss_demon_cleave"] = [
+    )
+    Flyweight.data["boss_demon_cleave"] = (
         image.load(
             ".assets/enemies/boss_demon_slime_FREE_v1.0/individual sprites/03_demon_cleave/demon_cleave_1.png"
         ),
@@ -869,8 +869,8 @@ class Animated(Flyweight):
         image.load(
             ".assets/enemies/boss_demon_slime_FREE_v1.0/individual sprites/03_demon_cleave/demon_cleave_15.png"
         ),
-    ]
-    Flyweight.data["boss_demon_hit"] = [
+    )
+    Flyweight.data["boss_demon_hit"] = (
         image.load(
             ".assets/enemies/boss_demon_slime_FREE_v1.0/individual sprites/04_demon_take_hit/demon_take_hit_1.png"
         ),
@@ -886,8 +886,8 @@ class Animated(Flyweight):
         image.load(
             ".assets/enemies/boss_demon_slime_FREE_v1.0/individual sprites/04_demon_take_hit/demon_take_hit_5.png"
         ),
-    ]
-    Flyweight.data["boss_demon_hit"] = [
+    )
+    Flyweight.data["boss_demon_hit"] = (
         image.load(
             ".assets/enemies/boss_demon_slime_FREE_v1.0/individual sprites/05_demon_death/demon_death_1.png"
         ),
@@ -954,8 +954,8 @@ class Animated(Flyweight):
         image.load(
             ".assets/enemies/boss_demon_slime_FREE_v1.0/individual sprites/05_demon_death/demon_death_22.png"
         ),
-    ]
-    Flyweight.data["boss_frost_attack"] = [
+    )
+    Flyweight.data["boss_frost_attack"] = (
         image.load(
             ".assets/enemies/Frost_Guardian_FREE_v1.0/PNG files/1_atk/1_atk_1.png"
         ),
@@ -998,8 +998,8 @@ class Animated(Flyweight):
         image.load(
             ".assets/enemies/Frost_Guardian_FREE_v1.0/PNG files/1_atk/1_atk_14.png"
         ),
-    ]
-    Flyweight.data["boss_frost_death"] = [
+    )
+    Flyweight.data["boss_frost_death"] = (
         image.load(
             ".assets/enemies/Frost_Guardian_FREE_v1.0/PNG files/death/death_1.png"
         ),
@@ -1048,8 +1048,8 @@ class Animated(Flyweight):
         image.load(
             ".assets/enemies/Frost_Guardian_FREE_v1.0/PNG files/death/death_16.png"
         ),
-    ]
-    Flyweight.data["boss_frost_idle"] = [
+    )
+    Flyweight.data["boss_frost_idle"] = (
         image.load(
             ".assets/enemies/Frost_Guardian_FREE_v1.0/PNG files/idle/idle_1.png"
         ),
@@ -1068,8 +1068,8 @@ class Animated(Flyweight):
         image.load(
             ".assets/enemies/Frost_Guardian_FREE_v1.0/PNG files/idle/idle_6.png"
         ),
-    ]
-    Flyweight.data["boss_frost_hit"] = [
+    )
+    Flyweight.data["boss_frost_hit"] = (
         image.load(
             ".assets/enemies/Frost_Guardian_FREE_v1.0/PNG files/take_hit/take_hit_1.png"
         ),
@@ -1091,8 +1091,8 @@ class Animated(Flyweight):
         image.load(
             ".assets/enemies/Frost_Guardian_FREE_v1.0/PNG files/take_hit/take_hit_7.png"
         ),
-    ]
-    Flyweight.data["boss_frost_walk"] = [
+    )
+    Flyweight.data["boss_frost_walk"] = (
         image.load(
             ".assets/enemies/Frost_Guardian_FREE_v1.0/PNG files/walk/walk_1.png"
         ),
@@ -1123,8 +1123,8 @@ class Animated(Flyweight):
         image.load(
             ".assets/enemies/Frost_Guardian_FREE_v1.0/PNG files/walk/walk_10.png"
         ),
-    ]
-    Flyweight.data["ice_spell_1_hit"] = [
+    )
+    Flyweight.data["ice_spell_1_hit"] = (
         image.load(".assets/Ice Effect 01/Ice VFX 1/Separated Frames/VFX 1 Hit1.png"),
         image.load(".assets/Ice Effect 01/Ice VFX 1/Separated Frames/VFX 1 Hit2.png"),
         image.load(".assets/Ice Effect 01/Ice VFX 1/Separated Frames/VFX 1 Hit3.png"),
@@ -1133,8 +1133,8 @@ class Animated(Flyweight):
         image.load(".assets/Ice Effect 01/Ice VFX 1/Separated Frames/VFX 1 Hit6.png"),
         image.load(".assets/Ice Effect 01/Ice VFX 1/Separated Frames/VFX 1 Hit7.png"),
         image.load(".assets/Ice Effect 01/Ice VFX 1/Separated Frames/VFX 1 Hit8.png"),
-    ]
-    Flyweight.data["ice_spell_1_move"] = [
+    )
+    Flyweight.data["ice_spell_1_move"] = (
         image.load(
             ".assets/Ice Effect 01/Ice VFX 1/Separated Frames/VFX 1 Repeatable1.png"
         ),
@@ -1165,13 +1165,13 @@ class Animated(Flyweight):
         image.load(
             ".assets/Ice Effect 01/Ice VFX 1/Separated Frames/VFX 1 Repeatable10.png"
         ),
-    ]
-    Flyweight.data["ice_spell_1_strat"] = [
+    )
+    Flyweight.data["ice_spell_1_strat"] = (
         image.load(".assets/Ice Effect 01/Ice VFX 1/Separated Frames/VFX 1 Start1.png"),
         image.load(".assets/Ice Effect 01/Ice VFX 1/Separated Frames/VFX 1 Start2.png"),
         image.load(".assets/Ice Effect 01/Ice VFX 1/Separated Frames/VFX 1 Start3.png"),
-    ]
-    Flyweight.data["ice_spell_2_active"] = [
+    )
+    Flyweight.data["ice_spell_2_active"] = (
         image.load(
             ".assets/Ice Effect 01/Ice VFX 2/Separated Frames/Ice VFX 2 Active1.png"
         ),
@@ -1199,8 +1199,8 @@ class Animated(Flyweight):
         image.load(
             ".assets/Ice Effect 01/Ice VFX 2/Separated Frames/Ice VFX 2 Active9.png"
         ),
-    ]
-    Flyweight.data["ice_spell_2_ending"] = [
+    )
+    Flyweight.data["ice_spell_2_ending"] = (
         image.load(
             ".assets/Ice Effect 01/Ice VFX 2/Separated Frames/Ice VFX 2 Ending1.png"
         ),
@@ -1252,8 +1252,8 @@ class Animated(Flyweight):
         image.load(
             ".assets/Ice Effect 01/Ice VFX 2/Separated Frames/Ice VFX 2 Ending18.png"
         ),
-    ]
-    Flyweight.data["ice_spell_2_start"] = [
+    )
+    Flyweight.data["ice_spell_2_start"] = (
         image.load(
             ".assets/Ice Effect 01/Ice VFX 2/Separated Frames/Ice VFX 2 Start1.png"
         ),
@@ -1281,8 +1281,8 @@ class Animated(Flyweight):
         image.load(
             ".assets/Ice Effect 01/Ice VFX 2/Separated Frames/Ice VFX 2 Start9.png"
         ),
-    ]
-    Flyweight.data["npc_ranger"] = [
+    )
+    Flyweight.data["npc_ranger"] = (
         image.load(
             ".assets/Lively_NPCs_v3.0/individual sprites/elementals/leaf_ranger/leaf_ranger_1.png"
         ),
@@ -1295,8 +1295,8 @@ class Animated(Flyweight):
         image.load(
             ".assets/Lively_NPCs_v3.0/individual sprites/elementals/leaf_ranger/leaf_ranger_4.png"
         ),
-    ]
-    Flyweight.data["npc_gunslinger"] = [
+    )
+    Flyweight.data["npc_gunslinger"] = (
         image.load(
             ".assets/Lively_NPCs_v3.0/individual sprites/steampunk/gunslinger/gunslinger_1.png"
         ),
@@ -1312,8 +1312,8 @@ class Animated(Flyweight):
         image.load(
             ".assets/Lively_NPCs_v3.0/individual sprites/steampunk/gunslinger/gunslinger_5.png"
         ),
-    ]
-    Flyweight.data["npc_witch"] = [
+    )
+    Flyweight.data["npc_witch"] = (
         image.load(
             ".assets/Lively_NPCs_v3.0/individual sprites/medieval/witch/witch_00.png"
         ),
@@ -1329,8 +1329,8 @@ class Animated(Flyweight):
         image.load(
             ".assets/Lively_NPCs_v3.0/individual sprites/medieval/witch/witch_04.png"
         ),
-    ]
-    Flyweight.data["npc_king"] = [
+    )
+    Flyweight.data["npc_king"] = (
         image.load(
             ".assets/Lively_NPCs_v3.0/individual sprites/medieval/king/king_00.png"
         ),
@@ -1346,8 +1346,8 @@ class Animated(Flyweight):
         image.load(
             ".assets/Lively_NPCs_v3.0/individual sprites/medieval/king/king_04.png"
         ),
-    ]
-    Flyweight.data["npc_monk"] = [
+    )
+    Flyweight.data["npc_monk"] = (
         image.load(
             ".assets/Lively_NPCs_v3.0/individual sprites/elementals/ground_monk/ground_monk_1.png"
         ),
@@ -1360,8 +1360,8 @@ class Animated(Flyweight):
         image.load(
             ".assets/Lively_NPCs_v3.0/individual sprites/elementals/ground_monk/ground_monk_4.png"
         ),
-    ]
-    Flyweight.data["npc_fairy"] = [
+    )
+    Flyweight.data["npc_fairy"] = (
         image.load(
             ".assets/Lively_NPCs_v3.0/individual sprites/medieval/fairy/fairy_1.png"
         ),
@@ -1374,70 +1374,70 @@ class Animated(Flyweight):
         image.load(
             ".assets/Lively_NPCs_v3.0/individual sprites/medieval/fairy/fairy_4.png"
         ),
-    ]
-    Flyweight.data["moonpie_front_idle"] = [
+    )
+    Flyweight.data["moonpie_front_idle"] = (
         image.load(".assets/MoonPie/girl_frames1.png"),
         image.load(".assets/MoonPie/girl_frames2.png"),
         image.load(".assets/MoonPie/girl_frames3.png"),
         image.load(".assets/MoonPie/girl_frames4.png"),
-    ]
-    Flyweight.data["moonpie_left_idle"] = [
+    )
+    Flyweight.data["moonpie_left_idle"] = (
         image.load(".assets/MoonPie/girl_frames5.png"),
         image.load(".assets/MoonPie/girl_frames6.png"),
         image.load(".assets/MoonPie/girl_frames7.png"),
         image.load(".assets/MoonPie/girl_frames8.png"),
-    ]
-    Flyweight.data["moonpie_right_idle"] = [
+    )
+    Flyweight.data["moonpie_right_idle"] = (
         image.load(".assets/MoonPie/girl_frames9.png"),
         image.load(".assets/MoonPie/girl_frames10.png"),
         image.load(".assets/MoonPie/girl_frames11.png"),
         image.load(".assets/MoonPie/girl_frames12.png"),
-    ]
-    Flyweight.data["moonpie_back_idle"] = [
+    )
+    Flyweight.data["moonpie_back_idle"] = (
         image.load(".assets/MoonPie/girl_frames13.png"),
         image.load(".assets/MoonPie/girl_frames14.png"),
         image.load(".assets/MoonPie/girl_frames15.png"),
         image.load(".assets/MoonPie/girl_frames16.png"),
-    ]
-    Flyweight.data["moonpie_front_run"] = [
+    )
+    Flyweight.data["moonpie_front_run"] = (
         image.load(".assets/MoonPie/girl_frames17.png"),
         image.load(".assets/MoonPie/girl_frames18.png"),
         image.load(".assets/MoonPie/girl_frames19.png"),
         image.load(".assets/MoonPie/girl_frames20.png"),
         image.load(".assets/MoonPie/girl_frames21.png"),
         image.load(".assets/MoonPie/girl_frames22.png"),
-    ]
-    Flyweight.data["moonpie_left_run"] = [
+    )
+    Flyweight.data["moonpie_left_run"] = (
         image.load(".assets/MoonPie/girl_frames23.png"),
         image.load(".assets/MoonPie/girl_frames24.png"),
         image.load(".assets/MoonPie/girl_frames25.png"),
         image.load(".assets/MoonPie/girl_frames26.png"),
         image.load(".assets/MoonPie/girl_frames27.png"),
         image.load(".assets/MoonPie/girl_frames28.png"),
-    ]
-    Flyweight.data["moonpie_right_run"] = [
+    )
+    Flyweight.data["moonpie_right_run"] = (
         image.load(".assets/MoonPie/girl_frames29.png"),
         image.load(".assets/MoonPie/girl_frames30.png"),
         image.load(".assets/MoonPie/girl_frames31.png"),
         image.load(".assets/MoonPie/girl_frames32.png"),
         image.load(".assets/MoonPie/girl_frames33.png"),
         image.load(".assets/MoonPie/girl_frames34.png"),
-    ]
-    Flyweight.data["moonpie_back_run"] = [
+    )
+    Flyweight.data["moonpie_back_run"] = (
         image.load(".assets/MoonPie/girl_frames35.png"),
         image.load(".assets/MoonPie/girl_frames36.png"),
         image.load(".assets/MoonPie/girl_frames37.png"),
         image.load(".assets/MoonPie/girl_frames38.png"),
         image.load(".assets/MoonPie/girl_frames39.png"),
         image.load(".assets/MoonPie/girl_frames40.png"),
-    ]
-    Flyweight.data["moonpie_death"] = [
+    )
+    Flyweight.data["moonpie_death"] = (
         image.load(".assets/MoonPie/girl_frames41.png"),
         image.load(".assets/MoonPie/girl_frames42.png"),
         image.load(".assets/MoonPie/girl_frames43.png"),
         image.load(".assets/MoonPie/girl_frames44.png"),
-    ]
-    Flyweight.data["blood"] = [
+    )
+    Flyweight.data["blood"] = (
         image.load(".assets/NEw pack blood/1/1_0.png"),
         image.load(".assets/NEw pack blood/1/1_1.png"),
         image.load(".assets/NEw pack blood/1/1_2.png"),
@@ -1468,60 +1468,52 @@ class Animated(Flyweight):
         image.load(".assets/NEw pack blood/1/1_27.png"),
         image.load(".assets/NEw pack blood/1/1_28.png"),
         image.load(".assets/NEw pack blood/1/1_29.png"),
-    ]
-    Flyweight.data["start_button"] = [
+    )
+    Flyweight.data["start_button"] = (
         image.load(".assets/Simple UI Pack/Buttons/64x64/Start.png"),
         image.load(".assets/Simple UI Pack/Buttons/64x64/StartGray.png"),
         image.load(".assets/Simple UI Pack/Buttons/64x64/StartPressed.png"),
-    ]
-    Flyweight.data["exit_button"] = [
+    )
+    Flyweight.data["exit_button"] = (
         image.load(".assets/Simple UI Pack/Buttons/64x64/Exit.png"),
         image.load(".assets/Simple UI Pack/Buttons/64x64/ExitGray.png"),
         image.load(".assets/Simple UI Pack/Buttons/64x64/ExitPressed.png"),
-    ]
-    Flyweight.data["coin"] = [
+    )
+    Flyweight.data["coin"] = (
         image.load(".assets/Simple UI Pack/HUD/64x64/Coin_1.png"),
         image.load(".assets/Simple UI Pack/HUD/64x64/Coin_2.png"),
         image.load(".assets/Simple UI Pack/HUD/64x64/Coin_3.png"),
         image.load(".assets/Simple UI Pack/HUD/64x64/Coin_4.png"),
-    ]
-    Flyweight.data["confirm_button"] = [
+    )
+    Flyweight.data["confirm_button"] = (
         image.load(
             ".assets/Simple UI Pack/Icons and Vectors/64x64/Icons/Icon_Confirm1.png"
         ),
         image.load(
             ".assets/Simple UI Pack/Icons and Vectors/64x64/Icons/Icon_Confirm2.png"
         ),
-    ]
-    Flyweight.data["pause_button"] = [
+    )
+    Flyweight.data["pause_button"] = (
         image.load(
             ".assets/Simple UI Pack/Icons and Vectors/64x64/Icons/Icon_Pause1Blue.png"
         ),
         image.load(
             ".assets/Simple UI Pack/Icons and Vectors/64x64/Icons/Icon_Pause2.png"
         ),
-    ]
-    Flyweight.data["sound_button"] = [
+    )
+    Flyweight.data["sound_button"] = (
         image.load(
             ".assets/Simple UI Pack/Icons and Vectors/64x64/Icons/Icon_SoundMutedRed.png"
         ),
         image.load(
             ".assets/Simple UI Pack/Icons and Vectors/64x64/Icons/Icon_SoundOnGreen.png"
         ),
-    ]
-    Flyweight.data["star_button"] = [
+    )
+    Flyweight.data["star_button"] = (
         image.load(
             ".assets/Simple UI Pack/Icons and Vectors/64x64/Icons/Icon_Star.png"
         ),
         image.load(
             ".assets/Simple UI Pack/Icons and Vectors/64x64/Icons/Icon_StarEmpty.png"
         ),
-    ]
-    Flyweight.data["shop_button"] = [
-        image.load(".assets/Simple UI Pack/Menu/64x64/Texts/Green/ShopGreen.png"),
-        image.load(".assets/Simple UI Pack/Menu/64x64/Texts/Red/ShopRed.png"),
-    ]
-    Flyweight.data["you_button"] = [
-        image.load(".assets/Simple UI Pack/Menu/64x64/Texts/Green/YouGreen.png"),
-        image.load(".assets/Simple UI Pack/Menu/64x64/Texts/Red/YouRed.png"),
-    ]
+    )

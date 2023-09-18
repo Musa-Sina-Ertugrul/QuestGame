@@ -1,11 +1,13 @@
 """
 This module contains NotAnimated flyweight class
 
+TODO: Scale everthing when coding started
+
 """
 
 from pygame.mixer import Sound
 from pygame.font import Font
-from pygame import image,transform
+from pygame import image, transform
 
 from .Flyweight import Flyweight
 
@@ -16,11 +18,7 @@ class NotAnimated(Flyweight):
 
     Keywords:
         "crosshair"
-        "bg_mountain"
-        "bg_moon"
-        "bg_desert"
-        "bg_rocks"
-        "bg_peaks"
+        "bgs_main_menu"
         "icons_skill"
         "start_menu_sound"
         "game_sound"
@@ -52,21 +50,25 @@ class NotAnimated(Flyweight):
         "moonpie_demaged_voices"
         "moonpie_healed_voices"
         "moonpie_shield_voices"
+        "pygame_logo"
+        "quest_logo"
     """
 
     Flyweight.data["crosshair"] = image.load(
         ".assets/Crosshairs/Outline/CrosshairsOutline17.png"
     )
-    Flyweight.data["bg_mountain"] = image.load(
-        ".assets/Desolate Places/Cloudy Mountains.png"
+    Flyweight.data["bgs_main_menu"] = (
+        transform.scale_by(
+            image.load(".assets/Desolate Places/Cloudy Mountains.png"), 3.0
+        ),
+        transform.scale_by(image.load(".assets/Desolate Places/Dusty Moon.png"), 3.0),
+        transform.scale_by(
+            image.load(".assets/Desolate Places/Hidden Desert.png"), 3.0
+        ),
+        transform.scale_by(image.load(".assets/Desolate Places/Misty Rocks.png"), 3.0),
+        transform.scale_by(image.load(".assets/Desolate Places/Starry Peaks.png"), 3.0),
     )
-    Flyweight.data["bg_moon"] = image.load(".assets/Desolate Places/Dusty Moon.png")
-    Flyweight.data["bg_desert"] = image.load(
-        ".assets/Desolate Places/Hidden Desert.png"
-    )
-    Flyweight.data["bg_rocks"] = image.load(".assets/Desolate Places/Misty Rocks.png")
-    Flyweight.data["bg_peaks"] = image.load(".assets/Desolate Places/Starry Peaks.png")
-    Flyweight.data["icons_skill"] = [
+    Flyweight.data["icons_skill"] = (
         image.load(".assets/skill_icons_by_quintino_pixels/96x96/skill_icons1.png"),
         image.load(".assets/skill_icons_by_quintino_pixels/96x96/skill_icons2.png"),
         image.load(".assets/skill_icons_by_quintino_pixels/96x96/skill_icons3.png"),
@@ -121,24 +123,24 @@ class NotAnimated(Flyweight):
         image.load(".assets/skill_icons_by_quintino_pixels/96x96/skill_icons52.png"),
         image.load(".assets/skill_icons_by_quintino_pixels/96x96/skill_icons53.png"),
         image.load(".assets/skill_icons_by_quintino_pixels/96x96/skill_icons54.png"),
-    ]
+    )
     Flyweight.data["start_menu_sound"] = Sound(".assets/game_Sound/Spy/Spy.mp3")
-    Flyweight.data["game_sound"] = [
+    Flyweight.data["game_sound"] = (
         Sound(".assets/game_Sound/16_bit_space.ogg"),
         Sound(".assets/game_Sound/future.ogg"),
         Sound(".assets/game_Sound/glitch.ogg"),
         Sound(".assets/game_Sound/retro_metal.ogg"),
-    ]
-    Flyweight.data["hearth"] = [
+    )
+    Flyweight.data["hearth"] = (
         image.load(".assets/health/heart_1.png"),
         image.load(".assets/health/heart_2.png"),
         image.load(".assets/health/heart_3.png"),
-    ]
-    Flyweight.data["shield"] = [
+    )
+    Flyweight.data["shield"] = (
         image.load(".assets/health/shield_1.png"),
         image.load(".assets/health/shield_2.png"),
         image.load(".assets/health/shield_3.png"),
-    ]
+    )
     Flyweight.data["W"] = image.load(".assets/Individual Icons/keyboard_14.png")
     Flyweight.data["A"] = image.load(".assets/Individual Icons/keyboard_23.png")
     Flyweight.data["S"] = image.load(".assets/Individual Icons/keyboard_24.png")
@@ -154,9 +156,12 @@ class NotAnimated(Flyweight):
     Flyweight.data["menu_shop"] = image.load(
         ".assets/Simple UI Pack/Menu/64x64/SHOP.png"
     )
-    Flyweight.data["icon_template"] = transform.scale_by(image.load(
-        ".assets/Simple UI Pack/Icons and Vectors/64x64/Icons/IconTemplate.png"
-    ),1.6)
+    Flyweight.data["icon_template"] = transform.scale_by(
+        image.load(
+            ".assets/Simple UI Pack/Icons and Vectors/64x64/Icons/IconTemplate.png"
+        ),
+        1.6,
+    )
     Flyweight.data["icon_random"] = image.load(
         ".assets/Simple UI Pack/Icons and Vectors/64x64/Icons/RandomBox.png"
     )
@@ -179,7 +184,7 @@ class NotAnimated(Flyweight):
         ".assets/SoundStarterPack/SoundStarterPack/Starter Pack-Realist Sound Bank.23/Hit(Impact)/HitGore1.wav"
     )
     Flyweight.data["font"] = Font(".assets/DungeonFont.ttf")
-    Flyweight.data["elenore_menu_voices"] = [
+    Flyweight.data["elenore_menu_voices"] = (
         Sound(".assets/Elenore/Type 2/aqua.wav"),
         Sound(".assets/Elenore/Type 2/blizzard.wav"),
         Sound(".assets/Elenore/Type 2/bubbles.wav"),
@@ -195,20 +200,20 @@ class NotAnimated(Flyweight):
         Sound(".assets/Elenore/Type 2/twister.wav"),
         Sound(".assets/Elenore/Type 2/water.wav"),
         Sound(".assets/Elenore/Type 2/wind.wav"),
-    ]
-    Flyweight.data["elenore_demaged_voices"] = [
+    )
+    Flyweight.data["elenore_demaged_voices"] = (
         Sound(".assets/Elenore/Type 2/damaged1.wav"),
         Sound(".assets/Elenore/Type 2/damaged2.wav"),
         Sound(".assets/Elenore/Type 2/damaged3.wav"),
-    ]
-    Flyweight.data["elenore_healed_voices"] = [
+    )
+    Flyweight.data["elenore_healed_voices"] = (
         Sound(".assets/Elenore/Type 2/heal.wav"),
         Sound(".assets/Elenore/Type 2/healed1.wav"),
         Sound(".assets/Elenore/Type 2/healed2.wav"),
         Sound(".assets/Elenore/Type 2/healed3.wav"),
-    ]
+    )
     Flyweight.data["elenore_shield_voices"] = Sound(".assets/Elenore/Type 2/cure.wav")
-    Flyweight.data["moonpie_menu_voices"] = [
+    Flyweight.data["moonpie_menu_voices"] = (
         Sound(".assets/MoonPie/RPG Voice Starter Pack/Type 1/aqua.wav"),
         Sound(".assets/MoonPie/RPG Voice Starter Pack/Type 1/blizzard.wav"),
         Sound(".assets/MoonPie/RPG Voice Starter Pack/Type 1/bubbles.wav"),
@@ -224,18 +229,20 @@ class NotAnimated(Flyweight):
         Sound(".assets/MoonPie/RPG Voice Starter Pack/Type 1/twister.wav"),
         Sound(".assets/MoonPie/RPG Voice Starter Pack/Type 1/water.wav"),
         Sound(".assets/MoonPie/RPG Voice Starter Pack/Type 1/wind.wav"),
-    ]
-    Flyweight.data["moonpie_demaged_voices"] = [
+    )
+    Flyweight.data["moonpie_demaged_voices"] = (
         Sound(".assets/MoonPie/RPG Voice Starter Pack/Type 1/damaged1.wav"),
         Sound(".assets/MoonPie/RPG Voice Starter Pack/Type 1/damaged2.wav"),
         Sound(".assets/MoonPie/RPG Voice Starter Pack/Type 1/damaged3.wav"),
-    ]
-    Flyweight.data["moonpie_healed_voices"] = [
+    )
+    Flyweight.data["moonpie_healed_voices"] = (
         Sound(".assets/MoonPie/RPG Voice Starter Pack/Type 1/heal.wav"),
         Sound(".assets/MoonPie/RPG Voice Starter Pack/Type 1/healed1.wav"),
         Sound(".assets/MoonPie/RPG Voice Starter Pack/Type 1/healed2.wav"),
         Sound(".assets/MoonPie/RPG Voice Starter Pack/Type 1/healed3.wav"),
-    ]
+    )
     Flyweight.data["moonpie_shield_voices"] = Sound(
         ".assets/MoonPie/RPG Voice Starter Pack/Type 1/cure.wav"
     )
+    Flyweight.data["pygame_logo"] = image.load(".img/pygame_powered.png")
+    Flyweight.data["quest_logo"] = image.load(".img/quest_logo.png")
