@@ -16,7 +16,7 @@ from typing import Tuple, NoReturn #pylint: disable=import-error,wrong-import-po
 from animated import Animated #pylint: disable=import-error,wrong-import-position
 from ..MenuButton import MenuButton #pylint: disable=import-error,wrong-import-position
 
-class StartButton(MenuButton):
+class SoundButton(MenuButton):
     """sumary_line
     
     Keyword arguments:
@@ -26,7 +26,7 @@ class StartButton(MenuButton):
     def __init__(self):
         super().__init__(self) #pylint: disable=W,E
         super.current_button_img = 0
-        super.button_imgs = (copy(Animated.data["start_button"])) #pylint: disable=W,E,superfluous-parens
+        super.button_imgs = (copy(Animated.data["sound_button"])) #pylint: disable=W,E,superfluous-parens
         super.elements = self.init_elements()
         super.states = self.init_states()
 
