@@ -9,7 +9,7 @@ TODO: Update Docstrings
 """
 from enum import EnumType
 from abc import ABC, abstractmethod
-from typing import List, Tuple, NoReturn
+from typing import Tuple, NoReturn
 from ..Gui import Gui  # pylint: disable=E
 from ..State import (  # pylint: disable=W # When this line has been used delete pylint hint
     StateLookUpTable,  # pylint: disable=W
@@ -26,8 +26,8 @@ class Menu(Gui, ABC):
 
     def __init__(self):
         super().__init__(self)
-        self.elements: List[List[object]] = [[]]
-        self.states: List[List[EnumType]] = [[]]
+        self.elements: Tuple[Tuple[object]] = [[]]
+        self.states: Tuple[Tuple[EnumType]] = [[]]
         self.pos_x: int = 0
         self.pos_y: int = 0
         self.width: int = self._relative_width()
@@ -93,7 +93,7 @@ class Menu(Gui, ABC):
         """
         if NotImplemented:
             raise NotImplementedError
-        return (self._x, self._y)
+        return (self.pos_x, self.pos_y)
 
     def run(self):
         """sumary_line
@@ -105,3 +105,20 @@ class Menu(Gui, ABC):
 
         raise NotImplementedError
 
+    def init_states(self):
+        """sumary_line
+
+        Keyword arguments:
+        argument -- description
+        Return: return_description
+        """
+        raise NotImplementedError
+
+    def init_elements(self):
+        """sumary_line
+        
+        Keyword arguments:
+        argument -- description
+        Return: return_description
+        """
+        raise NotImplementedError

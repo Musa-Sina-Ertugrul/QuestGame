@@ -8,7 +8,7 @@ TODO: Update Docstrings
 
 """
 
-from typing import NoReturn, Tuple, List
+from typing import NoReturn, Tuple
 from ..Market import Market
 
 class KingElliot(Market):
@@ -22,7 +22,7 @@ class KingElliot(Market):
     def __init__(self):
         super().__init__()
         super.elements = self._init_market()
-        self.items: List[List[int]] = [[]]  # TODO: Hardcode items
+        self.items: Tuple[Tuple[int]] = [[]]  # TODO: Hardcode items
 
     def buy_level(self, skill: int):
         """sumary_line
@@ -41,46 +41,6 @@ class KingElliot(Market):
         Return: return_description
         """
         raise NotImplementedError
-
-    @property
-    def pos_x(self) -> int:
-        """sumary_line
-
-        Keyword arguments:
-        argument -- description
-        Return: return_description
-        """
-        return super().pos_x
-
-    @pos_x.setter
-    def pos_x(self, new_x: int) -> NoReturn:
-        """sumary_line
-
-        Keyword arguments:
-        argument -- description
-        Return: return_description
-        """
-        super().pos_x = new_x
-
-    @property
-    def pos_y(self) -> int:
-        """sumary_line
-
-        Keyword arguments:
-        argument -- description
-        Return: return_description
-        """
-        return super().pos_y
-
-    @pos_y.setter
-    def pos_y(self, new_y: int) -> NoReturn:
-        """sumary_line
-
-        Keyword arguments:
-        argument -- description
-        Return: return_description
-        """
-        super().pos_y = new_y
 
     def relative_pos(self) -> Tuple[int, int]:
         """sumary_line

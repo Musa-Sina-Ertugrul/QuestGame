@@ -7,11 +7,16 @@ Return: return_description
 TODO: Update Docstrings
 
 """
+from sys import path
 from typing import Tuple, NoReturn, List, Final # pylint: disable=W,E
 from pygame import Surface, transform # pylint: disable=W,E
-from .Menu import Menu  # pylint: disable=W,E
-from ..not_animated import NotAnimated  # pylint: disable=W,E
-from ..State import StateLookUpTable  # pylint: disable=W,E
+
+path.append("main/src/flyweights")
+path.append("main/src/")
+
+from not_animated import NotAnimated  # pylint: disable=W,E,import-error,wrong-import-position
+from State import StateLookUpTable  # pylint: disable=W,E,import-error,wrong-import-position
+from ..Menu import Menu  # pylint: disable=W,E,import-error,wrong-import-position
 
 
 class Icon(Menu):
@@ -23,9 +28,9 @@ class Icon(Menu):
     """
 
     def __init__(self, icon: int):
-        super().__init__(self)
-        super.elements = self._init_icon(icon)
-        super.states = self._init_states()
+        super().__init__(self) # pylint: disable=W,E
+        super.elements = self.init_elements(icon)
+        super.states = self.init_states()
 
     @property
     def pos_x(self) -> int:
@@ -130,8 +135,23 @@ class Icon(Menu):
         """
         raise NotImplementedError
 
-    def _init_icon(self,icon:int) -> List[List[object]]:
+    def init_states(self):
+        """sumary_line
+
+        Keyword arguments:
+        argument -- description
+        Return: return_description
+        """
         raise NotImplementedError
 
-    def _init_states(self):
+    def init_elements(self,icon:int) -> Tuple[Tuple[object]]:  # pylint: disable=W
+        """sumary_line
+        
+        Keyword arguments:
+        argument -- description
+        Return: return_description
+        """
+        raise NotImplementedError
+
+    def __change_color(self) -> NoReturn: # pylint: disable=W
         raise NotImplementedError

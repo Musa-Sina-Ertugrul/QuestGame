@@ -42,46 +42,6 @@ class Market(Menu, ABC):
         """
         raise NotImplementedError
 
-    @property
-    def pos_x(self) -> int:
-        """sumary_line
-
-        Keyword arguments:
-        argument -- description
-        Return: return_description
-        """
-        return super().pos_x
-
-    @pos_x.setter
-    def pos_x(self, new_x: int) -> NoReturn:
-        """sumary_line
-
-        Keyword arguments:
-        argument -- description
-        Return: return_description
-        """
-        super().pos_x = new_x
-
-    @property
-    def pos_y(self) -> int:
-        """sumary_line
-
-        Keyword arguments:
-        argument -- description
-        Return: return_description
-        """
-        return super().pos_y
-
-    @pos_y.setter
-    def pos_y(self, new_y: int) -> NoReturn:
-        """sumary_line
-
-        Keyword arguments:
-        argument -- description
-        Return: return_description
-        """
-        super().pos_y = new_y
-
     def relative_pos(self) -> Tuple[int, int]:
         """sumary_line
 
@@ -146,6 +106,24 @@ class Market(Menu, ABC):
         raise NotImplementedError
 
     def update_skill(self):
+        """sumary_line
+        
+        Keyword arguments:
+        argument -- description
+        Return: return_description
+        """
+        raise NotImplementedError
+
+    def init_states(self):
+        """sumary_line
+
+        Keyword arguments:
+        argument -- description
+        Return: return_description
+        """
+        raise NotImplementedError
+
+    def init_elements(self):
         """sumary_line
         
         Keyword arguments:

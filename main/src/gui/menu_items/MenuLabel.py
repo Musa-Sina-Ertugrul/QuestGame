@@ -7,7 +7,7 @@ Return: return_description
 TODO: Update Docstring
 
 """
-from typing import List, Tuple, NoReturn
+from typing import Tuple, NoReturn
 from .Column import Column  # pylint: disable= W
 from ..Menu import Menu
 
@@ -20,9 +20,10 @@ class MenuLabel(Menu):
     Return: return_description
     """
 
-    def __init__(self, item_list: List[List[int]]):
+    def __init__(self, item_list: Tuple[Tuple[int]]):
         super().__init__()
-        super().elements = self.init_columns(item_list)
+        super.elements = self.init_elements(item_list)
+        super.states = self.init_states()
 
     @property
     def pos_x(self) -> int:
@@ -127,5 +128,20 @@ class MenuLabel(Menu):
         """
         raise NotImplementedError
 
-    def _init_columns(self, item_list: List[List[int]]):
+    def init_states(self):
+        """sumary_line
+
+        Keyword arguments:
+        argument -- description
+        Return: return_description
+        """
+        raise NotImplementedError
+
+    def init_elements(self, item_list: Tuple[Tuple[int]]) -> Tuple[Tuple[object]]:  # pylint: disable=W
+        """sumary_line
+        
+        Keyword arguments:
+        argument -- description
+        Return: return_description
+        """
         raise NotImplementedError

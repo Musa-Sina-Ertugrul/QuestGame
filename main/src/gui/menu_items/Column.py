@@ -7,7 +7,7 @@ Return: return_description
 TODO: Update Docstrings
 
 """
-from typing import Tuple, NoReturn, List
+from typing import Tuple, NoReturn
 from .Icon import Icon
 from ..Menu import Menu
 
@@ -21,10 +21,10 @@ class Column(Menu):
     Return: return_description
     """
 
-    def __init__(self,item_list: List[List[int]]):
+    def __init__(self,item_list: Tuple[Tuple[int]]):
         super().__init__(self) # pylint: disable=E
-        super.elements = self._init_icons(item_list)
-        super.states = self._init_states()
+        super.elements = self._init_elements(item_list)
+        super.states = self.init_states()
 
     @property
     def pos_x(self) -> int:
@@ -120,7 +120,7 @@ class Column(Menu):
         """
         return (self._x, self._y)
 
-    def __add_icon(self, icon: List[Icon]): # pylint: disable=W
+    def __add_icon(self, icon: Tuple[Icon]): # pylint: disable=W
         super.elements.append(icon)
 
     def run(self):
@@ -132,8 +132,20 @@ class Column(Menu):
         """
         raise NotImplementedError
 
-    def _init_icons(self, item_list: List[List[int]]):
+    def init_states(self):
+        """sumary_line
+
+        Keyword arguments:
+        argument -- description
+        Return: return_description
+        """
         raise NotImplementedError
 
-    def _init_states(self):
+    def init_elements(self, item_list: Tuple[Tuple[object]]) ->  Tuple[Tuple[object]]: # pylint: disable=W
+        """sumary_line
+        
+        Keyword arguments:
+        argument -- description
+        Return: return_description
+        """
         raise NotImplementedError
