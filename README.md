@@ -1,5 +1,5 @@
 # :robot: QuestGame
-
+# [![CodeQL](https://github.com/Musa-Sina-Ertugrul/QuestGame/actions/workflows/github-code-scanning/codeql/badge.svg?branch=main)](https://github.com/Musa-Sina-Ertugrul/QuestGame/actions/workflows/github-code-scanning/codeql) [![Ubuntu](https://github.com/Musa-Sina-Ertugrul/QuestGame/actions/workflows/ubuntu.yml/badge.svg?branch=main)](https://github.com/Musa-Sina-Ertugrul/QuestGame/actions/workflows/ubuntu.yml) [![Windows](https://github.com/Musa-Sina-Ertugrul/QuestGame/actions/workflows/windows.yml/badge.svg?branch=main)](https://github.com/Musa-Sina-Ertugrul/QuestGame/actions/workflows/windows.yml) [![Python Linting](https://github.com/Musa-Sina-Ertugrul/QuestGame/actions/workflows/python-linting.yml/badge.svg?branch=main)](https://github.com/Musa-Sina-Ertugrul/QuestGame/actions/workflows/python-linting.yml)
 <p align="center">
   <img src="https://github.com/Musa-Sina-Ertugrul/QuestGame/blob/main/.img/quest_logo.png" />
 </p>
