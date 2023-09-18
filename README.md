@@ -1,5 +1,6 @@
 # :robot: QuestGame
 # [![CodeQL](https://github.com/Musa-Sina-Ertugrul/QuestGame/actions/workflows/github-code-scanning/codeql/badge.svg?branch=main)](https://github.com/Musa-Sina-Ertugrul/QuestGame/actions/workflows/github-code-scanning/codeql) [![Ubuntu](https://github.com/Musa-Sina-Ertugrul/QuestGame/actions/workflows/ubuntu.yml/badge.svg?branch=main)](https://github.com/Musa-Sina-Ertugrul/QuestGame/actions/workflows/ubuntu.yml) [![Windows](https://github.com/Musa-Sina-Ertugrul/QuestGame/actions/workflows/windows.yml/badge.svg?branch=main)](https://github.com/Musa-Sina-Ertugrul/QuestGame/actions/workflows/windows.yml) [![Python Linting](https://github.com/Musa-Sina-Ertugrul/QuestGame/actions/workflows/python-linting.yml/badge.svg?branch=main)](https://github.com/Musa-Sina-Ertugrul/QuestGame/actions/workflows/python-linting.yml)
+
 <p align="center">
   <img src="https://github.com/Musa-Sina-Ertugrul/QuestGame/blob/main/.img/quest_logo.png" />
 </p>
@@ -59,6 +60,7 @@ Please contact with [Musa Sina ERTUĞRUL](https://www.linkedin.com/in/musa-sina-
 * [Link :one:](https://www.udemy.com/course/parallel-computing-in-python/?kw=python+paralle&src=sac) [Link :two:](https://docs.google.com/viewer?a=v&pid=sites&srcid=b2JqZWN0bWFnZS5jb218cHJpdmF0ZS10cmFpbmluZ3xneDoyZjU2M2U4NGJiN2M0NWU2) ( Chapter :one: :two: :three: :four: ) for Parallel Programming
 * [Link](https://github.com/bitcraft/PyTMX) for pytmx
 * [Link](https://www.mapeditor.org/) for Tiled
+#### ⚠️ ALSO, CHECK AND STUDY ALL LINKS UNDER RULES AND REQUIRED SOFTWARES ⚠️
 
 # :art: Assets
 * [Free Pixel Effects Pack](https://xyezawr.itch.io/free)
