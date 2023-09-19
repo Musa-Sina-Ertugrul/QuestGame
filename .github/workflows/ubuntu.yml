@@ -1,7 +1,7 @@
 # This workflow will install Python dependencies, run tests and lint with a single version of Python
 # For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-python
 
-name: Python application Linting
+name: Ubuntu
 
 on:
   push:
@@ -29,9 +29,11 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         # pip install pytest
-        pip install -r requirements.txt
-        pip install -r requirements_dev.txt
-    - name: Linting
+        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+        if [ -f requirements_dev.txt ]; then pip install -r requirements_dev.txt; fi
+    - name: Runtime Errors
       run: |
-        python -m pylint --max-module-lines 2000 --max-line-length 150 main/*.py
-        python -m pylint --disable all --enable spelling --spelling-dict en_US --spelling-ignore-words "sys" main/*.py
+        python main/main.py
+    - name: Test with pytest
+      run: |
+        python -m pytest main/test/main_test.py 

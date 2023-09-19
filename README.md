@@ -1,11 +1,12 @@
 # :robot: QuestGame
+# [![CodeQL](https://github.com/Musa-Sina-Ertugrul/QuestGame/actions/workflows/github-code-scanning/codeql/badge.svg?branch=main)](https://github.com/Musa-Sina-Ertugrul/QuestGame/actions/workflows/github-code-scanning/codeql) [![Ubuntu](https://github.com/Musa-Sina-Ertugrul/QuestGame/actions/workflows/ubuntu.yml/badge.svg?branch=main)](https://github.com/Musa-Sina-Ertugrul/QuestGame/actions/workflows/ubuntu.yml) [![Windows](https://github.com/Musa-Sina-Ertugrul/QuestGame/actions/workflows/windows.yml/badge.svg?branch=main)](https://github.com/Musa-Sina-Ertugrul/QuestGame/actions/workflows/windows.yml) [![Python Linting](https://github.com/Musa-Sina-Ertugrul/QuestGame/actions/workflows/python-linting.yml/badge.svg?branch=main)](https://github.com/Musa-Sina-Ertugrul/QuestGame/actions/workflows/python-linting.yml)
 
 <p align="center">
   <img src="https://github.com/Musa-Sina-Ertugrul/QuestGame/blob/main/.img/quest_logo.png" />
 </p>
 
-# [![linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/company/quest-platform1) ![vscode](https://img.shields.io/badge/VSCode-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white) ![python](https://img.shields.io/badge/Python_3.11-FFD43B?style=for-the-badge&logo=python&logoColor=blue) ![linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black) ![windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white) ![itch.io](https://img.shields.io/badge/Itch.io-FA5C5C?style=for-the-badge&logo=itchdotio&logoColor=white) ![black](https://img.shields.io/badge/code_style_black-000?style=for-the-badge) ![docstring](https://img.shields.io/badge/Google_Doc_String-4285F4.svg?style=for-the-badge&logo=Google&logoColor=white) [![sponsor](https://img.shields.io/badge/GitHub%20Sponsors-EA4AAA.svg?style=for-the-badge&logo=GitHub-Sponsors&logoColor=white)](https://www.patreon.com/QuestPlatform)
-Game project of [Quest Platform](https://www.linkedin.com/company/quest-platform1) Student Organization in Celal Bayar University. Main porpuse of this project understanding design patterns and industrial standart code.
+# [![linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/company/quest-platform1) ![vscode](https://img.shields.io/badge/VSCode-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white) ![python](https://img.shields.io/badge/Python_3.11-FFD43B?style=for-the-badge&logo=python&logoColor=blue) ![linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black) ![windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white) ![android](https://img.shields.io/badge/Android-3DDC84.svg?style=for-the-badge&logo=Android&logoColor=white) ![itch.io](https://img.shields.io/badge/Itch.io-FA5C5C?style=for-the-badge&logo=itchdotio&logoColor=white) ![google_play](https://img.shields.io/badge/Google%20Play-414141.svg?style=for-the-badge&logo=Google-Play&logoColor=white) ![steam](https://img.shields.io/badge/Steam-000000.svg?style=for-the-badge&logo=Steam&logoColor=white) ![black](https://img.shields.io/badge/code_style_black-000?style=for-the-badge) ![docstring](https://img.shields.io/badge/Google_Doc_String-4285F4.svg?style=for-the-badge&logo=Google&logoColor=white) [![sponsor](https://img.shields.io/badge/GitHub%20Sponsors-EA4AAA.svg?style=for-the-badge&logo=GitHub-Sponsors&logoColor=white)](https://www.patreon.com/QuestPlatform) ![tensorflow](https://img.shields.io/badge/TensorFlow_Lite-FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white) ![pytorch](https://img.shields.io/badge/PyTorch-EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white) ![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white) ![cmake](https://img.shields.io/badge/CMake-064F8C.svg?style=for-the-badge&logo=CMake&logoColor=white)
+Game project of [Quest Platform](https://www.linkedin.com/company/quest-platform1) Student Organization in Celal Bayar University. The main purpose of this project understanding design patterns and industrial standard code.
 
 # :round_pushpin: Contents
 * [Design Proposal](#bulb-design-proposal)
@@ -46,6 +47,7 @@ Game project of [Quest Platform](https://www.linkedin.com/company/quest-platform
 * Everyone will [create a new environment](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html) for this project and everyone will [install packages from requirements.txt and requirements_dev.txt](https://note.nkmk.me/en/python-pip-install-requirements/)
 * Project maintainers will use [anaconda](https://www.anaconda.com/download) to handle environments
 * All paths must be relative
+* Developers must suggest their ideas on [issues](https://docs.github.com/en/issues/tracking-your-work-with-issues/quickstart) under enhancement label such as <b>this class or module need a variable or method</b>
 
 # :handshake: Contrubition
 Please contact with [Musa Sina ERTUĞRUL](https://www.linkedin.com/in/musa-sina-ertu%C4%9Frul-922416229/)
@@ -53,12 +55,13 @@ Please contact with [Musa Sina ERTUĞRUL](https://www.linkedin.com/in/musa-sina-
 # :open_book: Addition
 * [Link](https://github.com/firstcontributions/first-contributions) for Push Requests
 * [Link](https://www.youtube.com/@ClearCode) for learning Pygame
-* [Link](https://realpython.com/pointers-in-python/) for Pointers
+* [Link](https://realpython.com/pointers-in-python/) for Pointers and [why we use Pointer](https://stackoverflow.com/questions/449560/how-do-i-determine-the-size-of-an-object-in-python)
 * [Link :one:](http://www.javier8a.com/itc/bd1/articulo.pdf) [Link :two:](https://gameprogrammingpatterns.com/contents.html) for Design Patterns 
 * [Link](https://www.visual-paradigm.com/guide/uml-unified-modeling-language/uml-class-diagram-tutorial/) for UML Diagram
 * [Link :one:](https://www.udemy.com/course/parallel-computing-in-python/?kw=python+paralle&src=sac) [Link :two:](https://docs.google.com/viewer?a=v&pid=sites&srcid=b2JqZWN0bWFnZS5jb218cHJpdmF0ZS10cmFpbmluZ3xneDoyZjU2M2U4NGJiN2M0NWU2) ( Chapter :one: :two: :three: :four: ) for Parallel Programming
 * [Link](https://github.com/bitcraft/PyTMX) for pytmx
 * [Link](https://www.mapeditor.org/) for Tiled
+#### ⚠️ ALSO, CHECK AND STUDY ALL LINKS UNDER RULES AND REQUIRED SOFTWARES ⚠️
 
 # :art: Assets
 * [Free Pixel Effects Pack](https://xyezawr.itch.io/free)
