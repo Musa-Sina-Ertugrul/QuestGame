@@ -22,7 +22,7 @@ class MenuButton(Menu,ABC):
     def __init__(self):
         Menu.__init__(self)
         self.current_button_img:int = 0
-        self.button_imgs : Tuple[Tuple[Surface]] = (())
+        self.button_imgs : Tuple[Tuple[Surface]] = ((Surface,),)
 
     @abstractmethod
     def relative_pos(self) -> Tuple[int, int]:
@@ -117,4 +117,3 @@ class MenuButton(Menu,ABC):
         Return: return_description
         """
         raise NotImplementedError
-

@@ -26,7 +26,7 @@ class ExitButton(MenuButton):
     def __init__(self):
         super().__init__(self) #pylint: disable=W,E
         super.current_button_img = 0
-        super.button_imgs = (copy(Animated.data["exit_button"])) #pylint: disable=W,E,superfluous-parens
+        super.button_imgs = (copy(Animated.data["exit_button"]),) #pylint: disable=W,E,superfluous-parens
         super.elements = self.init_elements()
         super.states = self.init_states()
 

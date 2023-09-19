@@ -25,7 +25,7 @@ class MainMenu(Menu):
     """
     def __init__(self):
         super().__init__(self) # pylint: disable=W,E
-        super.elememts = self.init_elements()
+        super.elements = self.init_elements()
         super.states = self.init_states()
 
     def relative_pos(self) -> Tuple[int, int]:

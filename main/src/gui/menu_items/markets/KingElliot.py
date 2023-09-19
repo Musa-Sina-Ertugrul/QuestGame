@@ -22,7 +22,7 @@ class KingElliot(Market):
     def __init__(self):
         super().__init__()
         super.elements = self._init_market()
-        self.items: Tuple[Tuple[int]] = [[]]  # TODO: Hardcode items
+        self.items: Tuple[Tuple[int]] = ((int,),)  # TODO: Hardcode items
 
     def buy_level(self, skill: int):
         """sumary_line

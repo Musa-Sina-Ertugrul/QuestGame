@@ -11,25 +11,26 @@ TODO: Update Docstrings
 from typing import Tuple, NoReturn
 from enum import EnumType
 from sys import path
-from numpy import random
 from pygame import Surface
 
-path.append("main/src/flyweights/")
-from not_animated import NotAnimated #pylint: disable=import-error,wrong-import-position
-from ..Menu import Menu #pylint: disable=wrong-import-position
+path.append("main/src/factory/")
+
+from Factory import Factory # pylint: disable=import-error,wrong-import-position
+from ..Menu import Menu  # pylint: disable=wrong-import-position
+
 
 
 class MainMenu(Menu):
     """sumary_line
-    
+
     Keyword arguments:
     argument -- description
     Return: return_description
     """
+
     def __init__(self):
-        super().__init__(self) # pylint: disable=W,E
-        self.bg_random : Tuple[Surface] = (NotAnimated.data["bgs_main_menu"][int(random.uniform(low=0.0,high=4.999))])
-        super.elememts = self.init_elements()
+        super().__init__(self)  # pylint: disable=W,E
+        super.elements = self.init_elements()
         super.states = self.init_states()
 
     def relative_pos(self) -> Tuple[int, int]:
@@ -110,7 +111,7 @@ class MainMenu(Menu):
 
     def init_elements(self) -> Tuple[Tuple[object]]:  # pylint: disable=W
         """sumary_line
-        
+
         Keyword arguments:
         argument -- description
         Return: return_description

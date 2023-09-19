@@ -35,9 +35,9 @@ class Text(Menu):
 
     def __init__(self):
         super().__init__(self)  # pylint: disable=W,E
-        self.__current_font: Tuple[Font] = copy( # pylint: disable=W,E
+        self.__current_font: Tuple[Font] = (copy( # pylint: disable=W,E
             NotAnimated.data["font"]
-        )
+        ),)
         self.__current_text: str = ""  # pylint: disable=W,E
         self.__current_punto: int = 0  # pylint: disable=W,E
 
@@ -157,7 +157,7 @@ class Text(Menu):
         """
         raise NotImplementedError
 
-    def init_elements(self) -> Tuple[Font]:  # pylint: disable=W
+    def init_elements(self) -> Tuple[Tuple[Font]]:  # pylint: disable=W
         """sumary_line
 
         Keyword arguments:

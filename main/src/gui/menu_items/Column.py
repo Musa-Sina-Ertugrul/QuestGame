@@ -21,8 +21,8 @@ class Column(Menu):
     Return: return_description
     """
 
-    def __init__(self,item_list: Tuple[Tuple[int]]):
-        super().__init__(self) # pylint: disable=E
+    def __init__(self, item_list: Tuple[Tuple[int]]):
+        super().__init__(self)  # pylint: disable=E
         super.elements = self._init_elements(item_list)
         super.states = self.init_states()
 
@@ -118,10 +118,7 @@ class Column(Menu):
         argument -- description
         Return: return_description
         """
-        return (self._x, self._y)
-
-    def __add_icon(self, icon: Tuple[Icon]): # pylint: disable=W
-        super.elements.append(icon)
+        return (self.pos_x, self.pos_y)
 
     def run(self):
         """sumary_line
@@ -141,9 +138,11 @@ class Column(Menu):
         """
         raise NotImplementedError
 
-    def init_elements(self, item_list: Tuple[Tuple[object]]) ->  Tuple[Tuple[object]]: # pylint: disable=W
+    def init_elements(
+        self, item_list: Tuple[Tuple[object]]
+    ) -> Tuple[Tuple[object]]:  # pylint: disable=W
         """sumary_line
-        
+
         Keyword arguments:
         argument -- description
         Return: return_description

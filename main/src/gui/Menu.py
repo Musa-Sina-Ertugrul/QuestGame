@@ -7,7 +7,6 @@ Return: return_description
 TODO: Update Docstrings
 
 """
-from enum import EnumType
 from abc import ABC, abstractmethod
 from typing import Tuple, NoReturn
 from ..Gui import Gui  # pylint: disable=E
@@ -26,10 +25,10 @@ class Menu(Gui, ABC):
 
     def __init__(self):
         super().__init__(self)
-        self.elements: Tuple[Tuple[object]] = [[]]
-        self.states: Tuple[Tuple[EnumType]] = [[]]
         self.pos_x: int = 0
         self.pos_y: int = 0
+        super.elememts = self.init_elements()
+        super.states = self.init_states()
         self.width: int = self._relative_width()
         self.height: int = self._relative_height()
 

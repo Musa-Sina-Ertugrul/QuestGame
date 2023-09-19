@@ -15,22 +15,25 @@ from copy import copy
 from pygame import Surface
 
 path.append("main/src/flyweights/")
-from not_animated import NotAnimated #pylint: disable=import-error,wrong-import-position
-from ..Menu import Menu #pylint: disable=wrong-import-position
+from not_animated import ( # pylint: disable=import-error,wrong-import-position
+    NotAnimated, # pylint: disable=import-error,wrong-import-position
+)  # pylint: disable=import-error,wrong-import-position
+from ..Menu import Menu  # pylint: disable=wrong-import-position
 
 
 class MainMenu(Menu):
     """sumary_line
-    
+
     Keyword arguments:
     argument -- description
     Return: return_description
     """
+
     def __init__(self):
-        super().__init__(self) # pylint: disable=W,E
-        self.quest_logo : Tuple[Surface] = [copy(NotAnimated.data["quest_logo"])]
-        self.pygame_logo : Tuple[Surface] = [copy(NotAnimated.data["pygame_logo"])]
-        super.elememts = self.init_elements()
+        super().__init__(self)  # pylint: disable=W,E
+        self.quest_logo: Tuple[Surface] = (copy(NotAnimated.data["quest_logo"]),)
+        self.pygame_logo: Tuple[Surface] = (copy(NotAnimated.data["pygame_logo"]),)
+        super.elements = self.init_elements()
         super.states = self.init_states()
 
     def relative_pos(self) -> Tuple[int, int]:
@@ -111,7 +114,7 @@ class MainMenu(Menu):
 
     def init_elements(self) -> Tuple[Tuple[object]]:  # pylint: disable=W
         """sumary_line
-        
+
         Keyword arguments:
         argument -- description
         Return: return_description
