@@ -47,6 +47,7 @@ Game project of [Quest Platform](https://www.linkedin.com/company/quest-platform
 * Everyone will [create a new environment](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html) for this project and everyone will [install packages from requirements.txt and requirements_dev.txt](https://note.nkmk.me/en/python-pip-install-requirements/)
 * Project maintainers will use [anaconda](https://www.anaconda.com/download) to handle environments
 * All paths must be relative
+* Developers must suggest their ideas on [issues]() under features tag such as <b>this class or module need a variable or method</b>
 
 # :handshake: Contrubition
 Please contact with [Musa Sina ERTUĞRUL](https://www.linkedin.com/in/musa-sina-ertu%C4%9Frul-922416229/)
