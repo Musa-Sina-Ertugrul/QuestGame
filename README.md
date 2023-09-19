@@ -53,7 +53,7 @@ Game project of [Quest Platform](https://www.linkedin.com/company/quest-platform
 Please contact with [Musa Sina ERTUĞRUL](https://www.linkedin.com/in/musa-sina-ertu%C4%9Frul-922416229/)
 
 # :open_book: Addition
-* [Link](https://github.com/firstcontributions/first-contributions) for Push Requests
+* [Link](https://github.com/firstcontributions/first-contributions) for Pull Requests
 * [Link](https://www.youtube.com/@ClearCode) for learning Pygame
 * [Link](https://realpython.com/pointers-in-python/) for Pointers and [why we use Pointer](https://stackoverflow.com/questions/449560/how-do-i-determine-the-size-of-an-object-in-python)
 * [Link :one:](http://www.javier8a.com/itc/bd1/articulo.pdf) [Link :two:](https://gameprogrammingpatterns.com/contents.html) for Design Patterns 
