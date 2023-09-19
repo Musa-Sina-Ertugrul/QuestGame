@@ -27,3 +27,18 @@ def main():
         # pylint: disable=no-member
         # sys.exit()
         # pylint: enable=no-member
+
+#pylint: disable=all TODO: Check code at below for pointers
+def multi(obj):
+    print(id(obj[0])) # TODO: after first run change obj[0] with obj
+
+from multiprocessing import Process
+
+if __name__ == '__main__':
+    obj = (1,2,3)
+    p1=Process(target=multi,args=(obj,))
+    p2=Process(target=multi,args=(obj,))
+    p1.start()
+    p2.start()
+    p1.join()
+    p2.join()
