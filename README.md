@@ -42,7 +42,7 @@ Game project of [Quest Platform](https://www.linkedin.com/company/quest-platform
 * Commits will be named with [this guideline](https://gist.github.com/tonibardina/9290fbc7d605b4f86919426e614fe692)
 * Types of variable will be typed [like this](https://mypy.readthedocs.io/en/stable/cheat_sheet_py3.html) or with [typing module](https://docs.python.org/3/library/typing.html)
 * Developers will use [snake case](https://www.pluralsight.com/blog/software-development/programming-naming-conventions-explained#snake-case)
-* In this project developers must use [pointers](https://realpython.com/pointers-in-python/) for information that is more than 8 bytes
+* In this project developers must use [pointers](https://realpython.com/pointers-in-python/) for information that is more than 48 bytes
 * Developers will use [Black Formatter](https://github.com/psf/black)
 * Everyone will [create a new environment](https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html) for this project and everyone will [install packages from requirements.txt and requirements_dev.txt](https://note.nkmk.me/en/python-pip-install-requirements/)
 * Project maintainers will use [anaconda](https://www.anaconda.com/download) to handle environments
@@ -55,7 +55,7 @@ Please check [CONTRIBUTING.md](https://github.com/Musa-Sina-Ertugrul/QuestGame/b
 # :open_book: Addition
 * [Link](https://github.com/firstcontributions/first-contributions) for Pull Requests
 * [Link](https://www.youtube.com/@ClearCode) for learning Pygame
-* [Link](https://realpython.com/pointers-in-python/) for Pointers and [why we use Pointer](https://stackoverflow.com/questions/449560/how-do-i-determine-the-size-of-an-object-in-python)
+* [Link](https://realpython.com/pointers-in-python/) for Pointers and [why we use Pointer](https://stackoverflow.com/questions/449560/how-do-i-determine-the-size-of-an-object-in-python) ⚠️ [Link 1️⃣](https://stackoverflow.com/questions/11458239/how-to-change-values-in-a-tuple)
 * [Link :one:](http://www.javier8a.com/itc/bd1/articulo.pdf) [Link :two:](https://gameprogrammingpatterns.com/contents.html) for Design Patterns 
 * [Link](https://www.visual-paradigm.com/guide/uml-unified-modeling-language/uml-class-diagram-tutorial/) for UML Diagram
 * [Link :one:](https://www.udemy.com/course/parallel-computing-in-python/?kw=python+paralle&src=sac) [Link :two:](https://docs.google.com/viewer?a=v&pid=sites&srcid=b2JqZWN0bWFnZS5jb218cHJpdmF0ZS10cmFpbmluZ3xneDoyZjU2M2U4NGJiN2M0NWU2) ( Chapter :one: :two: :three: :four: ) for Parallel Programming
