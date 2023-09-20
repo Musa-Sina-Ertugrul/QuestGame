@@ -10,17 +10,11 @@ TODO: Update Docstrings
 
 from typing import Tuple, NoReturn
 from enum import EnumType
-from sys import path
-from pygame import Surface
-
-path.append("main/src/factory/")
-
-from Factory import Factory # pylint: disable=import-error,wrong-import-position
 from ..Menu import Menu  # pylint: disable=wrong-import-position
 
 
 
-class MainMenu(Menu):
+class MenuBackground(Menu):
     """sumary_line
 
     Keyword arguments:

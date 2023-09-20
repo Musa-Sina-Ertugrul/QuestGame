@@ -8,10 +8,9 @@ TODO: Update Docstring
 
 """
 from typing import NoReturn, Tuple
-from abc import ABC, abstractmethod
 from ..Menu import Menu
 
-class Market(Menu, ABC):
+class Market(Menu):
     """sumary_line
 
     Keyword arguments:
@@ -21,8 +20,9 @@ class Market(Menu, ABC):
 
     def __init__(self):
         super().__init__(self)  # pylint: disable=W,E
+        super.elememts = self.init_elements()
+        super.states = self.init_states()
 
-    @abstractmethod
     def buy_level(self, skill: int):
         """sumary_line
 
@@ -32,7 +32,6 @@ class Market(Menu, ABC):
         """
         raise NotImplementedError
 
-    @abstractmethod
     def reset_levels(self):
         """sumary_line
 
