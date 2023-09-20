@@ -109,6 +109,7 @@ Please check [CONTRIBUTING.md](https://github.com/Musa-Sina-Ertugrul/QuestGame/b
 * [Mert KARDAŞ](https://github.com/MertKardas)
 * [İrem BOYALIOĞLU](https://github.com/iremboyalioglu)
 * [Efe Deniz BAĞLAR](https://github.com/kanemoda)
+* [Harun KAYA](https://github.com/harnkya)
 
 <p align="center">
   <img width="500px", height="500px" src="https://github.com/Musa-Sina-Ertugrul/QuestGame/blob/main/.img/quest_catch_phrase.png" />
