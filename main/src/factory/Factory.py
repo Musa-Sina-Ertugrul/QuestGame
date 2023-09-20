@@ -10,7 +10,6 @@ TODO: Update Docstrings
 from typing import Tuple
 from numpy import random
 
-
 class Factory:
     """ "sumary_line
 
@@ -42,7 +41,7 @@ class Factory:
         raise NotImplementedError
 
     @staticmethod
-    def create_market_menu() -> Tuple[object]:
+    def create_markets() -> Tuple[object]:
         """sumary_line
 
         Keyword arguments:
@@ -53,7 +52,7 @@ class Factory:
         raise NotImplementedError
 
     @staticmethod
-    def create_game_play() -> Tuple[object]:
+    def create_levels() -> Tuple[object]:
         """sumary_line
 
         Keyword arguments:
@@ -222,7 +221,7 @@ class Factory:
         raise NotImplementedError
 
     @staticmethod
-    def __crate_pause_button():  # pylint: disable = W,E
+    def __crate_resume_button():  # pylint: disable = W,E
         """sumary_line
 
         Keyword arguments:
@@ -258,6 +257,237 @@ class Factory:
     def __crate_star_button():  # pylint: disable = W,E
         """sumary_line
 
+        Keyword arguments:
+        argument -- description
+        Return: return_description
+        """
+
+        raise NotImplementedError
+
+    @staticmethod
+    def __create_icon(): # pylint: disable = W,E
+        """sumary_line
+        
+        Keyword arguments:
+        argument -- description
+        Return: return_description
+        """
+
+        raise NotImplementedError
+
+    @staticmethod
+    def __create_column(): # pylint: disable = W,E
+        """sumary_line
+        
+        Keyword arguments:
+        argument -- description
+        Return: return_description
+        """
+
+        raise NotImplementedError
+
+    @staticmethod
+    def __create_icon_text(icon: EnumType): # pylint: disable = W,E
+        """sumary_line
+        
+        Keyword arguments:
+        argument -- description
+        Return: return_description
+        """
+
+        raise NotImplementedError
+
+    @staticmethod
+    def __create_cave_level(): # pylint: disable = W,E
+        """sumary_line
+        
+        Keyword arguments:
+        argument -- description
+        Return: return_description
+        """
+
+        raise NotImplementedError
+
+    @staticmethod
+    def __create_catacomb_level(): # pylint: disable = W,E
+        """sumary_line
+        
+        Keyword arguments:
+        argument -- description
+        Return: return_description
+        """
+
+        raise NotImplementedError
+
+    @staticmethod
+    def __create_cave_level(): # pylint: disable = W,E
+        """sumary_line
+        
+        Keyword arguments:
+        argument -- description
+        Return: return_description
+        """
+
+        raise NotImplementedError
+
+    @staticmethod
+    def __create_clock(): # pylint: disable = W,E
+        """sumary_line
+        
+        Keyword arguments:
+        argument -- description
+        Return: return_description
+        """
+
+        raise NotImplementedError
+
+    @staticmethod
+    def __create_enemy_damage_texts(): # pylint: disable = W,E
+        """sumary_line
+        
+        Keyword arguments:
+        argument -- description
+        Return: return_description
+        """
+
+        raise NotImplementedError
+
+    @staticmethod
+    def __command_start_button(): # pylint: disable = W,E
+        """sumary_line
+        
+        Keyword arguments:
+        argument -- description
+        Return: return_description
+        """
+
+        raise NotImplementedError
+
+    @staticmethod
+    def __command_star_button(): # pylint: disable = W,E
+        """sumary_line
+        
+        Keyword arguments:
+        argument -- description
+        Return: return_description
+        """
+
+        raise NotImplementedError
+
+    @staticmethod
+    def __command_exit_button(): # pylint: disable = W,E
+        """sumary_line
+        
+        Keyword arguments:
+        argument -- description
+        Return: return_description
+        """
+
+        raise NotImplementedError
+
+    @staticmethod
+    def __command_settings_button(): # pylint: disable = W,E
+        """sumary_line
+        
+        Keyword arguments:
+        argument -- description
+        Return: return_description
+        """
+
+        raise NotImplementedError
+
+    @staticmethod
+    def __command_sound_button(): # pylint: disable = W,E
+        """sumary_line
+        
+        Keyword arguments:
+        argument -- description
+        Return: return_description
+        """
+
+        raise NotImplementedError
+
+    @staticmethod
+    def __command_confirm_button(): # pylint: disable = W,E
+        """sumary_line
+        
+        Keyword arguments:
+        argument -- description
+        Return: return_description
+        """
+
+        raise NotImplementedError
+
+    @staticmethod
+    def __command_display_size_button(): # pylint: disable = W,E
+        """sumary_line
+        
+        Keyword arguments:
+        argument -- description
+        Return: return_description
+        """
+
+        raise NotImplementedError
+
+    @staticmethod
+    def __command_sound_level_button(): # pylint: disable = W,E
+        """sumary_line
+        
+        Keyword arguments:
+        argument -- description
+        Return: return_description
+        """
+
+        raise NotImplementedError
+
+    @staticmethod
+    def __command_sound_button(): # pylint: disable = W,E
+        """sumary_line
+        
+        Keyword arguments:
+        argument -- description
+        Return: return_description
+        """
+
+        raise NotImplementedError
+
+    @staticmethod
+    def __create_player_texts(): # pylint: disable = W,E
+        """sumary_line
+        
+        Keyword arguments:
+        argument -- description
+        Return: return_description
+        """
+
+        raise NotImplementedError
+
+    @staticmethod
+    def __create_health_bar(): # pylint: disable = W,E
+        """sumary_line
+        
+        Keyword arguments:
+        argument -- description
+        Return: return_description
+        """
+
+        raise NotImplementedError
+
+    @staticmethod
+    def __create_shield_bar(): # pylint: disable = W,E
+        """sumary_line
+        
+        Keyword arguments:
+        argument -- description
+        Return: return_description
+        """
+
+        raise NotImplementedError
+
+    @staticmethod
+    def __create_spell_label(): # pylint: disable = W,E
+        """sumary_line
+        
         Keyword arguments:
         argument -- description
         Return: return_description
