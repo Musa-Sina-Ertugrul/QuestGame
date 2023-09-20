@@ -50,7 +50,7 @@ Game project of [Quest Platform](https://www.linkedin.com/company/quest-platform
 * Developers must suggest their ideas on [issues](https://docs.github.com/en/issues/tracking-your-work-with-issues/quickstart) under enhancement label such as <b>this class or module need a variable or method</b>
 
 # :handshake: Contrubition
-Please contact with [Musa Sina ERTUĞRUL](https://www.linkedin.com/in/musa-sina-ertu%C4%9Frul-922416229/)
+Please check [CONTRIBUTING.md](https://github.com/Musa-Sina-Ertugrul/QuestGame/blob/main/CONTRIBUTING.md)
 
 # :open_book: Addition
 * [Link](https://github.com/firstcontributions/first-contributions) for Pull Requests
