@@ -246,3 +246,4 @@ class NotAnimated(Flyweight):
     )
     Flyweight.data["pygame_logo"] = image.load(".img/pygame_powered.png")
     Flyweight.data["quest_logo"] = image.load(".img/quest_logo.png")
+    #TODO: Add game texts
