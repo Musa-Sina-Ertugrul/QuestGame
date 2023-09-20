@@ -33,7 +33,7 @@ def multi(obj):
     print(id(obj[0])) # TODO: after first run change obj[0] with obj
 
 from multiprocessing import Process
-
+from sys import getsizeof
 if __name__ == '__main__':
     obj = (1,2,3)
     p1=Process(target=multi,args=(obj,))
@@ -42,3 +42,6 @@ if __name__ == '__main__':
     p2.start()
     p1.join()
     p2.join()
+    # NOTE: Check differences with pointers and without pointers
+    print("sizeof: " + str(getsizeof(Animated.data)))
+    print("sizeof: " + str(getsizeof((Animated.data,))))
