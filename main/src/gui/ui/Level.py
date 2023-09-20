@@ -7,15 +7,14 @@ Return: return_description
 TODO: Update Docstrings
 
 """
-from abc import ABC, abstractmethod
+
 from typing import Tuple, NoReturn
-from ..Gui import Gui  # pylint: disable=E
-from ..State import (  # pylint: disable=W # When this line has been used delete pylint hint
-    StateLookUpTable,  # pylint: disable=W
-)  # pylint: disable=W
+from enum import EnumType
+from ..Game import Game
 
 
-class Game(Gui, ABC):
+
+class Level(Game):
     """sumary_line
 
     Keyword arguments:
@@ -24,15 +23,10 @@ class Game(Gui, ABC):
     """
 
     def __init__(self):
-        super().__init__(self)
-        self.pos_x: int = 0
-        self.pos_y: int = 0
-        super.elememts = self.init_elements()
+        super().__init__(self)  # pylint: disable=W,E
+        super.elements = self.init_elements()
         super.states = self.init_states()
-        self.width: int = self._relative_width()
-        self.height: int = self._relative_height()
 
-    @abstractmethod
     def relative_pos(self) -> Tuple[int, int]:
         """sumary_line
 
@@ -43,7 +37,6 @@ class Game(Gui, ABC):
 
         raise NotImplementedError
 
-    @abstractmethod
     def relative_height(self) -> int:
         """sumary_line
 
@@ -53,7 +46,6 @@ class Game(Gui, ABC):
         """
         raise NotImplementedError
 
-    @abstractmethod
     def relative_width(self) -> int:
         """sumary_line
 
@@ -63,7 +55,6 @@ class Game(Gui, ABC):
         """
         raise NotImplementedError
 
-    @abstractmethod
     def update_elements(self) -> NoReturn:
         """sumary_line
 
@@ -73,7 +64,6 @@ class Game(Gui, ABC):
         """
         raise NotImplementedError
 
-    @abstractmethod
     def notify_states(self) -> NoReturn:
         """sumary_line
 
@@ -92,7 +82,7 @@ class Game(Gui, ABC):
         """
         if NotImplemented:
             raise NotImplementedError
-        return (self.pos_x, self.pos_y)
+        return (self._x, self._y)
 
     def run(self):
         """sumary_line
@@ -104,7 +94,7 @@ class Game(Gui, ABC):
 
         raise NotImplementedError
 
-    def init_states(self):
+    def init_states(self) -> Tuple[Tuple[EnumType]]:
         """sumary_line
 
         Keyword arguments:
@@ -113,9 +103,9 @@ class Game(Gui, ABC):
         """
         raise NotImplementedError
 
-    def init_elements(self):
+    def init_elements(self) -> Tuple[Tuple[object]]:  # pylint: disable=W
         """sumary_line
-        
+
         Keyword arguments:
         argument -- description
         Return: return_description
