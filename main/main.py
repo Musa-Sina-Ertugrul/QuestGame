@@ -34,6 +34,7 @@ def multi(obj):
 
 from multiprocessing import Process
 from sys import getsizeof
+from copy import copy
 if __name__ == '__main__':
     obj = (1,2,3)
     p1=Process(target=multi,args=(obj,))
@@ -45,3 +46,12 @@ if __name__ == '__main__':
     # NOTE: Check differences with pointers and without pointers
     print("sizeof: " + str(getsizeof(Animated.data)))
     print("sizeof: " + str(getsizeof((Animated.data,))))
+    # NOTE: Check these examples
+    shallow_copy = copy(obj[1])
+    print(id(obj[1]))
+    obj = obj[:1] + (4,5) + obj[2:]
+    print(obj)
+    print(shallow_copy)
+    print(id(shallow_copy))
+    shallow_copy = 8
+    print(id(shallow_copy))
