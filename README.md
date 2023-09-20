@@ -61,6 +61,7 @@ Please check [CONTRIBUTING.md](https://github.com/Musa-Sina-Ertugrul/QuestGame/b
 * [Link :one:](https://www.udemy.com/course/parallel-computing-in-python/?kw=python+paralle&src=sac) [Link :two:](https://docs.google.com/viewer?a=v&pid=sites&srcid=b2JqZWN0bWFnZS5jb218cHJpdmF0ZS10cmFpbmluZ3xneDoyZjU2M2U4NGJiN2M0NWU2) ( Chapter :one: :two: :three: :four: ) for Parallel Programming
 * [Link](https://github.com/bitcraft/PyTMX) for pytmx
 * [Link](https://www.mapeditor.org/) for Tiled
+* [Link](https://realpython.com/courses/caching-python-lru/) for Caching
 #### ⚠️ ALSO, CHECK AND STUDY ALL LINKS UNDER RULES AND REQUIRED SOFTWARES ⚠️
 
 # :art: Assets
