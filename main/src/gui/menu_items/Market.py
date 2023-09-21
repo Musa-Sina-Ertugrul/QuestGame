@@ -10,6 +10,7 @@ TODO: Update Docstring
 from typing import NoReturn, Tuple
 from ..Menu import Menu
 
+
 class Market(Menu):
     """sumary_line
 
@@ -106,7 +107,7 @@ class Market(Menu):
 
     def update_skill(self):
         """sumary_line
-        
+
         Keyword arguments:
         argument -- description
         Return: return_description
@@ -124,7 +125,16 @@ class Market(Menu):
 
     def init_elements(self):
         """sumary_line
-        
+
+        Keyword arguments:
+        argument -- description
+        Return: return_description
+        """
+        raise NotImplementedError
+
+    def update_states(self):
+        """sumary_line
+
         Keyword arguments:
         argument -- description
         Return: return_description

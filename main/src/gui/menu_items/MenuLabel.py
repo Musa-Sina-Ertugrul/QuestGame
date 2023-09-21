@@ -137,9 +137,20 @@ class MenuLabel(Menu):
         """
         raise NotImplementedError
 
-    def init_elements(self, item_list: Tuple[Tuple[EnumType]]) -> Tuple[Tuple[object]]:  # pylint: disable=W
+    def init_elements( # pylint: disable=W
+        self, item_list: Tuple[Tuple[EnumType]]
+    ) -> Tuple[Tuple[object]]:  # pylint: disable=W
         """sumary_line
-        
+
+        Keyword arguments:
+        argument -- description
+        Return: return_description
+        """
+        raise NotImplementedError
+
+    def update_states(self):
+        """sumary_line
+
         Keyword arguments:
         argument -- description
         Return: return_description

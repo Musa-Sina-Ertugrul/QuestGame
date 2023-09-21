@@ -21,6 +21,7 @@ from .Run import Run
 
 from .prototypes.Prototype import Prototype
 
+
 class Gui(Run):
     """sumary_line
 
@@ -47,9 +48,9 @@ class Gui(Run):
             (Condition() for _ in range(6)),
         )  # pylint: disable=W,E
 
-        self.elements: Tuple[Tuple[object]] = ((object,),)
+        self.elements: Tuple[Tuple[object]] = self.init_elements()
 
-        self.states: Tuple[Tuple[EnumType]] = ((EnumType,),)
+        self.states: Tuple[Tuple[EnumType]] = self.init_states()
 
     def run(self):
         """sumary_line
@@ -183,3 +184,48 @@ class Gui(Run):
         else:
 
             self.__cv_ptr_tuple[0][5].wait()
+
+    def init_states(self):
+        """sumary_line
+
+        Keyword arguments:
+        argument -- description
+        Return: return_description
+        """
+        raise NotImplementedError
+
+    def init_elements(self):
+        """sumary_line
+
+        Keyword arguments:
+        argument -- description
+        Return: return_description
+        """
+        raise NotImplementedError
+
+    def update_elements(self) -> NoReturn:
+        """sumary_line
+
+        Keyword arguments:
+        argument -- description
+        Return: return_description
+        """
+        raise NotImplementedError
+
+    def update_states(self) -> NoReturn:
+        """sumary_line
+
+        Keyword arguments:
+        argument -- description
+        Return: return_description
+        """
+        raise NotImplementedError
+
+    def notify_states(self) -> NoReturn:
+        """sumary_line
+
+        Keyword arguments:
+        argument -- description
+        Return: return_description
+        """
+        raise NotImplementedError

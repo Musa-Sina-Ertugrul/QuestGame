@@ -11,6 +11,7 @@ from typing import Tuple, NoReturn
 from enum import EnumType
 from ..Game import Game
 
+
 class GameLabel(Game):
     """sumary_line
 
@@ -20,7 +21,7 @@ class GameLabel(Game):
     """
 
     def __init__(self, item_list: Tuple[Tuple[EnumType]]):
-        super().__init__(self) # pylint: disable=W,E
+        super().__init__(self)  # pylint: disable=W,E
         super.elements = self.init_elements(item_list)
         super.states = self.init_states()
 
@@ -136,9 +137,20 @@ class GameLabel(Game):
         """
         raise NotImplementedError
 
-    def init_elements(self, item_list: Tuple[Tuple[EnumType]]) -> Tuple[Tuple[object]]:  # pylint: disable=W
+    def init_elements(  # pylint: disable=W
+        self, item_list: Tuple[Tuple[EnumType]]
+    ) -> Tuple[Tuple[object]]:  # pylint: disable=W
         """sumary_line
-        
+
+        Keyword arguments:
+        argument -- description
+        Return: return_description
+        """
+        raise NotImplementedError
+
+    def update_states(self):
+        """sumary_line
+
         Keyword arguments:
         argument -- description
         Return: return_description

@@ -8,7 +8,6 @@ TODO: Update Docstrings
 
 """
 from typing import Tuple, NoReturn
-from .Icon import Icon
 from ..Menu import Menu
 
 
@@ -138,9 +137,18 @@ class Column(Menu):
         """
         raise NotImplementedError
 
-    def init_elements(
+    def init_elements( # pylint: disable=W
         self, item_list: Tuple[Tuple[object]]
     ) -> Tuple[Tuple[object]]:  # pylint: disable=W
+        """sumary_line
+
+        Keyword arguments:
+        argument -- description
+        Return: return_description
+        """
+        raise NotImplementedError
+
+    def update_states(self):
         """sumary_line
 
         Keyword arguments:

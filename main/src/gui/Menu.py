@@ -115,7 +115,16 @@ class Menu(Gui, ABC):
 
     def init_elements(self):
         """sumary_line
-        
+
+        Keyword arguments:
+        argument -- description
+        Return: return_description
+        """
+        raise NotImplementedError
+
+    def update_states(self):
+        """sumary_line
+
         Keyword arguments:
         argument -- description
         Return: return_description

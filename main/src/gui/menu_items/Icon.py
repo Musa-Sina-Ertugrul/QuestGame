@@ -8,14 +8,18 @@ TODO: Update Docstrings
 
 """
 from sys import path
-from typing import Tuple, NoReturn, List, Final # pylint: disable=W,E
-from pygame import Surface, transform # pylint: disable=W,E
+from typing import Tuple, NoReturn, List, Final  # pylint: disable=W,E
+from pygame import Surface, transform  # pylint: disable=W,E
 
 path.append("main/src/flyweights")
 path.append("main/src/")
 
-from not_animated import NotAnimated  # pylint: disable=W,E,import-error,wrong-import-position
-from State import StateLookUpTable  # pylint: disable=W,E,import-error,wrong-import-position
+from not_animated import (  # pylint: disable=W,E,import-error,wrong-import-position
+    NotAnimated,  # pylint: disable=W,E,import-error,wrong-import-position
+)  # pylint: disable=W,E,import-error,wrong-import-position
+from State import (  # pylint: disable=W,E,import-error,wrong-import-position
+    StateLookUpTable,  # pylint: disable=W,E,import-error,wrong-import-position
+)  # pylint: disable=W,E,import-error,wrong-import-position
 from ..Menu import Menu  # pylint: disable=W,E,import-error,wrong-import-position
 
 
@@ -28,7 +32,7 @@ class Icon(Menu):
     """
 
     def __init__(self, icon: int):
-        super().__init__(self) # pylint: disable=W,E
+        super().__init__(self)  # pylint: disable=W,E
         super.elements = self.init_elements(icon)
         super.states = self.init_states()
 
@@ -144,14 +148,23 @@ class Icon(Menu):
         """
         raise NotImplementedError
 
-    def init_elements(self,icon:int) -> Tuple[Tuple[object]]:  # pylint: disable=W
+    def init_elements(self, icon: int) -> Tuple[Tuple[object]]:  # pylint: disable=W
         """sumary_line
-        
+
         Keyword arguments:
         argument -- description
         Return: return_description
         """
         raise NotImplementedError
 
-    def __change_color(self) -> NoReturn: # pylint: disable=W
+    def __change_color(self) -> NoReturn:  # pylint: disable=W
+        raise NotImplementedError
+
+    def update_states(self):
+        """sumary_line
+
+        Keyword arguments:
+        argument -- description
+        Return: return_description
+        """
         raise NotImplementedError

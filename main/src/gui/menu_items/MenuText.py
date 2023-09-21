@@ -16,10 +16,10 @@ from pygame.font import Font
 path.append("main/src/flyweights")
 path.append("main/src/")
 
-from not_animated import ( # pylint: disable=W,E,import-error,wrong-import-position
+from not_animated import (  # pylint: disable=W,E,import-error,wrong-import-position
     NotAnimated,
 )
-from State import ( # pylint: disable=W,E,import-error,wrong-import-position
+from State import (  # pylint: disable=W,E,import-error,wrong-import-position
     StateLookUpTable,
 )
 from ..Menu import Menu  # pylint: disable=W,E,import-error,wrong-import-position
@@ -35,9 +35,9 @@ class MenuText(Menu):
 
     def __init__(self):
         super().__init__(self)  # pylint: disable=W,E
-        self.__current_font: Tuple[Font] = (copy( # pylint: disable=W,E
-            NotAnimated.data["font"]
-        ),)
+        self.__current_font: Tuple[Font] = ( # pylint: disable=W
+            copy(NotAnimated.data["font"]),  # pylint: disable=W,E
+        ) # pylint: disable=W
         self.__current_text: str = ""  # pylint: disable=W,E
         self.__current_punto: int = 0  # pylint: disable=W,E
 
@@ -166,5 +166,14 @@ class MenuText(Menu):
         """
         raise NotImplementedError
 
-    def __change_color(self) -> NoReturn: # pylint: disable=W
+    def __change_color(self) -> NoReturn:  # pylint: disable=W
+        raise NotImplementedError
+
+    def update_states(self):
+        """sumary_line
+
+        Keyword arguments:
+        argument -- description
+        Return: return_description
+        """
         raise NotImplementedError

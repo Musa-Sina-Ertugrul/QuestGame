@@ -13,7 +13,6 @@ from enum import EnumType
 from ..Menu import Menu  # pylint: disable=wrong-import-position
 
 
-
 class MenuTemplate(Menu):
     """sumary_line
 
@@ -104,6 +103,15 @@ class MenuTemplate(Menu):
         raise NotImplementedError
 
     def init_elements(self) -> Tuple[Tuple[object]]:  # pylint: disable=W
+        """sumary_line
+
+        Keyword arguments:
+        argument -- description
+        Return: return_description
+        """
+        raise NotImplementedError
+
+    def update_states(self):
         """sumary_line
 
         Keyword arguments:

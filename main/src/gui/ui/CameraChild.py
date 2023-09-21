@@ -14,8 +14,7 @@ from pygame.camera import Camera
 from ..Game import Game
 
 
-
-class CameraChild(Game,Camera):
+class CameraChild(Game, Camera):
     """sumary_line
 
     Keyword arguments:
@@ -25,7 +24,7 @@ class CameraChild(Game,Camera):
 
     def __init__(self):
         Game.__init__(self)  # pylint: disable=W,E
-        Camera.__init__(self) # TODO: Override most of the methods
+        Camera.__init__(self)  # TODO: Override most of the methods
         Game.elements = self.init_elements()
         Game.states = self.init_states()
 
@@ -106,6 +105,15 @@ class CameraChild(Game,Camera):
         raise NotImplementedError
 
     def init_elements(self) -> Tuple[Tuple[object]]:  # pylint: disable=W
+        """sumary_line
+
+        Keyword arguments:
+        argument -- description
+        Return: return_description
+        """
+        raise NotImplementedError
+
+    def update_states(self):
         """sumary_line
 
         Keyword arguments:
