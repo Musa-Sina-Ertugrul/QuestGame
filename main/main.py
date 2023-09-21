@@ -28,17 +28,20 @@ def main():
         # sys.exit()
         # pylint: enable=no-member
 
-#pylint: disable=all TODO: Check code at below for pointers
+
+# pylint: disable=all TODO: Check code at below for pointers
 def multi(obj):
-    print(id(obj[0])) # TODO: after first run change obj[0] with obj
+    print(id(obj[0]))  # TODO: after first run change obj[0] with obj
+
 
 from multiprocessing import Process
 from sys import getsizeof
 from copy import copy
-if __name__ == '__main__':
-    obj = (1,2,3)
-    p1=Process(target=multi,args=(obj,))
-    p2=Process(target=multi,args=(obj,))
+
+if __name__ == "__main__":
+    obj = (1, 2, 3)
+    p1 = Process(target=multi, args=(obj,))
+    p2 = Process(target=multi, args=(obj,))
     p1.start()
     p2.start()
     p1.join()
@@ -49,7 +52,7 @@ if __name__ == '__main__':
     # NOTE: Check these examples
     shallow_copy = copy(obj[1])
     print(id(obj[1]))
-    obj = obj[:1] + (4,5) + obj[2:]
+    obj = obj[:1] + (4, 5) + obj[2:]
     print(obj)
     print(shallow_copy)
     print(id(shallow_copy))

@@ -5,6 +5,7 @@ import os
 import pytest
 from main import main
 
+
 def test_main():
     """
     Test for game loop
