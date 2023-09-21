@@ -22,12 +22,15 @@ class PlayerWeapon(metaclass=ABCMeta):
     @classmethod
     def __subclasshook__(cls, subclass):
         return (
-            hasattr(subclass, "reload") and callable(subclass.reload) or NotImplemented,
-            hasattr(subclass, "fire") and callable(subclass.fire) or NotImplemented,
+            hasattr(subclass, "death") and callable(subclass.death) or NotImplemented,
+            hasattr(subclass, "take_hit")
+            and callable(subclass.take_hit)
+            or NotImplemented,
+            hasattr(subclass, "move") and callable(subclass.move) or NotImplemented,
         )
 
     @abstractmethod
-    def reload(self):
+    def death(self):
         """sumary_line
 
         Keyword arguments:
@@ -37,7 +40,17 @@ class PlayerWeapon(metaclass=ABCMeta):
         raise NotImplementedError
 
     @abstractmethod
-    def fire(self):
+    def take_hit(self):
+        """sumary_line
+
+        Keyword arguments:
+        argument -- description
+        Return: return_description
+        """
+        raise NotImplementedError
+
+    @abstractmethod
+    def move(self):
         """sumary_line
 
         Keyword arguments:

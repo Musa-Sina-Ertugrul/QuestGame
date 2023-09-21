@@ -7,12 +7,12 @@ Return: return_description
 TODO: Update Docstrings
 
 """
-from typing import Tuple
-from enum import EnumType
-from ..Enemy import Enemy
+
+from typing import NoReturn
+from abc import ABCMeta, abstractmethod
 
 
-class MiniEnemy(Enemy):
+class PlayerWeapon(metaclass=ABCMeta):
     """sumary_line
 
     Keyword arguments:
@@ -20,42 +20,27 @@ class MiniEnemy(Enemy):
     Return: return_description
     """
 
-    def __init__(self):
-        super().__init__(self)  # pylint: disable = W,E
-        self.elements: Tuple[
-            Tuple[object]
-        ] = self.init_elements()  # pylint: disable = W,E
-        self.states: Tuple[
-            Tuple[EnumType]
-        ] = self.init_states()  # pylint: disable = W,E
+    @classmethod
+    def __subclasshook__(cls, subclass):
+        return (
+            hasattr(subclass, "init_states")
+            and callable(subclass.init_states)
+            or NotImplemented,
+            hasattr(subclass, "init_elements")
+            and callable(subclass.init_elements)
+            or NotImplemented,
+            hasattr(subclass, "update_elements")
+            and callable(subclass.update_elements)
+            or NotImplemented,
+            hasattr(subclass, "update_states")
+            and callable(subclass.update_states)
+            or NotImplemented,
+            hasattr(subclass, "notify_states")
+            and callable(subclass.notify_states)
+            or NotImplemented,
+        )
 
-    def run(self):
-        """sumary_line
-
-        Keyword arguments:
-        argument -- description
-        Return: return_description
-        """
-        raise NotImplementedError
-
-    def notify_states(self):
-        """sumary_line
-
-        Keyword arguments:
-        argument -- description
-        Return: return_description
-        """
-        raise NotImplementedError
-
-    def init_elements(self):
-        """sumary_line
-
-        Keyword arguments:
-        argument -- description
-        Return: return_description
-        """
-        raise NotImplementedError
-
+    @abstractmethod
     def init_states(self):
         """sumary_line
 
@@ -65,7 +50,8 @@ class MiniEnemy(Enemy):
         """
         raise NotImplementedError
 
-    def death(self):
+    @abstractmethod
+    def init_elements(self):
         """sumary_line
 
         Keyword arguments:
@@ -74,7 +60,8 @@ class MiniEnemy(Enemy):
         """
         raise NotImplementedError
 
-    def take_hit(self):
+    @abstractmethod
+    def update_elements(self) -> NoReturn:
         """sumary_line
 
         Keyword arguments:
@@ -83,7 +70,18 @@ class MiniEnemy(Enemy):
         """
         raise NotImplementedError
 
-    def move(self):
+    @abstractmethod
+    def update_states(self) -> NoReturn:
+        """sumary_line
+
+        Keyword arguments:
+        argument -- description
+        Return: return_description
+        """
+        raise NotImplementedError
+
+    @abstractmethod
+    def notify_states(self) -> NoReturn:
         """sumary_line
 
         Keyword arguments:
