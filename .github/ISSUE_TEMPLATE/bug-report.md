@@ -8,14 +8,22 @@ assignees: ''
 ---
 
 **Describe the bug**
-A clear and concise description of what the bug is.
+>A clear and concise description of what the bug is.
+
+>HERE
 
 **To Reproduce**
-Steps to reproduce the behavior:
+<details open>
+<summary>Steps to reproduce the behavior:</summary>
+
+>Example:
+
 1. Go to '...'
 2. Click on '....'
 3. Scroll down to '....'
 4. See error
+
+</details>
 
 **Expected behavior**
 A clear and concise description of what you expected to happen.
