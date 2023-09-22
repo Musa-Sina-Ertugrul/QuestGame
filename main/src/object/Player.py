@@ -12,8 +12,8 @@ from typing import Tuple
 from enum import EnumType
 from ..Object import Object  # pylint: disable = import-error, no-name-in-module
 from .PlayerWeapon import PlayerWeapon
-from .PlayerEnemy import (
-    PlayerEnemy,
+from .PlayerEnemy import ( # pylint: disable = import-error, no-name-in-module
+    PlayerEnemy, # pylint: disable = import-error, no-name-in-module
 )  # pylint: disable = import-error, no-name-in-module
 
 
@@ -118,6 +118,16 @@ class Player(Object, PlayerWeapon, PlayerEnemy, ABC):
     def reload(self):
         """sumary_line
 
+        Keyword arguments:
+        argument -- description
+        Return: return_description
+        """
+        raise NotImplementedError
+
+    @abstractmethod
+    def apply_effects(self):
+        """sumary_line
+        
         Keyword arguments:
         argument -- description
         Return: return_description

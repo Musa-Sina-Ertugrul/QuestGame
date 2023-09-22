@@ -11,8 +11,8 @@ from typing import Tuple, NoReturn
 from enum import EnumType
 from .prototypes.Prototype import Prototype
 from .Run import Run
-from .ObjectGui import (
-    ObjectGui,
+from .ObjectGui import ( # pylint: disable = import-error, no-name-in-module,wrong-import-order,wrong-import-position
+    ObjectGui, # pylint: disable = import-error, no-name-in-module,wrong-import-order,wrong-import-position
 )  # pylint: disable = import-error, no-name-in-module,wrong-import-order,wrong-import-position
 
 
@@ -94,3 +94,13 @@ class Object(Run, ObjectGui):
         Return: return_description
         """
         raise NotImplementedError
+
+    def apply_effects(self):
+        """sumary_line
+        
+        Keyword arguments:
+        argument -- description
+        Return: return_description
+        """
+        raise NotImplementedError
+

@@ -155,3 +155,12 @@ class Weapon(Object, Run):
         Return: return_description
         """
         raise NotImplementedError
+
+    def apply_effects(self):
+        """sumary_line
+        
+        Keyword arguments:
+        argument -- description
+        Return: return_description
+        """
+        raise NotImplementedError
