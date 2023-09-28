@@ -10,7 +10,7 @@ TODO: Update Docstrings
 
 from typing import Tuple, NoReturn
 from enum import EnumType
-from ..Menu import Menu  # pylint: disable=wrong-import-position
+from src.gui.Menu import Menu  # pylint: disable=wrong-import-position
 
 
 class MenuTemplate(Menu):
@@ -22,7 +22,7 @@ class MenuTemplate(Menu):
     """
 
     def __init__(self):
-        super().__init__(self)  # pylint: disable=W,E
+        super().__init__()  # pylint: disable=W,E
         super.elements = self.init_elements()
         super.states = self.init_states()
 

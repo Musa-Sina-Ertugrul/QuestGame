@@ -7,6 +7,7 @@ Return: return_description
 TODO: When implementations are done functions will be filled and object typing will be changed
 TODO: Update Docstrings
 """
+from enum import EnumType
 from typing import Tuple
 from numpy import random
 
@@ -131,7 +132,31 @@ class Factory:
 
             raise NotImplementedError
 
-        raise NotImplementedError
+        from sys import ( # pylint: disable=W,E, import-error, import-outside-toplevel
+            path, # pylint: disable=W,E, import-error, import-outside-toplevel
+        )  # pylint: disable=W,E, import-error, import-outside-toplevel
+
+        path.append("main/src/gui/menu_items/")
+        from MenuTemplate import ( # pylint: disable=W,E, import-error, import-outside-toplevel
+            MenuTemplate, # pylint: disable=W,E, import-error, import-outside-toplevel
+        )  # pylint: disable=W,E, import-error, import-outside-toplevel
+
+        return MenuTemplate()
+
+    @staticmethod
+    def create_guis():
+        """sumary_line
+
+        Keyword arguments:
+        argument -- description
+        Return: return_description
+        """
+        from sys import path # pylint: disable=W,E, import-error, import-outside-toplevel
+
+        path.append("main/src/")
+        from Gui import Gui # pylint: disable=W,E, import-error, import-outside-toplevel
+
+        return ((Gui(),),)
 
     @staticmethod
     def create_main_menu() -> Tuple[object]:
@@ -450,7 +475,7 @@ class Factory:
 
             raise NotImplementedError
 
-    raise NotImplementedError
+        raise NotImplementedError
 
     @staticmethod
     def __create_icon():  # pylint: disable = W,E

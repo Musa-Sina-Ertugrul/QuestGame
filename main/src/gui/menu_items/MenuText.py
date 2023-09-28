@@ -35,9 +35,9 @@ class MenuText(Menu):
 
     def __init__(self):
         super().__init__(self)  # pylint: disable=W,E
-        self.__current_font: Tuple[Font] = ( # pylint: disable=W
+        self.__current_font: Tuple[Font] = (  # pylint: disable=W
             copy(NotAnimated.data["font"]),  # pylint: disable=W,E
-        ) # pylint: disable=W
+        )  # pylint: disable=W
         self.__current_text: str = ""  # pylint: disable=W,E
         self.__current_punto: int = 0  # pylint: disable=W,E
 

@@ -26,7 +26,7 @@ def singelton(cls: Callable) -> Tuple[object]:
         Return: return_description
         """
 
-        if hasattr(singelton, "instance") and Tuple(singelton, singelton.instance):
+        if hasattr(singelton, "instance"):
             return singelton.instance
         else:
             singelton.instance: Tuple[object] = (cls(),)

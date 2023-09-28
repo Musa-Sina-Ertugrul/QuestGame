@@ -17,10 +17,7 @@ from enum import EnumType
 
 from multiprocessing import Condition
 
-from .Run import Run
-
-from .prototypes.Prototype import Prototype
-
+from src.Run import Run
 
 class Gui(Run):
     """sumary_line
@@ -34,23 +31,23 @@ class Gui(Run):
 
     def __init__(self):
 
-        self.__loading_menu_ptr: Tuple[object] = Prototype.get_loading_menu()
+        self.__loading_menu_ptr: Tuple[object] = ((object,),)
 
-        self.__start_menu_ptr: Tuple[object] = Prototype.get_start_menu()
+        self.__start_menu_ptr: Tuple[object] = ((object,),)
 
-        self.__resume_menu_ptr: Tuple[object] = Prototype.get_resume_menu()
+        self.__resume_menu_ptr: Tuple[object] = ((object,),)
 
-        self.__markets_ptr: Tuple[Tuple[object]] = Prototype.get_markets()
+        self.__markets_ptr: Tuple[Tuple[object]] = ((object,),)
 
-        self.__levels_ptr: Tuple[object] = Prototype.get_levels()
+        self.__levels_ptr: Tuple[object] = ((object,),)
 
         self.__cv_ptr_tuple: Tuple[Tuple[Condition]] = (
             (Condition() for _ in range(6)),
         )  # pylint: disable=W,E
 
-        self.elements: Tuple[Tuple[object]] = self.init_elements()
+        self.elements: Tuple[Tuple[object]] = ((object,),)
 
-        self.states: Tuple[Tuple[EnumType]] = self.init_states()
+        self.states: Tuple[Tuple[EnumType]] = ((EnumType,),)
 
     def run(self):
         """sumary_line
@@ -69,7 +66,7 @@ class Gui(Run):
 
             raise NotImplementedError
 
-    @property.getter
+    @property
     def loading_menu_ptr(self) -> Tuple[object]:
         """sumary_line
 
@@ -82,7 +79,7 @@ class Gui(Run):
 
         return self.__loading_menu_ptr
 
-    @property.getter
+    @property
     def start_menu_ptr(self) -> Tuple[object]:
         """sumary_line
 
@@ -94,7 +91,7 @@ class Gui(Run):
         """
         return self.__start_menu_ptr
 
-    @property.getter
+    @property
     def pause_menu_ptr(self) -> Tuple[object]:
         """sumary_line
 
@@ -106,7 +103,7 @@ class Gui(Run):
         """
         return self.__resume_menu_ptr
 
-    @property.getter
+    @property
     def shop_menu_ptr(self) -> Tuple[object]:
         """sumary_line
 
@@ -119,7 +116,7 @@ class Gui(Run):
 
         return self.__markets_ptr
 
-    @property.getter
+    @property
     def game_play_ptr(self) -> Tuple[object]:
         """sumary_line
 
@@ -131,8 +128,14 @@ class Gui(Run):
         """
         return self.__levels_ptr
 
-    @property.setter
+    @property
     def loading_menu_flag(self, is_relased: bool) -> NoReturn:
+        """sumary_line
+
+        Keyword arguments:
+        argument -- description
+        Return: return_description
+        """
         if is_relased:
 
             self.__cv_ptr_tuple[0][0].notify()
@@ -140,8 +143,14 @@ class Gui(Run):
 
             self.__cv_ptr_tuple[0][0].wait()
 
-    @property.setter
+    @property
     def start_menu_flag(self, is_relased: bool) -> NoReturn:
+        """sumary_line
+
+        Keyword arguments:
+        argument -- description
+        Return: return_description
+        """
         if is_relased:
 
             self.__cv_ptr_tuple[0][1].notify()
@@ -149,8 +158,14 @@ class Gui(Run):
 
             self.__cv_ptr_tuple[0][1].wait()
 
-    @property.setter
+    @property
     def pause_menu_flag(self, is_relased: bool) -> NoReturn:
+        """sumary_line
+
+        Keyword arguments:
+        argument -- description
+        Return: return_description
+        """
         if is_relased:
 
             self.__cv_ptr_tuple[0][2].notify()
@@ -158,8 +173,14 @@ class Gui(Run):
 
             self.__cv_ptr_tuple[0][2].wait()
 
-    @property.setter
+    @property
     def shop_menu_flag(self, is_relased: bool) -> NoReturn:
+        """sumary_line
+
+        Keyword arguments:
+        argument -- description
+        Return: return_description
+        """
         if is_relased:
 
             self.__cv_ptr_tuple[0][3].notify()
@@ -167,8 +188,14 @@ class Gui(Run):
 
             self.__cv_ptr_tuple[0][3].wait()
 
-    @property.setter
+    @property
     def npc_menu_flag(self, is_relased: bool) -> NoReturn:
+        """sumary_line
+
+        Keyword arguments:
+        argument -- description
+        Return: return_description
+        """
         if is_relased:
 
             self.__cv_ptr_tuple[0][4].notify()
@@ -176,8 +203,14 @@ class Gui(Run):
 
             self.__cv_ptr_tuple[0][4].wait()
 
-    @property.setter
+    @property
     def game_play_flag(self, is_relased: bool) -> NoReturn:
+        """sumary_line
+
+        Keyword arguments:
+        argument -- description
+        Return: return_description
+        """
         if is_relased:
 
             self.__cv_ptr_tuple[0][5].notify()
