@@ -40,72 +40,101 @@ class StateLookUpTable(Enum):
     VISIBLE: EnumType = 14
     NOT_VISIBLE: EnumType = 15
 
+
 class PlayerLookUpTable(Enum):
     """sumary_line
-    
+
     Keyword arguments:
     argument -- description
     Return: return_description
     """
 
-    NULL : EnumType = 0
+    NULL: EnumType = 0
+
 
 class EnemyLookUpTable(Enum):
     """sumary_line
-    
+
     Keyword arguments:
     argument -- description
     Return: return_description
     """
 
-    NULL : EnumType = 0
+    NULL: EnumType = 0
+
 
 class ResumeMenuLookUpTable(Enum):
     """sumary_line
-    
+
     Keyword arguments:
     argument -- description
     Return: return_description
     """
 
-    NULL : EnumType = 0
+    NULL: EnumType = 0
+
 
 class MainMenuLookUpTable(Enum):
     """sumary_line
-    
+
     Keyword arguments:
     argument -- description
     Return: return_description
     """
 
-    NULL : EnumType = 0
+    NULL: EnumType = 0
+
 
 class LoadingMenuLookUpTable(Enum):
     """sumary_line
-    
+
     Keyword arguments:
     argument -- description
     Return: return_description
     """
 
-    NULL : EnumType = 0
+    NULL: EnumType = 0
+
 
 class SpellLookUpTable(Enum):
     """sumary_line
-    
+
     Keyword arguments:
     argument -- description
     Return: return_description
     """
 
-    NULL : EnumType = 0
+    NULL: EnumType = 0
+
 
 class MarketLookUpTable(Enum):
     """sumary_line
-    
+
     Keyword arguments:
     argument -- description
     Return: return_description
     """
 
-    NULL : EnumType = 0
+    NULL: EnumType = 0
+
+
+class MenuTextLookUpTable(Enum):
+    """sumary_line
+
+    Keyword arguments:
+    argument -- description
+    Return: return_description
+    """
+
+    NULL: EnumType = 0
+
+
+class ButtonLookUpTable(Enum):
+    """sumary_line
+
+    Keyword arguments:
+    argument -- description
+    Return: return_description
+    """
+
+    NULL: EnumType = 0

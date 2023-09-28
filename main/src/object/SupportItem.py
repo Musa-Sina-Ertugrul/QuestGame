@@ -10,7 +10,9 @@ TODO: Update Docstrings
 from abc import abstractmethod, ABC
 from typing import Tuple, NoReturn
 from enum import EnumType
-from ..Object import Object  # pylint: disable = import-error, no-name-in-module,wrong-import-order,wrong-import-position
+from ..Object import (
+    Object,
+)  # pylint: disable = import-error, no-name-in-module,wrong-import-order,wrong-import-position
 
 
 class SupportItem(Object, ABC):
@@ -33,13 +35,12 @@ class SupportItem(Object, ABC):
     @abstractmethod
     def choose_random(self):
         """sumary_line
-        
+
         Keyword arguments:
         argument -- description
         Return: return_description
         """
         raise NotImplementedError
-
 
     @abstractmethod
     def run(self):
@@ -104,7 +105,7 @@ class SupportItem(Object, ABC):
     @abstractmethod
     def apply_effects(self):
         """sumary_line
-        
+
         Keyword arguments:
         argument -- description
         Return: return_description
@@ -114,7 +115,7 @@ class SupportItem(Object, ABC):
     @abstractmethod
     def multiplate_support_item(self):
         """sumary_line
-        
+
         Keyword arguments:
         argument -- description
         Return: return_description
@@ -124,7 +125,7 @@ class SupportItem(Object, ABC):
     @abstractmethod
     def init_command(self):
         """sumary_line
-        
+
         Keyword arguments:
         argument -- description
         Return: return_description

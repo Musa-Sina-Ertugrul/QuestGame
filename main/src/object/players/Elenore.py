@@ -11,17 +11,17 @@ from sys import path
 
 path.append("main/src/utils")
 
-from typing import ( # pylint: disable = import-error, no-name-in-module,wrong-import-order,wrong-import-position
-    Tuple, # pylint: disable = import-error, no-name-in-module,wrong-import-order,wrong-import-position
+from typing import (  # pylint: disable = import-error, no-name-in-module,wrong-import-order,wrong-import-position
+    Tuple,  # pylint: disable = import-error, no-name-in-module,wrong-import-order,wrong-import-position
 )  # pylint: disable = import-error, no-name-in-module,wrong-import-order,wrong-import-position
-from enum import ( # pylint: disable = import-error, no-name-in-module,wrong-import-order,wrong-import-position
-    EnumType, # pylint: disable = import-error, no-name-in-module,wrong-import-order,wrong-import-position
+from enum import (  # pylint: disable = import-error, no-name-in-module,wrong-import-order,wrong-import-position
+    EnumType,  # pylint: disable = import-error, no-name-in-module,wrong-import-order,wrong-import-position
 )  # pylint: disable = import-error, no-name-in-module,wrong-import-order,wrong-import-position
-from utils import ( # pylint: disable = import-error, no-name-in-module,wrong-import-order,wrong-import-position
-    singelton, # pylint: disable = import-error, no-name-in-module,wrong-import-order,wrong-import-position
+from utils import (  # pylint: disable = import-error, no-name-in-module,wrong-import-order,wrong-import-position
+    singelton,  # pylint: disable = import-error, no-name-in-module,wrong-import-order,wrong-import-position
 )  # pylint: disable = import-error, no-name-in-module,wrong-import-order,wrong-import-position
-from ..Player import ( # pylint: disable = import-error, no-name-in-module,wrong-import-order,wrong-import-position
-    Player, # pylint: disable = import-error, no-name-in-module,wrong-import-order,wrong-import-position
+from ..Player import (  # pylint: disable = import-error, no-name-in-module,wrong-import-order,wrong-import-position
+    Player,  # pylint: disable = import-error, no-name-in-module,wrong-import-order,wrong-import-position
 )  # pylint: disable = import-error, no-name-in-module,wrong-import-order,wrong-import-position
 
 

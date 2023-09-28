@@ -9,7 +9,9 @@ TODO: Update Docstrings
 """
 from typing import Tuple, NoReturn
 from enum import EnumType
-from ..SupportItem import SupportItem  # pylint: disable = import-error, no-name-in-module,wrong-import-order,wrong-import-position
+from ..SupportItem import (
+    SupportItem,
+)  # pylint: disable = import-error, no-name-in-module,wrong-import-order,wrong-import-position
 
 
 class Coin(SupportItem):
@@ -21,7 +23,7 @@ class Coin(SupportItem):
     """
 
     def __init__(self):
-        super().__init__(self) # pylint: disable = W,E
+        super().__init__(self)  # pylint: disable = W,E
         super.elements: Tuple[
             Tuple[object]
         ] = self.init_elements()  # pylint: disable = W,E
@@ -31,7 +33,7 @@ class Coin(SupportItem):
 
     def flip_coin(self):
         """sumary_line
-        
+
         Keyword arguments:
         argument -- description
         Return: return_description
@@ -40,7 +42,7 @@ class Coin(SupportItem):
 
     def choose_random(self):
         """sumary_line
-        
+
         Keyword arguments:
         argument -- description
         Return: return_description
@@ -103,7 +105,7 @@ class Coin(SupportItem):
 
     def apply_effects(self):
         """sumary_line
-        
+
         Keyword arguments:
         argument -- description
         Return: return_description
@@ -112,7 +114,7 @@ class Coin(SupportItem):
 
     def multiplate_support_item(self):
         """sumary_line
-        
+
         Keyword arguments:
         argument -- description
         Return: return_description
@@ -121,7 +123,7 @@ class Coin(SupportItem):
 
     def init_command(self):
         """sumary_line
-        
+
         Keyword arguments:
         argument -- description
         Return: return_description

@@ -137,7 +137,7 @@ class Column(Menu):
         """
         raise NotImplementedError
 
-    def init_elements( # pylint: disable=W
+    def init_elements(  # pylint: disable=W
         self, item_list: Tuple[Tuple[object]]
     ) -> Tuple[Tuple[object]]:  # pylint: disable=W
         """sumary_line

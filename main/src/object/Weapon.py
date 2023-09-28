@@ -158,7 +158,7 @@ class Weapon(Object, Run):
 
     def apply_effects(self):
         """sumary_line
-        
+
         Keyword arguments:
         argument -- description
         Return: return_description

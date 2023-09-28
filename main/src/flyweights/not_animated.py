@@ -4,12 +4,16 @@ This module contains NotAnimated flyweight class
 TODO: Scale everthing when coding started
 
 """
-
+from pygame import mixer
+from pygame import font
 from pygame.mixer import Sound
 from pygame.font import Font
 from pygame import image, transform
 
-from .Flyweight import Flyweight
+mixer.init()
+font.init()
+
+from src.flyweights.Flyweight import Flyweight
 
 
 class NotAnimated(Flyweight):
@@ -124,12 +128,12 @@ class NotAnimated(Flyweight):
         image.load(".assets/skill_icons_by_quintino_pixels/96x96/skill_icons53.png"),
         image.load(".assets/skill_icons_by_quintino_pixels/96x96/skill_icons54.png"),
     )
-    Flyweight.data["start_menu_sound"] = Sound(".assets/game_Sound/Spy/Spy.mp3")
+    Flyweight.data["start_menu_sound"] = Sound(".assets/game_music/Spy/Spy.mp3")
     Flyweight.data["game_sound"] = (
-        Sound(".assets/game_Sound/16_bit_space.ogg"),
-        Sound(".assets/game_Sound/future.ogg"),
-        Sound(".assets/game_Sound/glitch.ogg"),
-        Sound(".assets/game_Sound/retro_metal.ogg"),
+        Sound(".assets/game_music/16_bit_space.ogg"),
+        Sound(".assets/game_music/future.ogg"),
+        Sound(".assets/game_music/glitch.ogg"),
+        Sound(".assets/game_music/retro_metal.ogg"),
     )
     Flyweight.data["hearth"] = (
         image.load(".assets/health/heart_1.png"),

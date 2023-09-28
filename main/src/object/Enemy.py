@@ -11,8 +11,8 @@ from abc import ABC, abstractmethod
 from typing import Tuple
 from enum import EnumType
 from ..Object import Object  # pylint: disable = import-error, no-name-in-module
-from .PlayerEnemy import ( # pylint: disable = import-error, no-name-in-module
-    PlayerEnemy, # pylint: disable = import-error, no-name-in-module
+from .PlayerEnemy import (  # pylint: disable = import-error, no-name-in-module
+    PlayerEnemy,  # pylint: disable = import-error, no-name-in-module
 )  # pylint: disable = import-error, no-name-in-module
 
 
@@ -106,7 +106,7 @@ class Enemy(Object, PlayerEnemy, ABC):
     @abstractmethod
     def apply_effects(self):
         """sumary_line
-        
+
         Keyword arguments:
         argument -- description
         Return: return_description

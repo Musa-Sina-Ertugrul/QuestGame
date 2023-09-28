@@ -9,10 +9,9 @@ TODO: Update Docstrings
 """
 from typing import Tuple, NoReturn
 from enum import EnumType
-from .prototypes.Prototype import Prototype
 from .Run import Run
-from .ObjectGui import ( # pylint: disable = import-error, no-name-in-module,wrong-import-order,wrong-import-position
-    ObjectGui, # pylint: disable = import-error, no-name-in-module,wrong-import-order,wrong-import-position
+from .ObjectGui import (  # pylint: disable = import-error, no-name-in-module,wrong-import-order,wrong-import-position
+    ObjectGui,  # pylint: disable = import-error, no-name-in-module,wrong-import-order,wrong-import-position
 )  # pylint: disable = import-error, no-name-in-module,wrong-import-order,wrong-import-position
 
 
@@ -23,7 +22,7 @@ class Object(Run, ObjectGui):
     argument -- description
     Return: return_description
     """
-
+    # TODO: Change Prototypes with Factory it has been deprecated
     def __init__(self):
         self.__players_ptr: Tuple[  # pylint: disable = W,E
             Tuple[object]
@@ -97,10 +96,9 @@ class Object(Run, ObjectGui):
 
     def apply_effects(self):
         """sumary_line
-        
+
         Keyword arguments:
         argument -- description
         Return: return_description
         """
         raise NotImplementedError
-

@@ -24,11 +24,11 @@ class Menu(Gui, ABC):
     """
 
     def __init__(self):
-        super().__init__(self)
+        Gui.__init__(self)
         self.pos_x: int = 0
         self.pos_y: int = 0
-        super.elememts = self.init_elements()
-        super.states = self.init_states()
+        Gui.elememts = self.init_elements()
+        Gui.states = self.init_states()
         self.width: int = self._relative_width()
         self.height: int = self._relative_height()
 
