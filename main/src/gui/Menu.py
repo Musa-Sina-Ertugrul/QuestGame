@@ -27,8 +27,9 @@ class Menu(Gui, ABC):
         Gui.__init__(self)
         self.pos_x: int = 0
         self.pos_y: int = 0
-        Gui.elememts = self.init_elements()
-        Gui.states = self.init_states()
+        Gui.elememts = ((object,),)
+        Gui.internal_states = (({},),)
+        Gui.external_states = (({},),)
         self.width: int = self._relative_width()
         self.height: int = self._relative_height()
 
@@ -104,7 +105,16 @@ class Menu(Gui, ABC):
 
         raise NotImplementedError
 
-    def init_states(self):
+    def init_external_states(self):
+        """sumary_line
+
+        Keyword arguments:
+        argument -- description
+        Return: return_description
+        """
+        raise NotImplementedError
+
+    def init_internal_states(self):
         """sumary_line
 
         Keyword arguments:

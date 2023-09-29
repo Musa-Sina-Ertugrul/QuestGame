@@ -12,10 +12,8 @@ from sys import path
 path.append("main/src/utils")
 
 from typing import (  # pylint: disable = import-error, no-name-in-module,wrong-import-order,wrong-import-position
-    Tuple,  # pylint: disable = import-error, no-name-in-module,wrong-import-order,wrong-import-position
-)  # pylint: disable = import-error, no-name-in-module,wrong-import-order,wrong-import-position
-from enum import (  # pylint: disable = import-error, no-name-in-module,wrong-import-order,wrong-import-position
-    EnumType,  # pylint: disable = import-error, no-name-in-module,wrong-import-order,wrong-import-position
+    Tuple, # pylint: disable = import-error, no-name-in-module,wrong-import-order,wrong-import-position
+    Dict  # pylint: disable = import-error, no-name-in-module,wrong-import-order,wrong-import-position
 )  # pylint: disable = import-error, no-name-in-module,wrong-import-order,wrong-import-position
 from utils import (  # pylint: disable = import-error, no-name-in-module,wrong-import-order,wrong-import-position
     singelton,  # pylint: disable = import-error, no-name-in-module,wrong-import-order,wrong-import-position
@@ -36,12 +34,11 @@ class MoonPie(Player):
 
     def __init__(self):
         super().__init__(self)  # pylint: disable = W,E
-        self.elements: Tuple[
+        super.elements: Tuple[
             Tuple[object]
-        ] = self.init_elements()  # pylint: disable = W,E
-        self.states: Tuple[
-            Tuple[EnumType]
-        ] = self.init_states()  # pylint: disable = W,E
+        ] = ((object,),) # pylint: disable = W,E
+        super.internal_states: Tuple[Tuple[Dict]] = ((dict,),)
+        super.external_states: Tuple[Tuple[Dict]] = ((dict,),)
 
     def run(self):
         """sumary_line
@@ -70,7 +67,16 @@ class MoonPie(Player):
         """
         raise NotImplementedError
 
-    def init_states(self):
+    def init_external_states(self):
+        """sumary_line
+
+        Keyword arguments:
+        argument -- description
+        Return: return_description
+        """
+        raise NotImplementedError
+
+    def init_internal_states(self):
         """sumary_line
 
         Keyword arguments:

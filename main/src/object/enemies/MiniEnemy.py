@@ -7,8 +7,7 @@ Return: return_description
 TODO: Update Docstrings
 
 """
-from typing import Tuple
-from enum import EnumType
+from typing import Tuple, Dict
 from ..Enemy import Enemy
 
 
@@ -22,12 +21,11 @@ class MiniEnemy(Enemy):
 
     def __init__(self):
         super().__init__(self)  # pylint: disable = W,E
-        self.elements: Tuple[
+        super.elements: Tuple[
             Tuple[object]
-        ] = self.init_elements()  # pylint: disable = W,E
-        self.states: Tuple[
-            Tuple[EnumType]
-        ] = self.init_states()  # pylint: disable = W,E
+        ] = ((object,),) # pylint: disable = W,E
+        super.internal_states: Tuple[Tuple[Dict]] = ((dict,),)
+        super.external_states: Tuple[Tuple[Dict]] = ((dict,),)
 
     def run(self):
         """sumary_line
@@ -56,7 +54,16 @@ class MiniEnemy(Enemy):
         """
         raise NotImplementedError
 
-    def init_states(self):
+    def init_external_states(self):
+        """sumary_line
+
+        Keyword arguments:
+        argument -- description
+        Return: return_description
+        """
+        raise NotImplementedError
+
+    def init_internal_states(self):
         """sumary_line
 
         Keyword arguments:

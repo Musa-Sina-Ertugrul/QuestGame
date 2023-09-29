@@ -8,10 +8,9 @@ TODO: Update Docstrings
 
 """
 from abc import abstractmethod, ABC
-from typing import Tuple, NoReturn
-from enum import EnumType
-from ..Object import (
-    Object,
+from typing import Tuple, NoReturn, Dict
+from src.Object import ( # pylint: disable = import-error, no-name-in-module,wrong-import-order,wrong-import-position
+    Object, # pylint: disable = import-error, no-name-in-module,wrong-import-order,wrong-import-position
 )  # pylint: disable = import-error, no-name-in-module,wrong-import-order,wrong-import-position
 
 
@@ -27,10 +26,9 @@ class SupportItem(Object, ABC):
         Object.__init__(self)
         Object.elements: Tuple[
             Tuple[object]
-        ] = self.init_elements()  # pylint: disable = W,E
-        Object.states: Tuple[
-            Tuple[EnumType]
-        ] = self.init_states()  # pylint: disable = W,E
+        ] = ((object,),)  # pylint: disable = W,E
+        Object.internal_states: Tuple[Tuple[Dict]] = ((dict,),)
+        Object.external_states: Tuple[Tuple[Dict]] = ((dict,),)
 
     @abstractmethod
     def choose_random(self):
@@ -73,7 +71,17 @@ class SupportItem(Object, ABC):
         raise NotImplementedError
 
     @abstractmethod
-    def init_states(self):
+    def init_external_states(self):
+        """sumary_line
+
+        Keyword arguments:
+        argument -- description
+        Return: return_description
+        """
+        raise NotImplementedError
+
+    @abstractmethod
+    def init_internal_states(self):
         """sumary_line
 
         Keyword arguments:

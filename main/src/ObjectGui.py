@@ -23,7 +23,10 @@ class PlayerWeapon(metaclass=ABCMeta):
     @classmethod
     def __subclasshook__(cls, subclass):
         return (
-            hasattr(subclass, "init_states")
+            hasattr(subclass, "init_external_states")
+            and callable(subclass.init_states)
+            or NotImplemented,
+            hasattr(subclass, "init_internal_states")
             and callable(subclass.init_states)
             or NotImplemented,
             hasattr(subclass, "init_elements")
@@ -41,7 +44,17 @@ class PlayerWeapon(metaclass=ABCMeta):
         )
 
     @abstractmethod
-    def init_states(self):
+    def init_external_states(self):
+        """sumary_line
+
+        Keyword arguments:
+        argument -- description
+        Return: return_description
+        """
+        raise NotImplementedError
+
+    @abstractmethod
+    def init_internal_states(self):
         """sumary_line
 
         Keyword arguments:

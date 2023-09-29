@@ -11,7 +11,7 @@ TODO: object assigments will change after implementations
 TODO: Update Docstrings
 """
 
-from typing import Tuple, NoReturn
+from typing import Tuple, NoReturn, Dict
 
 from enum import EnumType
 
@@ -47,7 +47,8 @@ class Gui(Run):
 
         self.elements: Tuple[Tuple[object]] = ((object,),)
 
-        self.states: Tuple[Tuple[EnumType]] = ((EnumType,),)
+        self.internal_states: Tuple[Tuple[Dict]] = ((dict,),)
+        self.external_states: Tuple[Tuple[Dict]] = ((dict,),)
 
     def run(self):
         """sumary_line

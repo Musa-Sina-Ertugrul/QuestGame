@@ -7,7 +7,7 @@ Return: return_description
 TODO: Update Docstrings
 
 """
-from typing import Tuple, NoReturn, Callable
+from typing import Tuple, NoReturn, Callable, Dict
 from enum import EnumType
 from ..SupportItem import (
     SupportItem,
@@ -26,10 +26,9 @@ class Bullet(SupportItem):
         super().__init__(self)  # pylint: disable = W,E
         super.elements: Tuple[
             Tuple[object]
-        ] = self.init_elements()  # pylint: disable = W,E
-        super.states: Tuple[
-            Tuple[EnumType]
-        ] = self.init_states()  # pylint: disable = W,E
+        ] = ((object,),) # pylint: disable = W,E
+        super.internal_states: Tuple[Tuple[Dict]] = ((dict,),)
+        super.external_states: Tuple[Tuple[Dict]] = ((dict,),)
         self.__bullet_command: Callable = self.init_command()  # pylint: disable = W,E
 
     def choose_random(self):
@@ -68,7 +67,16 @@ class Bullet(SupportItem):
         """
         raise NotImplementedError
 
-    def init_states(self):
+    def init_external_states(self):
+        """sumary_line
+
+        Keyword arguments:
+        argument -- description
+        Return: return_description
+        """
+        raise NotImplementedError
+
+    def init_internal_states(self):
         """sumary_line
 
         Keyword arguments:

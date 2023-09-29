@@ -8,8 +8,7 @@ TODO: Update Docstrings
 
 """
 from abc import ABC, abstractmethod
-from typing import Tuple
-from enum import EnumType
+from typing import Tuple, Dict
 from ..Object import Object  # pylint: disable = import-error, no-name-in-module
 from .PlayerWeapon import PlayerWeapon
 from .PlayerEnemy import (  # pylint: disable = import-error, no-name-in-module
@@ -30,9 +29,8 @@ class Player(Object, PlayerWeapon, PlayerEnemy, ABC):
         self.elements: Tuple[
             Tuple[object]
         ] = self.init_elements()  # pylint: disable = W,E
-        self.states: Tuple[
-            Tuple[EnumType]
-        ] = self.init_states()  # pylint: disable = W,E
+        Object.internal_states: Tuple[Tuple[Dict]] = ((dict,),)
+        Object.external_states: Tuple[Tuple[Dict]] = ((dict,),)
 
     @abstractmethod
     def run(self):
@@ -65,7 +63,17 @@ class Player(Object, PlayerWeapon, PlayerEnemy, ABC):
         raise NotImplementedError
 
     @abstractmethod
-    def init_states(self):
+    def init_external_states(self):
+        """sumary_line
+
+        Keyword arguments:
+        argument -- description
+        Return: return_description
+        """
+        raise NotImplementedError
+
+    @abstractmethod
+    def init_internal_states(self):
         """sumary_line
 
         Keyword arguments:

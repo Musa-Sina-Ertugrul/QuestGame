@@ -7,8 +7,7 @@ Return: return_description
 TODO: Update Docstrings
 
 """
-from typing import Tuple, NoReturn, Callable
-from enum import EnumType
+from typing import Tuple, NoReturn, Callable, Dict
 from ..SupportItem import (
     SupportItem,
 )  # pylint: disable = import-error, no-name-in-module,wrong-import-order,wrong-import-position
@@ -26,10 +25,9 @@ class Skill(SupportItem):
         super().__init__(self)  # pylint: disable = W,E
         super.elements: Tuple[
             Tuple[object]
-        ] = self.init_elements()  # pylint: disable = W,E
-        super.states: Tuple[
-            Tuple[EnumType]
-        ] = self.init_states()  # pylint: disable = W,E
+        ] = ((object,),) # pylint: disable = W,E
+        super.internal_states: Tuple[Tuple[Dict]] = ((dict,),)
+        super.external_states: Tuple[Tuple[Dict]] = ((dict,),)
         self.__skill_command: Callable = self.init_command()  # pylint: disable = W,E
 
     def choose_random(self):
@@ -68,7 +66,16 @@ class Skill(SupportItem):
         """
         raise NotImplementedError
 
-    def init_states(self):
+    def init_external_states(self):
+        """sumary_line
+
+        Keyword arguments:
+        argument -- description
+        Return: return_description
+        """
+        raise NotImplementedError
+
+    def init_internal_states(self):
         """sumary_line
 
         Keyword arguments:

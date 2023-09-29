@@ -8,9 +8,8 @@ TODO: Update Docstrings
 
 """
 from sys import path
-from typing import Tuple, NoReturn
+from typing import Tuple, NoReturn, Dict
 from copy import copy
-from enum import EnumType
 from pygame.font import Font
 
 path.append("main/src/flyweights")
@@ -38,6 +37,11 @@ class GameText(Game):
         self.__current_font: Tuple[Font] = (  # pylint: disable=W,E
             copy(NotAnimated.data["font"]),  # pylint: disable=W,E
         )
+        super.elements: Tuple[
+            Tuple[object]
+        ] = ((object,),) # pylint: disable = W,E
+        super.internal_states: Tuple[Tuple[Dict]] = ((dict,),)
+        super.external_states: Tuple[Tuple[Dict]] = ((dict,),)
         self.__current_text: str = ""  # pylint: disable=W,E
         self.__current_punto: int = 0  # pylint: disable=W,E
 
@@ -148,7 +152,16 @@ class GameText(Game):
 
         raise NotImplementedError
 
-    def init_states(self) -> Tuple[Tuple[EnumType]]:
+    def init_external_states(self):
+        """sumary_line
+
+        Keyword arguments:
+        argument -- description
+        Return: return_description
+        """
+        raise NotImplementedError
+
+    def init_internal_states(self):
         """sumary_line
 
         Keyword arguments:

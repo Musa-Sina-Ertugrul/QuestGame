@@ -7,10 +7,10 @@ Return: return_description
 TODO: Update Docstrings
 
 """
-from typing import Callable, Tuple
+from typing import Callable, Dict, Tuple
 
 
-def singelton(cls: Callable) -> Tuple[object]:
+def singelton(cls: Callable) -> Tuple[Tuple[object]]:
     """sumary_line
 
     Keyword arguments:
@@ -27,9 +27,13 @@ def singelton(cls: Callable) -> Tuple[object]:
         """
 
         if hasattr(singelton, "instance"):
-            return singelton.instance
+            if str(cls.__class__) in singelton.instance:
+                return ((singelton.instance[str(cls.__class__)],),)
+            else:
+                singelton.instance[str(cls.__class__)] = cls()
+                return ((singelton.instance[str(cls.__class__)],),)
         else:
-            singelton.instance: Tuple[object] = (cls(),)
-            return singelton.instance
+            singelton.instance: Dict[object] = { str(cls.__class__) : cls()}
+            return ((singelton.instance[str(cls.__class__)],),)
 
     return inner_singelton(cls)

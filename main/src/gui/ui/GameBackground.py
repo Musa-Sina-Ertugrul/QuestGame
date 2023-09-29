@@ -8,8 +8,7 @@ TODO: Update Docstrings
 
 """
 
-from typing import Tuple, NoReturn
-from enum import EnumType
+from typing import Tuple, NoReturn, Dict
 from ..Game import Game
 
 
@@ -23,8 +22,11 @@ class MenuBackground(Game):
 
     def __init__(self):
         super().__init__(self)  # pylint: disable=W,E
-        super.elements = self.init_elements()
-        super.states = self.init_states()
+        super.elements: Tuple[
+            Tuple[object]
+        ] = ((object,),) # pylint: disable = W,E
+        super.internal_states: Tuple[Tuple[Dict]] = ((dict,),)
+        super.external_states: Tuple[Tuple[Dict]] = ((dict,),)
 
     def relative_pos(self) -> Tuple[int, int]:
         """sumary_line
@@ -93,7 +95,16 @@ class MenuBackground(Game):
 
         raise NotImplementedError
 
-    def init_states(self) -> Tuple[Tuple[EnumType]]:
+    def init_external_states(self):
+        """sumary_line
+
+        Keyword arguments:
+        argument -- description
+        Return: return_description
+        """
+        raise NotImplementedError
+
+    def init_internal_states(self):
         """sumary_line
 
         Keyword arguments:

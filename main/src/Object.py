@@ -7,8 +7,7 @@ Return: return_description
 TODO: Update Docstrings
 
 """
-from typing import Tuple, NoReturn
-from enum import EnumType
+from typing import Tuple, NoReturn, Dict
 from .Run import Run
 from .ObjectGui import (  # pylint: disable = import-error, no-name-in-module,wrong-import-order,wrong-import-position
     ObjectGui,  # pylint: disable = import-error, no-name-in-module,wrong-import-order,wrong-import-position
@@ -25,20 +24,21 @@ class Object(Run, ObjectGui):
     # TODO: Change Prototypes with Factory it has been deprecated
     def __init__(self):
         self.__players_ptr: Tuple[  # pylint: disable = W,E
-            Tuple[object]
+            Tuple[Dict]
         ] = Prototype.get_players()  # pylint: disable = W,E
         self.__enemies_ptr: Tuple[  # pylint: disable = W,E
-            Tuple[object]
+            Tuple[Dict]
         ] = Prototype.get_enemies()  # pylint: disable = W,E
         self.__support_items_ptr: Tuple[  # pylint: disable = W,E
-            Tuple[object]
+            Tuple[Dict]
         ] = Prototype.get_support_items()  # pylint: disable = W,E
         self.elements: Tuple[
-            Tuple[object]
+            Tuple[Dict]
         ] = self.init_elements()  # pylint: disable = W,E
-        self.states: Tuple[
-            Tuple[EnumType]
-        ] = self.init_states()  # pylint: disable = W,E
+        self.internal_states: Tuple[
+            Tuple[Dict]
+        ] = (({},),)  # pylint: disable = W,E
+        self.external_states: Tuple[Tuple[Dict]] = (({},),) # pylint: disable = W,E
 
     def run(self):
         """sumary_line
@@ -67,7 +67,16 @@ class Object(Run, ObjectGui):
         """
         raise NotImplementedError
 
-    def init_states(self):
+    def init_external_states(self):
+        """sumary_line
+
+        Keyword arguments:
+        argument -- description
+        Return: return_description
+        """
+        raise NotImplementedError
+
+    def init_internal_states(self):
         """sumary_line
 
         Keyword arguments:

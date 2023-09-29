@@ -30,8 +30,8 @@ class Software(Run):
 
     def __init__(self):
         # TODO: Implement
-        # self.__observers_ptr : Tuple[Tuple[object]] = self.__init_observers() # pylint: disable= W,E
-        # self.__objects_ptr : Tuple[Tuple[object]] = self.__init_objects() # pylint: disable= W,E
+        # self.__observers_ptr : Tuple[Tuple[Dict]] = self.__init_observers() # pylint: disable= W,E
+        # self.__objects_ptr : Tuple[Tuple[Dict]] = self.__init_objects() # pylint: disable= W,E
         self.__guis_ptr: Tuple[
             Tuple[object]
         ] = self.__init_guis()  # pylint: disable= W,E

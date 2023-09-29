@@ -8,7 +8,7 @@ TODO: Update Docstrings
 
 """
 
-from typing import NoReturn
+from typing import NoReturn, Dict, Tuple
 from ..Weapon import Weapon
 
 
@@ -22,8 +22,9 @@ class Bow(Weapon):
 
     def __init__(self):
         super().__init__(self)  # pylint: disable = W,E
-        super.elements = self.init_elements()
-        super.states = self.init_states()
+        super.elements = ((object,),)
+        super.internal_states: Tuple[Tuple[Dict]] = ((dict,),)
+        super.external_states: Tuple[Tuple[Dict]] = ((dict,),)
         super.pos_x: int = 0
         super.pos_y: int = 0
         super.tetha: float = 0.0
@@ -146,7 +147,16 @@ class Bow(Weapon):
         """
         raise NotImplementedError
 
-    def init_states(self):
+    def init_external_states(self):
+        """sumary_line
+
+        Keyword arguments:
+        argument -- description
+        Return: return_description
+        """
+        raise NotImplementedError
+
+    def init_internal_states(self):
         """sumary_line
 
         Keyword arguments:
