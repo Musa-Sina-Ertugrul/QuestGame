@@ -10,7 +10,11 @@ TODO: Update Docstrings
 from sys import path
 from typing import Tuple, NoReturn, Dict
 from copy import copy
+from functools import lru_cache
+from enum import EnumType
 from pygame.font import Font
+from pygame import Surface
+from pygame import transform
 
 path.append("main/src/flyweights")
 path.append("main/src/")
@@ -22,7 +26,7 @@ from State import (  # pylint: disable=W,E,import-error,wrong-import-position
     StateLookUpTable,
 )
 from ..Menu import Menu  # pylint: disable=W,E,import-error,wrong-import-position
-
+from src.State import ButtonStateLookUpTable
 
 class MenuText(Menu):
     """sumary_line
@@ -34,16 +38,34 @@ class MenuText(Menu):
 
     def __init__(self):
         super().__init__(self)  # pylint: disable=W,E
-        self.__current_font: Tuple[Font] = (  # pylint: disable=W
-            copy(NotAnimated.data["font"]),  # pylint: disable=W,E
-        )  # pylint: disable=W
+        self.__current_font: Font = copy(NotAnimated.data["font"])
         super.elements: Tuple[
-            Tuple[object]
-        ] = ((object,),) # pylint: disable = W,E
+            Tuple[Surface]
+        ] = ((Surface,),) # pylint: disable = W,E
         super.internal_states: Tuple[Tuple[Dict]] = ((dict,),)
         super.external_states: Tuple[Tuple[Dict]] = ((dict,),)
         self.__current_text: str = ""  # pylint: disable=W,E
         self.__current_punto: int = 0  # pylint: disable=W,E
+
+    @property
+    def mouse_state(self):
+        """sumary_line
+        
+        Keyword arguments:
+        argument -- description
+        Return: return_description
+        """
+        return super.external_states[0][0]["mouse_state"]
+
+    @mouse_state
+    def set_mouse_state(self,state:EnumType):
+        """sumary_line
+        
+        Keyword arguments:
+        argument -- description
+        Return: return_description
+        """
+        super.external_states[0][0]["mouse_state"] = state
 
     @property
     def current_text(self):
@@ -73,7 +95,7 @@ class MenuText(Menu):
         argument -- description
         Return: return_description
         """
-        return self.__current_text
+        return self.__current_punto
 
     @current_text.setter
     def set_punto(self, punto: int):
@@ -92,7 +114,6 @@ class MenuText(Menu):
         argument -- description
         Return: return_description
         """
-
         raise NotImplementedError
 
     def relative_height(self) -> int:
@@ -102,7 +123,10 @@ class MenuText(Menu):
         argument -- description
         Return: return_description
         """
-        raise NotImplementedError
+        if super.elements[0][0]:
+            return super.elements[0][0].get_height()
+
+        raise   RuntimeError("Elements are not initiliazed")
 
     def relative_width(self) -> int:
         """sumary_line
@@ -111,7 +135,10 @@ class MenuText(Menu):
         argument -- description
         Return: return_description
         """
-        raise NotImplementedError
+        if super.elements[0][0]:
+            return super.elements[0][0].get_width()
+
+        raise   RuntimeError("Elements are not initiliazed")
 
     def update_elements(self) -> NoReturn:
         """sumary_line
@@ -138,19 +165,56 @@ class MenuText(Menu):
         argument -- description
         Return: return_description
         """
-        if NotImplemented:
-            raise NotImplementedError
-        return (self._x, self._y)
+        return (super.pos_x, super.pos_y)
 
-    def run(self):
-        """sumary_line
+    def run(self) -> Tuple[Tuple[Surface]]:
+        """Method for adjust object for internal and external states
 
-        Keyword arguments:
-        argument -- description
-        Return: return_description
+        This method has two private method (run_cache, get_color)
+        these two method use lru cache to return proper Surface
+        object at the end
+
+        NOTE: Check this method for docstrings and structure !!!
+
+        Return:
+            Returns Surface object that adjusted based on states
         """
+        @lru_cache
+        def run_cache(text:str,punto:int,state: EnumType) -> Tuple[Tuple[Surface]]:
+            """Cached pivate method for run()
+            
+            Args:
+                text (str) : It is caching parameter, simply equals to self.current_text
+                punto (int) : It is caching parameter, simply equals to self.current_punto
+            Return:
+                Returns Tuple in Tuple as ptr Tuple[Tuple[Surface]]
+            """
+            tmp_color : Tuple[int,int,int] = get_color(state)
 
-        raise NotImplementedError
+            return ((transform.scale_by(self.__current_font.render(text=self.current_text,antialias=False,color=tmp_color),self.current_punto),),)
+
+        @lru_cache
+        def get_color(state : EnumType) -> Tuple[int,int,int]:
+            """Returns cached color tuple
+
+            TODO: Adjust colors
+
+            Args:
+                state (EnumType) : must be one of ButtonStateLookUpTable values
+            Return:
+                Returns color as Tuple[int,int,int]
+            """
+            match state:
+                case ButtonStateLookUpTable.CLICKED:
+                    return (0,0,0)
+                case ButtonStateLookUpTable.ON_CLICK:
+                    return (181,181,181)
+                case ButtonStateLookUpTable.NOT_COLLIDE:
+                    return (255,255,255)
+                case _ :
+                    raise TypeError(f"State must be one of ButtonStateLookUpTable, current {state.__name__}")
+
+        return run_cache(self.current_text,self.current_punto,self.mouse_state)
 
     def init_external_states(self):
         """sumary_line
@@ -170,14 +234,14 @@ class MenuText(Menu):
         """
         raise NotImplementedError
 
-    def init_elements(self) -> Tuple[Tuple[Font]]:  # pylint: disable=W
+    def init_elements(self):  # pylint: disable=W
         """sumary_line
 
         Keyword arguments:
         argument -- description
         Return: return_description
         """
-        raise NotImplementedError
+        super.elements = ((transform.scale_by(self.__current_font.render(text=self.current_text,antialias=False,color=(255,255,255)),self.current_punto),),)
 
     def __change_color(self) -> NoReturn:  # pylint: disable=W
         raise NotImplementedError

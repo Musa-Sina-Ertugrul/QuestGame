@@ -7,7 +7,7 @@ Return: return_description
 TODO: Update Docstring
 
 """
-from typing import Tuple, NoReturn, Dict
+from typing import Tuple, NoReturn, Dict, List
 from enum import EnumType
 from ..Menu import Menu
 
@@ -22,8 +22,8 @@ class MenuLabel(Menu):
 
     def __init__(self):
         super().__init__()
-        super.elements: Tuple[
-            Tuple[object]
+        super.elements: List[
+            List[object]
         ] = ((object,),) # pylint: disable = W,E
         super.internal_states: Tuple[Tuple[Dict]] = ((dict,),)
         super.external_states: Tuple[Tuple[Dict]] = ((dict,),)
@@ -150,7 +150,7 @@ class MenuLabel(Menu):
         raise NotImplementedError
 
     def init_elements(  # pylint: disable=W
-        self, item_list: Tuple[Tuple[EnumType]]
+        self, item_list: Tuple[Tuple[object]]
     ) -> Tuple[Tuple[object]]:  # pylint: disable=W
         """sumary_line
 
@@ -158,7 +158,7 @@ class MenuLabel(Menu):
         argument -- description
         Return: return_description
         """
-        raise NotImplementedError
+        super.elements = item_list
 
     def update_states(self):
         """sumary_line
