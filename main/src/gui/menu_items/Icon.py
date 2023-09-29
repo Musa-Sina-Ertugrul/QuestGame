@@ -31,7 +31,7 @@ class Icon(Menu):
     Return: return_description
     """
 
-    def __init__(self, icon: int):
+    def __init__(self):
         super().__init__(self)  # pylint: disable=W,E
         super.elements: Tuple[
             Tuple[object]

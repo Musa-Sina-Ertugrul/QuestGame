@@ -12,9 +12,6 @@ TODO: Update Docstrings
 """
 
 from typing import Tuple, NoReturn, Dict
-
-from enum import EnumType
-
 from multiprocessing import Condition
 
 from src.Run import Run
