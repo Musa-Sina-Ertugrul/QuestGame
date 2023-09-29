@@ -408,8 +408,8 @@ class Factory:
                     options_text : MenuText = create_options_text()
                     magnitude_text : MenuText = create_magnitude_text()
 
-                    space = 50
-                    size = ((options_text.relative_pos()[0]+ space +magnitude_text.relative_pos[0]+10+magnitude_text.relative_width()),options_text.relative_height()+2*options_text.relative_pos[1])
+                    space : int = 50
+                    size : Tuple[int,int] = ((options_text.relative_pos()[0]+ space +magnitude_text.relative_pos[0]+10+magnitude_text.relative_width()),options_text.relative_height()+2*options_text.relative_pos[1])
 
                     tmp_surface:Surface = create_transparent_surface(size=size)
 
