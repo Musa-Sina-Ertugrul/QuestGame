@@ -7,11 +7,14 @@ Return: return_description
 TODO: Update Docstrings
 
 """
-from typing import Tuple, NoReturn, Callable, Dict
+from copy import copy
+from enum import EnumType
+from typing import Tuple, NoReturn, Callable, Dict, List
+from pygame import Surface
 from ..Menu import Menu
 
 
-class MenuButton(Menu):
+class Button(Menu):
     """sumary_line
 
     Keyword arguments:
@@ -21,12 +24,32 @@ class MenuButton(Menu):
 
     def __init__(self):
         super().__init__(self)  # pylint: disable=W,E
-        super.elements: Tuple[
-            Tuple[object]
-        ] = ((object,),) # pylint: disable = W,E
-        super.internal_states: Tuple[Tuple[Dict]] = ((dict,),)
-        super.external_states: Tuple[Tuple[Dict]] = ((dict,),)
-        self.functionality: Callable = lambda x: x
+        self.elements: List[
+            List[object]
+        ] = [[object]] # pylint: disable = W,E
+        self.internal_states: List[List[Dict]] = [[dict]]
+        self.external_states: List[List[Dict]] = [[dict]]
+        self.functionality: Callable = None
+
+    @property
+    def __func(self)-> Callable:
+        """sumary_line
+
+        Keyword arguments:
+        argument -- description
+        Return: return_description
+        """
+        return self.functionality
+
+    @__func
+    def set_func(self,func : Callable) -> None:
+        """sumary_line
+
+        Keyword arguments:
+        argument -- description
+        Return: return_description
+        """
+        self.functionality = func
 
     def relative_pos(self) -> Tuple[int, int]:
         """sumary_line
@@ -81,46 +104,49 @@ class MenuButton(Menu):
         argument -- description
         Return: return_description
         """
-        if NotImplemented:
-            raise NotImplementedError
-        return (self._x, self._y)
+        return (self.pos_x, self.pos_y)
 
-    def run(self):
+    def run(self) -> Tuple[Tuple[Surface]]:
+        """draw other elements on label surface
+
+        This method returns first elements on label surface 
+        (first elements) to be draw on other surfaces
+
+        Return:
+            Tuple[Tuple[Surface]] : returns label surface as ptr
+        """
+        final_elements = [self.elements[0][i].run() for i in range(len(self.elements[0][1:]))]
+        base_label : Surface = copy(self.elements[0][0])
+        base_label.blits(final_elements)
+
+        return ((base_label,),)
+
+    def init_external_states(self,states : List[List[EnumType]]) -> None:
         """sumary_line
 
         Keyword arguments:
         argument -- description
         Return: return_description
         """
+        self.external_states = states
 
-        raise NotImplementedError
-
-    def init_external_states(self):
+    def init_internal_states(self,states : List[List[EnumType]]) -> None:
         """sumary_line
 
         Keyword arguments:
         argument -- description
         Return: return_description
         """
-        raise NotImplementedError
+        self.internal_states = states
 
-    def init_internal_states(self):
+    def init_elements(self, elements : List[List[object]]) -> None:
         """sumary_line
 
         Keyword arguments:
         argument -- description
         Return: return_description
         """
-        raise NotImplementedError
-
-    def init_elements(self):
-        """sumary_line
-
-        Keyword arguments:
-        argument -- description
-        Return: return_description
-        """
-        raise NotImplementedError
+        self.elements = elements
 
     def update_states(self):
         """sumary_line

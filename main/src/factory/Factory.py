@@ -9,9 +9,10 @@ TODO: Update Docstrings
 """
 from enum import EnumType
 from copy import copy
-from typing import Tuple, Callable, Optional, NoReturn
+from typing import Tuple, Callable, Optional
 from numpy import random
 from pygame import mouse, display, mixer
+from src.flyweights.not_animated import NotAnimated
 
 class Factory:
     """ "sumary_line
@@ -351,7 +352,7 @@ class Factory:
                 """
                 from pygame import Surface, HWSURFACE # pylint: disable=W,E, import-error, import-outside-toplevel, no-name-in-module
                 from src.gui.menu_items.MenuText import MenuText # pylint: disable=W,E, import-error, import-outside-toplevel
-                from src.gui.menu_items.MenuLabel import MenuLabel # pylint: disable=W,E, import-error, import-outside-toplevel
+                from src.gui.menu_items.Button import Button # pylint: disable=W,E, import-error, import-outside-toplevel
                 from src.State import ButtonStateLookUpTable, MenuLabelStateLookUpTable # pylint: disable=W,E, import-error, import-outside-toplevel
 
                 def create_options_text() -> MenuText:
@@ -442,7 +443,8 @@ class Factory:
 
                             current_volume += 0.1
                             mixer.mixer_music.set_volume(current_volume)
-                        
+
+                        NotAnimated.data["click_sound"].play()
                         instance.set_text = str(int(current_volume))
 
                     if instance:
@@ -450,7 +452,7 @@ class Factory:
         
                     inner_command(command_sound_level_button.instance)
 
-                def create_menu_label() -> MenuLabel:
+                def create_button() -> Button:
                     """sumary_line
                     
                     Keyword arguments:
@@ -465,17 +467,17 @@ class Factory:
 
                     tmp_surface:Surface = create_transparent_surface(size=size)
 
-                    tmp_menu_label : MenuLabel = MenuLabel()
+                    tmp_button : Button = Button()
                     command_sound_level_button(magnitude_text)
-                    tmp_menu_label.init_elements([[tmp_surface,options_text,magnitude_text]])
-                    tmp_menu_label.init_external_states([[MenuLabelStateLookUpTable.NULL for _ in range(3)]])
-                    tmp_menu_label.set_command(command_sound_level_button)
+                    tmp_button.init_elements([[tmp_surface,options_text,magnitude_text]])
+                    tmp_button.init_external_states([[MenuLabelStateLookUpTable.NULL for _ in range(3)]])
+                    tmp_button.set_func = command_sound_level_button
 
-                    return tmp_menu_label
+                    return tmp_button
 
                 # NOTE: create_sound_level_button() starts here
 
-                return create_menu_label()
+                return create_button()
 
             # NOTE: create_text_button(button_no: EnumType) starts here
 

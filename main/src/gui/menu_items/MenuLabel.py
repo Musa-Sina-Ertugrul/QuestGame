@@ -30,7 +30,6 @@ class MenuLabel(Menu):
         ] = ((object,),) # pylint: disable = W,E
         self.internal_states: List[List[Dict]] = [[dict]]
         self.external_states: List[List[Dict]] = [[dict]]
-        self.__command : Callable = None
 
     @property
     def pos_x(self) -> int:
@@ -71,26 +70,6 @@ class MenuLabel(Menu):
         Return: return_description
         """
         self.pos_y = new_y
-
-    @property
-    def __command(self) -> Callable:
-        """sumary_line
-
-        Keyword arguments:
-        argument -- description
-        Return: return_description
-        """
-        return self.__command
-
-    @__command
-    def set_command(self,func) -> None:
-        """sumary_line
-
-        Keyword arguments:
-        argument -- description
-        Return: return_description
-        """
-        self.__command = func
 
     def relative_pos(self) -> Tuple[int, int]:
         """sumary_line
@@ -147,19 +126,13 @@ class MenuLabel(Menu):
         return (self.pos_x, self.pos_y)
 
     def run(self) -> Tuple[Tuple[Surface]]:
-        """draw other elements on label surface
+        """sumary_line
 
-        This method returns first elements on label surface 
-        (first elements) to be draw on other surfaces
-
-        Return:
-            Tuple[Surface] : returns label surface
+        Keyword arguments:
+        argument -- description
+        Return: return_description
         """
-
-        base_label : Surface = copy(self.elements[0][0])
-        base_label.blits(self.elements[0][1:])
-
-        return ((base_label,),)
+        raise NotImplementedError
 
     def init_external_states(self, states: List[List[EnumType]]):
         """sumary_line

@@ -8,6 +8,7 @@ import pygame
 
 from src.flyweights.animated import Animated
 from src.Software import Software
+from src.factory.Factory import Factory
 
 
 def main():
@@ -22,12 +23,11 @@ def main():
     while True:
         pygame.display.flip()
         screen.fill((0, 0, 0))
+        tmp = Factory.__create_button(7)
         screen.blit(Animated.data["crazy_chest"][0], (100, 100))
         clock.tick(60)
-        raise SystemExit
-        # pylint: disable=no-member
-        # sys.exit()
-        # pylint: enable=no-member
+        # raise SystemExit
+
 
 
 # pylint: disable=all TODO: Check code at below for pointers
@@ -40,6 +40,7 @@ from sys import getsizeof
 from copy import copy
 
 if __name__ == "__main__":
+    main()
     obj = (1, 2, 3)
     p1 = Process(target=multi, args=(obj,))
     p2 = Process(target=multi, args=(obj,))
