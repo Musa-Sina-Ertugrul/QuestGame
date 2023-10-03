@@ -8,7 +8,7 @@ TODO: Update Docstrings
 
 """
 from sys import path
-from typing import Tuple, NoReturn, Dict
+from typing import Tuple, NoReturn, Dict, List, Callable
 from copy import copy
 from functools import lru_cache
 from enum import EnumType
@@ -39,11 +39,11 @@ class MenuText(Menu):
     def __init__(self):
         super().__init__(self)  # pylint: disable=W,E
         self.__current_font: Font = copy(NotAnimated.data["font"])
-        super.elements: Tuple[
+        self.elements: Tuple[
             Tuple[Surface]
         ] = ((Surface,),) # pylint: disable = W,E
-        super.internal_states: Tuple[Tuple[Dict]] = ((dict,),)
-        super.external_states: Tuple[Tuple[Dict]] = ((dict,),)
+        self.internal_states: List[List[Dict]] = [[dict]]
+        self.external_states: List[List[Dict]] = [[dict]]
         self.__current_text: str = ""  # pylint: disable=W,E
         self.__current_punto: int = 0  # pylint: disable=W,E
 

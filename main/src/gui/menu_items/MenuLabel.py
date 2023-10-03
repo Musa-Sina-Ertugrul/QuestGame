@@ -7,10 +7,11 @@ Return: return_description
 TODO: Update Docstring
 
 """
-from typing import Tuple, NoReturn, Dict, List
+from copy import copy
+from typing import Tuple,Dict, List, Callable
 from enum import EnumType
+from pygame import Surface
 from ..Menu import Menu
-
 
 class MenuLabel(Menu):
     """sumary_line
@@ -22,11 +23,14 @@ class MenuLabel(Menu):
 
     def __init__(self):
         super().__init__()
-        super.elements: List[
+        self.pos_x : int = 0
+        self.pos_y : int = 0
+        self.elements: List[
             List[object]
         ] = ((object,),) # pylint: disable = W,E
-        super.internal_states: Tuple[Tuple[Dict]] = ((dict,),)
-        super.external_states: Tuple[Tuple[Dict]] = ((dict,),)
+        self.internal_states: List[List[Dict]] = [[dict]]
+        self.external_states: List[List[Dict]] = [[dict]]
+        self.__command : Callable = None
 
     @property
     def pos_x(self) -> int:
@@ -36,17 +40,17 @@ class MenuLabel(Menu):
         argument -- description
         Return: return_description
         """
-        return super().pos_x
+        return self.pos_x
 
     @pos_x.setter
-    def pos_x(self, new_x: int) -> NoReturn:
+    def pos_x(self, new_x: int) -> None:
         """sumary_line
 
         Keyword arguments:
         argument -- description
         Return: return_description
         """
-        super().pos_x = new_x
+        self.pos_x = new_x
 
     @property
     def pos_y(self) -> int:
@@ -56,17 +60,37 @@ class MenuLabel(Menu):
         argument -- description
         Return: return_description
         """
-        return super().pos_y
+        return self.pos_y
 
     @pos_y.setter
-    def pos_y(self, new_y: int) -> NoReturn:
+    def pos_y(self, new_y: int) -> None:
         """sumary_line
 
         Keyword arguments:
         argument -- description
         Return: return_description
         """
-        super().pos_y = new_y
+        self.pos_y = new_y
+
+    @property
+    def __command(self) -> Callable:
+        """sumary_line
+
+        Keyword arguments:
+        argument -- description
+        Return: return_description
+        """
+        return self.__command
+
+    @__command
+    def set_command(self,func) -> None:
+        """sumary_line
+
+        Keyword arguments:
+        argument -- description
+        Return: return_description
+        """
+        self.__command = func
 
     def relative_pos(self) -> Tuple[int, int]:
         """sumary_line
@@ -95,7 +119,7 @@ class MenuLabel(Menu):
         """
         raise NotImplementedError
 
-    def update_elements(self) -> NoReturn:
+    def update_elements(self) -> None:
         """sumary_line
 
         Keyword arguments:
@@ -104,7 +128,7 @@ class MenuLabel(Menu):
         """
         raise NotImplementedError
 
-    def notify_states(self) -> NoReturn:
+    def notify_states(self) -> None:
         """sumary_line
 
         Keyword arguments:
@@ -120,25 +144,31 @@ class MenuLabel(Menu):
         argument -- description
         Return: return_description
         """
-        return (self._x, self._y)
+        return (self.pos_x, self.pos_y)
 
-    def run(self):
+    def run(self) -> Tuple[Tuple[Surface]]:
+        """draw other elements on label surface
+
+        This method returns first elements on label surface 
+        (first elements) to be draw on other surfaces
+
+        Return:
+            Tuple[Surface] : returns label surface
+        """
+
+        base_label : Surface = copy(self.elements[0][0])
+        base_label.blits(self.elements[0][1:])
+
+        return ((base_label,),)
+
+    def init_external_states(self, states: List[List[EnumType]]):
         """sumary_line
 
         Keyword arguments:
         argument -- description
         Return: return_description
         """
-        raise NotImplementedError
-
-    def init_external_states(self):
-        """sumary_line
-
-        Keyword arguments:
-        argument -- description
-        Return: return_description
-        """
-        raise NotImplementedError
+        self.external_states = states
 
     def init_internal_states(self):
         """sumary_line

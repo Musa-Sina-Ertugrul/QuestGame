@@ -163,6 +163,8 @@ class ButtonStateLookUpTable(Enum):
     NOT_COLLIDE: EnumType = 3
     VISIBLE: EnumType = 4
     NOT_VISIBLE : EnumType = 5
+    SOUND_UP : EnumType = 6
+    SOUND_DOWN : EnumType = 7
 
 class MenuLabelStateLookUpTable(Enum):
     """sumary_line

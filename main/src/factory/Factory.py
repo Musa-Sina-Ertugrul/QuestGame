@@ -8,9 +8,10 @@ TODO: When implementations are done functions will be filled and object typing w
 TODO: Update Docstrings
 """
 from enum import EnumType
-from typing import Tuple
+from copy import copy
+from typing import Tuple, Callable, Optional, NoReturn
 from numpy import random
-
+from pygame import mouse, display, mixer
 
 class Factory:
     """ "sumary_line
@@ -361,7 +362,7 @@ class Factory:
                     Return: return_description
                     """
                     options_text : MenuText = MenuText()
-                    options_text.set_text = "OPTIONS"
+                    options_text.set_text = "SOUND LEVEL"
                     options_text.set_mouse_state = ButtonStateLookUpTable.NOT_COLLIDE
                     options_text.set_punto = 12
                     options_text.pos_x = 10 + options_text.relative_width()
@@ -398,6 +399,57 @@ class Factory:
 
                     return tmp_surface
 
+                def command_sound_level_button(instance: Optional[MenuText]):
+                    """Just holds magnitude variable for later calls
+                    
+                        Args:
+                            instance (Optinonal[MenuText]) : Initial argument to identify
+                            magnitude text
+                    """
+                    def inner_command(instance: MenuText):
+                        """Adjust volume based on mouse pos
+
+                        Takes instance variable comes from outter function
+                        and ajust volume then set text with setter
+                       
+                        Args:
+                            instance (MenuText) : Initial argument to identify
+                            magnitude text
+                        """
+                        mouse_pos_x, _ = mouse.get_pos()
+                        display_x, _ = display.get_desktop_sizes()[0]
+                        current_volume : float = mixer.mixer_music.get_volume()
+
+                        if mouse_pos_x <= display_x//2:
+
+                            if current_volume == 0.0:
+                                try:
+                                    raise RuntimeError("Sound level is at lowest")
+                                except RuntimeError:
+                                    print("Sound level is at lowest")
+
+                            current_volume -= 0.1
+                            mixer.mixer_music.set_volume(current_volume)
+
+                        else:
+
+                            if current_volume == 1.0:
+                                # NOTE : Error has written for test cases, After test delete it
+                                try:
+                                    raise RuntimeError("Sound level is at highest")
+                                except RuntimeError:
+                                    print("Sound level is at highest")
+
+                            current_volume += 0.1
+                            mixer.mixer_music.set_volume(current_volume)
+                        
+                        instance.set_text = str(int(current_volume))
+
+                    if instance:
+                        command_sound_level_button.instance = copy(instance)
+        
+                    inner_command(command_sound_level_button.instance)
+
                 def create_menu_label() -> MenuLabel:
                     """sumary_line
                     
@@ -414,12 +466,18 @@ class Factory:
                     tmp_surface:Surface = create_transparent_surface(size=size)
 
                     tmp_menu_label : MenuLabel = MenuLabel()
-                    tmp_menu_label.init_elements(((tmp_surface,options_text,magnitude_text),))
-                    tmp_menu_label.init_external_states(((MenuLabelStateLookUpTable.NOT_VISIBLE for _ in range(3)),))
+                    command_sound_level_button(magnitude_text)
+                    tmp_menu_label.init_elements([[tmp_surface,options_text,magnitude_text]])
+                    tmp_menu_label.init_external_states([[MenuLabelStateLookUpTable.NULL for _ in range(3)]])
+                    tmp_menu_label.set_command(command_sound_level_button)
 
                     return tmp_menu_label
 
+                # NOTE: create_sound_level_button() starts here
+
                 return create_menu_label()
+
+            # NOTE: create_text_button(button_no: EnumType) starts here
 
             match button_no:
 
