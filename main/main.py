@@ -28,7 +28,7 @@ def main():
         screen.fill((255, 255, 255))
         surface: pygame.Surface = tmp.run()[0][0]
         rect = surface.get_rect()
-        screen.blit(surface, (1080 - rect.center[0], 100))
+        screen.blit(surface, (540 + rect.center[0], 100))
         clock.tick(60)
         # raise SystemExit
         for event in pygame.event.get():
