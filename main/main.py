@@ -2,13 +2,15 @@
     Pass for linting
 """
 # pylint: disable=no-member
-# import sys
+import sys
+
 # pylint: enable=no-member
 import pygame
 
 from src.flyweights.animated import Animated
 from src.Software import Software
 from src.factory.Factory import Factory
+from src.State import ButtonLookUpTable
 
 
 def main():
@@ -18,16 +20,20 @@ def main():
 
     pygame.init()  # pylint: disable=E
 
-    screen = pygame.display.set_mode((800, 800))
+    screen = pygame.display.set_mode((1920, 1080))
     clock = pygame.time.Clock()
+    tmp = Factory._create_button(ButtonLookUpTable.SOUND_LEVEL_BUTTON)
     while True:
         pygame.display.flip()
-        screen.fill((0, 0, 0))
-        tmp = Factory.__create_button(7)
-        screen.blit(Animated.data["crazy_chest"][0], (100, 100))
+        screen.fill((255, 255, 255))
+        surface: pygame.Surface = tmp.run()[0][0]
+        rect = surface.get_rect()
+        screen.blit(surface, (1080 - rect.center[0], 100))
         clock.tick(60)
         # raise SystemExit
-
+        for event in pygame.event.get():
+            if event.type == pygame.KEYDOWN and event.type == pygame.K_ESCAPE:
+                sys.exit(0)
 
 
 # pylint: disable=all TODO: Check code at below for pointers
