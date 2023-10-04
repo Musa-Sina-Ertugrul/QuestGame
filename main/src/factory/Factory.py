@@ -12,6 +12,7 @@ from copy import copy
 from typing import Tuple, Callable, Optional
 from numpy import random
 from pygame import mouse, display, event
+from time import sleep
 from pygame.mixer import music
 import pygame
 from src.flyweights.not_animated import NotAnimated
@@ -476,6 +477,7 @@ class Factory:
                         NotAnimated.data["click_sound"].play()
                         instance.set_text = str(current_volume)
 
+
                     # NOTE: Function starts from here
                     if instance:
                         command_sound_level_button.instance = instance
@@ -484,6 +486,7 @@ class Factory:
 
                     if mouse.get_pressed()[0]:
                         inner_command(command_sound_level_button.instance)
+                        sleep(0.2)
 
                 def create_button() -> Button:
                     """sumary_line
