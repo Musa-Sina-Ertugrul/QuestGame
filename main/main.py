@@ -46,7 +46,6 @@ from sys import getsizeof
 from copy import copy
 
 if __name__ == "__main__":
-    main()
     obj = (1, 2, 3)
     p1 = Process(target=multi, args=(obj,))
     p2 = Process(target=multi, args=(obj,))
