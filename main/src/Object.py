@@ -21,6 +21,7 @@ class Object(Run, ObjectGui):
     argument -- description
     Return: return_description
     """
+
     # TODO: Change Prototypes with Factory it has been deprecated
     def __init__(self):
         self.__players_ptr: Tuple[  # pylint: disable = W,E
@@ -35,10 +36,8 @@ class Object(Run, ObjectGui):
         self.elements: Tuple[
             Tuple[Dict]
         ] = self.init_elements()  # pylint: disable = W,E
-        self.internal_states: Tuple[
-            Tuple[Dict]
-        ] = (({},),)  # pylint: disable = W,E
-        self.external_states: Tuple[Tuple[Dict]] = (({},),) # pylint: disable = W,E
+        self.internal_states: Tuple[Tuple[Dict]] = (({},),)  # pylint: disable = W,E
+        self.external_states: Tuple[Tuple[Dict]] = (({},),)  # pylint: disable = W,E
 
     def run(self):
         """sumary_line

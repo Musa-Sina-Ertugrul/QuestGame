@@ -12,8 +12,8 @@ from sys import path
 path.append("main/src/utils")
 
 from typing import (  # pylint: disable = import-error, no-name-in-module,wrong-import-order,wrong-import-position
-    Tuple, # pylint: disable = import-error, no-name-in-module,wrong-import-order,wrong-import-position
-    Dict  # pylint: disable = import-error, no-name-in-module,wrong-import-order,wrong-import-position
+    Tuple,  # pylint: disable = import-error, no-name-in-module,wrong-import-order,wrong-import-position
+    Dict,  # pylint: disable = import-error, no-name-in-module,wrong-import-order,wrong-import-position
 )  # pylint: disable = import-error, no-name-in-module,wrong-import-order,wrong-import-position
 from utils import (  # pylint: disable = import-error, no-name-in-module,wrong-import-order,wrong-import-position
     singelton,  # pylint: disable = import-error, no-name-in-module,wrong-import-order,wrong-import-position
@@ -34,9 +34,7 @@ class MoonPie(Player):
 
     def __init__(self):
         super().__init__(self)  # pylint: disable = W,E
-        super.elements: Tuple[
-            Tuple[object]
-        ] = ((object,),) # pylint: disable = W,E
+        super.elements: Tuple[Tuple[object]] = ((object,),)  # pylint: disable = W,E
         super.internal_states: Tuple[Tuple[Dict]] = ((dict,),)
         super.external_states: Tuple[Tuple[Dict]] = ((dict,),)
 

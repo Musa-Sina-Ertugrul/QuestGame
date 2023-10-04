@@ -24,9 +24,7 @@ class CameraChild(Game, Camera):
     def __init__(self):
         Game.__init__(self)  # pylint: disable=W,E
         Camera.__init__(self)  # TODO: Override most of the methods
-        Game.elements: Tuple[
-            Tuple[object]
-        ] = ((object,),) # pylint: disable = W,E
+        Game.elements: Tuple[Tuple[object]] = ((object,),)  # pylint: disable = W,E
         Game.internal_states: Tuple[Tuple[Dict]] = ((dict,),)
         Game.external_states: Tuple[Tuple[Dict]] = ((dict,),)
 

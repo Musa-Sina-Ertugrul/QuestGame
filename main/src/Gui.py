@@ -16,6 +16,7 @@ from multiprocessing import Condition
 
 from src.Run import Run
 
+
 class Gui(Run):
     """sumary_line
 
@@ -27,7 +28,6 @@ class Gui(Run):
     """
 
     def __init__(self):
-
         self.__loading_menu_ptr: Tuple[object] = ((object,),)
 
         self.__start_menu_ptr: Tuple[object] = ((object,),)
@@ -61,7 +61,6 @@ class Gui(Run):
         """
 
         if NotImplemented:
-
             raise NotImplementedError
 
     @property
@@ -135,10 +134,8 @@ class Gui(Run):
         Return: return_description
         """
         if is_relased:
-
             self.__cv_ptr_tuple[0][0].notify()
         else:
-
             self.__cv_ptr_tuple[0][0].wait()
 
     @property
@@ -150,10 +147,8 @@ class Gui(Run):
         Return: return_description
         """
         if is_relased:
-
             self.__cv_ptr_tuple[0][1].notify()
         else:
-
             self.__cv_ptr_tuple[0][1].wait()
 
     @property
@@ -165,10 +160,8 @@ class Gui(Run):
         Return: return_description
         """
         if is_relased:
-
             self.__cv_ptr_tuple[0][2].notify()
         else:
-
             self.__cv_ptr_tuple[0][2].wait()
 
     @property
@@ -180,10 +173,8 @@ class Gui(Run):
         Return: return_description
         """
         if is_relased:
-
             self.__cv_ptr_tuple[0][3].notify()
         else:
-
             self.__cv_ptr_tuple[0][3].wait()
 
     @property
@@ -195,10 +186,8 @@ class Gui(Run):
         Return: return_description
         """
         if is_relased:
-
             self.__cv_ptr_tuple[0][4].notify()
         else:
-
             self.__cv_ptr_tuple[0][4].wait()
 
     @property
@@ -210,10 +199,8 @@ class Gui(Run):
         Return: return_description
         """
         if is_relased:
-
             self.__cv_ptr_tuple[0][5].notify()
         else:
-
             self.__cv_ptr_tuple[0][5].wait()
 
     def init_states(self):

@@ -8,10 +8,11 @@ TODO: Update Docstring
 
 """
 from copy import copy
-from typing import Tuple,Dict, List, Callable
+from typing import Tuple, Dict, List, Callable
 from enum import EnumType
 from pygame import Surface
 from ..Menu import Menu
+
 
 class MenuLabel(Menu):
     """sumary_line
@@ -23,11 +24,9 @@ class MenuLabel(Menu):
 
     def __init__(self):
         super().__init__()
-        self.pos_x : int = 0
-        self.pos_y : int = 0
-        self.elements: List[
-            List[object]
-        ] = ((object,),) # pylint: disable = W,E
+        self.pos_x: int = 0
+        self.pos_y: int = 0
+        self.elements: List[List[object]] = ((object,),)  # pylint: disable = W,E
         self.internal_states: List[List[Dict]] = [[dict]]
         self.external_states: List[List[Dict]] = [[dict]]
 

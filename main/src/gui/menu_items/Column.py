@@ -22,9 +22,7 @@ class Column(Menu):
 
     def __init__(self):
         super().__init__(self)  # pylint: disable=E
-        super.elements: Tuple[
-            Tuple[object]
-        ] = ((object,),) # pylint: disable = W,E
+        super.elements: Tuple[Tuple[object]] = ((object,),)  # pylint: disable = W,E
         super.internal_states: Tuple[Tuple[Dict]] = ((dict,),)
         super.external_states: Tuple[Tuple[Dict]] = ((dict,),)
 

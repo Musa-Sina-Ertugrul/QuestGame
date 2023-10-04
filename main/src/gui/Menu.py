@@ -30,8 +30,8 @@ class Menu(Gui, ABC):
         Gui.elememts = ((object,),)
         Gui.internal_states = (({},),)
         Gui.external_states = (({},),)
-        self.width: int = self._relative_width()
-        self.height: int = self._relative_height()
+        self.width: int = 0
+        self.height: int = 0
 
     @abstractmethod
     def relative_pos(self) -> Tuple[int, int]:

@@ -25,9 +25,7 @@ class Enemy(Object, PlayerEnemy, ABC):
 
     def __init__(self):
         Object.__init__(self)  # pylint: disable = W,E
-        self.elements: Tuple[
-            Tuple[object]
-        ] = ((object,),)  # pylint: disable = W,E
+        self.elements: Tuple[Tuple[object]] = ((object,),)  # pylint: disable = W,E
         Object.internal_states: Tuple[Tuple[Dict]] = ((dict,),)
         Object.external_states: Tuple[Tuple[Dict]] = ((dict,),)
 

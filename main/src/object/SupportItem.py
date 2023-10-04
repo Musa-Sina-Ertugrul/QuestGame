@@ -9,8 +9,8 @@ TODO: Update Docstrings
 """
 from abc import abstractmethod, ABC
 from typing import Tuple, NoReturn, Dict
-from src.Object import ( # pylint: disable = import-error, no-name-in-module,wrong-import-order,wrong-import-position
-    Object, # pylint: disable = import-error, no-name-in-module,wrong-import-order,wrong-import-position
+from src.Object import (  # pylint: disable = import-error, no-name-in-module,wrong-import-order,wrong-import-position
+    Object,  # pylint: disable = import-error, no-name-in-module,wrong-import-order,wrong-import-position
 )  # pylint: disable = import-error, no-name-in-module,wrong-import-order,wrong-import-position
 
 
@@ -24,9 +24,7 @@ class SupportItem(Object, ABC):
 
     def __init__(self):
         Object.__init__(self)
-        Object.elements: Tuple[
-            Tuple[object]
-        ] = ((object,),)  # pylint: disable = W,E
+        Object.elements: Tuple[Tuple[object]] = ((object,),)  # pylint: disable = W,E
         Object.internal_states: Tuple[Tuple[Dict]] = ((dict,),)
         Object.external_states: Tuple[Tuple[Dict]] = ((dict,),)
 
