@@ -8,7 +8,7 @@ TODO: Update Docstrings
 
 """
 from abc import ABC, abstractmethod
-from typing import Tuple, NoReturn
+from typing import Tuple
 from ..Gui import Gui  # pylint: disable=E
 from ..State import (  # pylint: disable=W # When this line has been used delete pylint hint
     StateLookUpTable,  # pylint: disable=W
@@ -65,7 +65,7 @@ class Menu(Gui, ABC):
         raise NotImplementedError
 
     @abstractmethod
-    def update_elements(self) -> NoReturn:
+    def update_elements(self) -> None:
         """sumary_line
 
         Keyword arguments:
@@ -75,7 +75,7 @@ class Menu(Gui, ABC):
         raise NotImplementedError
 
     @abstractmethod
-    def notify_states(self) -> NoReturn:
+    def notify_states(self) -> None:
         """sumary_line
 
         Keyword arguments:
