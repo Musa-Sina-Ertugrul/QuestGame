@@ -22,12 +22,12 @@ class ElenoreSpell(Weapon):
 
     def __init__(self):
         super().__init__(self)  # pylint: disable = W,E
-        super.elements = ((object,),)
-        super.internal_states: Tuple[Tuple[Dict]] = ((dict,),)
-        super.external_states: Tuple[Tuple[Dict]] = ((dict,),)
-        super.pos_x: int = 0
-        super.pos_y: int = 0
-        super.tetha: float = 0.0
+        self.elements = ((object,),)
+        self.internal_states: Tuple[Tuple[Dict]] = ((dict,),)
+        self.external_states: Tuple[Tuple[Dict]] = ((dict,),)
+        self.pos_x: int = 0
+        self.pos_y: int = 0
+        self.tetha: float = 0.0
 
     @property
     def pos_x(self) -> int:

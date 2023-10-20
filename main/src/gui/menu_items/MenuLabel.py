@@ -160,7 +160,7 @@ class MenuLabel(Menu):
         argument -- description
         Return: return_description
         """
-        super.elements = item_list
+        self.elements = item_list
 
     def update_states(self):
         """sumary_line
