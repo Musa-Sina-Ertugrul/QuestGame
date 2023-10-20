@@ -7,7 +7,7 @@ Return: return_description
 TODO: Update Docstrings
 
 """
-from typing import Tuple, NoReturn, Callable, Dict
+from typing import Tuple, Callable, Dict
 from ..SupportItem import (
     SupportItem,
 )  # pylint: disable = import-error, no-name-in-module,wrong-import-order,wrong-import-position
@@ -82,7 +82,7 @@ class Skill(SupportItem):
         """
         raise NotImplementedError
 
-    def update_elements(self) -> NoReturn:
+    def update_elements(self) -> None:
         """sumary_line
 
         Keyword arguments:
@@ -91,7 +91,7 @@ class Skill(SupportItem):
         """
         raise NotImplementedError
 
-    def update_states(self) -> NoReturn:
+    def update_states(self) -> None:
         """sumary_line
 
         Keyword arguments:

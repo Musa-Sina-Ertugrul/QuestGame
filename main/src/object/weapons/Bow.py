@@ -8,7 +8,7 @@ TODO: Update Docstrings
 
 """
 
-from typing import NoReturn, Dict, Tuple
+from typing import Dict, Tuple
 from ..Weapon import Weapon
 
 
@@ -40,7 +40,7 @@ class Bow(Weapon):
         return self.pos_x
 
     @pos_x
-    def set_pos_x(self, new_x: int) -> NoReturn:
+    def set_pos_x(self, new_x: int) -> None:
         """sumary_line
 
         Keyword arguments:
@@ -60,7 +60,7 @@ class Bow(Weapon):
         return self.pos_y
 
     @pos_y
-    def set_pos_y(self, new_y: int) -> NoReturn:
+    def set_pos_y(self, new_y: int) -> None:
         """sumary_line
 
         Keyword arguments:
@@ -89,7 +89,7 @@ class Bow(Weapon):
         return self.pos_x
 
     @pos_x
-    def set_tetha(self, new_tetha: float) -> NoReturn:
+    def set_tetha(self, new_tetha: float) -> None:
         """sumary_line
 
         Keyword arguments:
@@ -102,7 +102,7 @@ class Bow(Weapon):
 
     def calculate_tetha(
         self, vector_1: object, vector_2: object
-    ) -> NoReturn:  # pylint: disable = W,E
+    ) -> None:  # pylint: disable = W,E
         """sumary_line
 
         Keyword arguments:

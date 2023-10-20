@@ -7,7 +7,7 @@ Return: return_description
 TODO: Update Docstring
 
 """
-from typing import NoReturn, Tuple, Dict
+from typing import Tuple, Dict
 from ..Menu import Menu
 
 
@@ -70,7 +70,7 @@ class Market(Menu):
         """
         raise NotImplementedError
 
-    def update_elements(self) -> NoReturn:
+    def update_elements(self) -> None:
         """sumary_line
 
         Keyword arguments:
@@ -79,7 +79,7 @@ class Market(Menu):
         """
         raise NotImplementedError
 
-    def notify_states(self) -> NoReturn:
+    def notify_states(self) -> None :
         """sumary_line
 
         Keyword arguments:
