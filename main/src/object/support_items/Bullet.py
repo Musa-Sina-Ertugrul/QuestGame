@@ -7,7 +7,7 @@ Return: return_description
 TODO: Update Docstrings
 
 """
-from typing import Tuple, NoReturn, Callable, Dict
+from typing import Tuple, Callable, Dict
 from enum import EnumType
 from ..SupportItem import (
     SupportItem,
@@ -83,7 +83,7 @@ class Bullet(SupportItem):
         """
         raise NotImplementedError
 
-    def update_elements(self) -> NoReturn:
+    def update_elements(self) -> None:
         """sumary_line
 
         Keyword arguments:
@@ -92,7 +92,7 @@ class Bullet(SupportItem):
         """
         raise NotImplementedError
 
-    def update_states(self) -> NoReturn:
+    def update_states(self) -> None:
         """sumary_line
 
         Keyword arguments:
