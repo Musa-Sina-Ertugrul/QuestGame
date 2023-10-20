@@ -33,9 +33,9 @@ class Icon(Menu):
 
     def __init__(self):
         super().__init__(self)  # pylint: disable=W,E
-        super.elements: Tuple[Tuple[object]] = ((object,),)  # pylint: disable = W,E
-        super.internal_states: Tuple[Tuple[Dict]] = ((dict,),)
-        super.external_states: Tuple[Tuple[Dict]] = ((dict,),)
+        self.elements: Tuple[Tuple[object]] = ((object,),)  # pylint: disable = W,E
+        self.internal_states: Tuple[Tuple[Dict]] = ((dict,),)
+        self.external_states: Tuple[Tuple[Dict]] = ((dict,),)
 
     @property
     def pos_x(self) -> int:
@@ -45,7 +45,7 @@ class Icon(Menu):
         argument -- description
         Return: return_description
         """
-        return super().pos_x
+        return self().pos_x
 
     @pos_x.setter
     def pos_x(self, new_x: int) -> None:
@@ -55,7 +55,7 @@ class Icon(Menu):
         argument -- description
         Return: return_description
         """
-        super().pos_x = new_x
+        self().pos_x = new_x
 
     @property
     def pos_y(self) -> int:
@@ -65,7 +65,7 @@ class Icon(Menu):
         argument -- description
         Return: return_description
         """
-        return super().pos_y
+        return self().pos_y
 
     @pos_y.setter
     def pos_y(self, new_y: int) -> None:
@@ -75,7 +75,7 @@ class Icon(Menu):
         argument -- description
         Return: return_description
         """
-        super().pos_y = new_y
+        self().pos_y = new_y
 
     def relative_pos(self) -> Tuple[int, int]:
         """sumary_line
