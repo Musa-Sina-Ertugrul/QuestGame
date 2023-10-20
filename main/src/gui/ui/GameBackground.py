@@ -8,7 +8,7 @@ TODO: Update Docstrings
 
 """
 
-from typing import Tuple, NoReturn, Dict
+from typing import Tuple, Dict
 from ..Game import Game
 
 
@@ -54,7 +54,7 @@ class MenuBackground(Game):
         """
         raise NotImplementedError
 
-    def update_elements(self) -> NoReturn:
+    def update_elements(self) -> None:
         """sumary_line
 
         Keyword arguments:
@@ -63,7 +63,7 @@ class MenuBackground(Game):
         """
         raise NotImplementedError
 
-    def notify_states(self) -> NoReturn:
+    def notify_states(self) -> None:
         """sumary_line
 
         Keyword arguments:

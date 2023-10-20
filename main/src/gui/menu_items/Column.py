@@ -7,7 +7,7 @@ Return: return_description
 TODO: Update Docstrings
 
 """
-from typing import Tuple, NoReturn, Dict
+from typing import Tuple, None, Dict
 from ..Menu import Menu
 
 
@@ -37,7 +37,7 @@ class Column(Menu):
         return self().pos_x
 
     @pos_x.setter
-    def pos_x(self, new_x: int) -> NoReturn:
+    def pos_x(self, new_x: int) -> None:
         """sumary_line
 
         Keyword arguments:
@@ -57,7 +57,7 @@ class Column(Menu):
         return self().pos_y
 
     @pos_y.setter
-    def pos_y(self, new_y: int) -> NoReturn:
+    def pos_y(self, new_y: int) -> None:
         """sumary_line
 
         Keyword arguments:
@@ -93,7 +93,7 @@ class Column(Menu):
         """
         raise NotImplementedError
 
-    def update_elements(self) -> NoReturn:
+    def update_elements(self) -> None:
         """sumary_line
 
         Keyword arguments:
@@ -102,7 +102,7 @@ class Column(Menu):
         """
         raise NotImplementedError
 
-    def notify_states(self) -> NoReturn:
+    def notify_states(self) -> None:
         """sumary_line
 
         Keyword arguments:

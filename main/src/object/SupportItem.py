@@ -8,7 +8,7 @@ TODO: Update Docstrings
 
 """
 from abc import abstractmethod, ABC
-from typing import Tuple, NoReturn, Dict
+from typing import Tuple, Dict
 from src.Object import (  # pylint: disable = import-error, no-name-in-module,wrong-import-order,wrong-import-position
     Object,  # pylint: disable = import-error, no-name-in-module,wrong-import-order,wrong-import-position
 )  # pylint: disable = import-error, no-name-in-module,wrong-import-order,wrong-import-position
@@ -89,7 +89,7 @@ class SupportItem(Object, ABC):
         raise NotImplementedError
 
     @abstractmethod
-    def update_elements(self) -> NoReturn:
+    def update_elements(self) -> None:
         """sumary_line
 
         Keyword arguments:
@@ -99,7 +99,7 @@ class SupportItem(Object, ABC):
         raise NotImplementedError
 
     @abstractmethod
-    def update_states(self) -> NoReturn:
+    def update_states(self) -> None:
         """sumary_line
 
         Keyword arguments:

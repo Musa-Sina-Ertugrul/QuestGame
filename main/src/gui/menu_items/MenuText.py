@@ -8,7 +8,7 @@ TODO: Update Docstrings
 
 """
 from sys import path
-from typing import Tuple, NoReturn, Dict, List, Callable
+from typing import Tuple, Dict, List, Callable
 from copy import copy
 from functools import lru_cache
 from enum import EnumType
@@ -159,7 +159,7 @@ class MenuText(Menu):
 
         raise RuntimeError("Elements are not initiliazed")
 
-    def update_elements(self) -> NoReturn:
+    def update_elements(self) -> None:
         """sumary_line
 
         Keyword arguments:
@@ -168,7 +168,7 @@ class MenuText(Menu):
         """
         raise NotImplementedError
 
-    def notify_states(self) -> NoReturn:
+    def notify_states(self) -> None:
         """sumary_line
 
         Keyword arguments:
@@ -267,7 +267,7 @@ class MenuText(Menu):
             (self.__current_font.render(self.current_text, False, (255, 255, 255)),),
         )
 
-    def __change_color(self) -> NoReturn:  # pylint: disable=W
+    def __change_color(self) -> None:  # pylint: disable=W
         raise NotImplementedError
 
     def update_states(self):

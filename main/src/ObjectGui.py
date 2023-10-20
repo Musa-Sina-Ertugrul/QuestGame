@@ -8,7 +8,7 @@ TODO: Update Docstrings
 
 """
 
-from typing import NoReturn
+
 from abc import ABCMeta, abstractmethod
 
 
@@ -74,7 +74,7 @@ class PlayerWeapon(metaclass=ABCMeta):
         raise NotImplementedError
 
     @abstractmethod
-    def update_elements(self) -> NoReturn:
+    def update_elements(self) -> None:
         """sumary_line
 
         Keyword arguments:
@@ -84,7 +84,7 @@ class PlayerWeapon(metaclass=ABCMeta):
         raise NotImplementedError
 
     @abstractmethod
-    def update_states(self) -> NoReturn:
+    def update_states(self) -> None:
         """sumary_line
 
         Keyword arguments:
@@ -94,7 +94,7 @@ class PlayerWeapon(metaclass=ABCMeta):
         raise NotImplementedError
 
     @abstractmethod
-    def notify_states(self) -> NoReturn:
+    def notify_states(self) -> None:
         """sumary_line
 
         Keyword arguments:

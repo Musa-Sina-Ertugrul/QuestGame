@@ -11,7 +11,7 @@ TODO: object assigments will change after implementations
 TODO: Update Docstrings
 """
 
-from typing import Tuple, NoReturn, Dict
+from typing import Tuple, Dict
 from multiprocessing import Condition
 
 from src.Run import Run
@@ -126,7 +126,7 @@ class Gui(Run):
         return self.__levels_ptr
 
     @property
-    def loading_menu_flag(self, is_relased: bool) -> NoReturn:
+    def loading_menu_flag(self, is_relased: bool) -> None:
         """sumary_line
 
         Keyword arguments:
@@ -139,7 +139,7 @@ class Gui(Run):
             self.__cv_ptr_tuple[0][0].wait()
 
     @property
-    def start_menu_flag(self, is_relased: bool) -> NoReturn:
+    def start_menu_flag(self, is_relased: bool) -> None:
         """sumary_line
 
         Keyword arguments:
@@ -152,7 +152,7 @@ class Gui(Run):
             self.__cv_ptr_tuple[0][1].wait()
 
     @property
-    def pause_menu_flag(self, is_relased: bool) -> NoReturn:
+    def pause_menu_flag(self, is_relased: bool) -> None:
         """sumary_line
 
         Keyword arguments:
@@ -165,7 +165,7 @@ class Gui(Run):
             self.__cv_ptr_tuple[0][2].wait()
 
     @property
-    def shop_menu_flag(self, is_relased: bool) -> NoReturn:
+    def shop_menu_flag(self, is_relased: bool) -> None:
         """sumary_line
 
         Keyword arguments:
@@ -178,7 +178,7 @@ class Gui(Run):
             self.__cv_ptr_tuple[0][3].wait()
 
     @property
-    def npc_menu_flag(self, is_relased: bool) -> NoReturn:
+    def npc_menu_flag(self, is_relased: bool) -> None:
         """sumary_line
 
         Keyword arguments:
@@ -191,7 +191,7 @@ class Gui(Run):
             self.__cv_ptr_tuple[0][4].wait()
 
     @property
-    def game_play_flag(self, is_relased: bool) -> NoReturn:
+    def game_play_flag(self, is_relased: bool) -> None:
         """sumary_line
 
         Keyword arguments:
@@ -221,7 +221,7 @@ class Gui(Run):
         """
         raise NotImplementedError
 
-    def update_elements(self) -> NoReturn:
+    def update_elements(self) -> None:
         """sumary_line
 
         Keyword arguments:
@@ -230,7 +230,7 @@ class Gui(Run):
         """
         raise NotImplementedError
 
-    def update_states(self) -> NoReturn:
+    def update_states(self) -> None:
         """sumary_line
 
         Keyword arguments:
@@ -239,7 +239,7 @@ class Gui(Run):
         """
         raise NotImplementedError
 
-    def notify_states(self) -> NoReturn:
+    def notify_states(self) -> None:
         """sumary_line
 
         Keyword arguments:

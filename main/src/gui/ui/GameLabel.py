@@ -7,7 +7,7 @@ Return: return_description
 TODO: Update Docstring
 
 """
-from typing import Tuple, NoReturn, Dict
+from typing import Tuple, Dict
 from enum import EnumType
 from ..Game import Game
 
@@ -37,7 +37,7 @@ class GameLabel(Game):
         return self().pos_x
 
     @pos_x.setter
-    def pos_x(self, new_x: int) -> NoReturn:
+    def pos_x(self, new_x: int) -> None:
         """sumary_line
 
         Keyword arguments:
@@ -57,7 +57,7 @@ class GameLabel(Game):
         return self().pos_y
 
     @pos_y.setter
-    def pos_y(self, new_y: int) -> NoReturn:
+    def pos_y(self, new_y: int) -> None:
         """sumary_line
 
         Keyword arguments:
@@ -93,7 +93,7 @@ class GameLabel(Game):
         """
         raise NotImplementedError
 
-    def update_elements(self) -> NoReturn:
+    def update_elements(self) -> None:
         """sumary_line
 
         Keyword arguments:
@@ -102,7 +102,7 @@ class GameLabel(Game):
         """
         raise NotImplementedError
 
-    def notify_states(self) -> NoReturn:
+    def notify_states(self) -> None:
         """sumary_line
 
         Keyword arguments:
