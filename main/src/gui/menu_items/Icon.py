@@ -8,7 +8,7 @@ TODO: Update Docstrings
 
 """
 from sys import path
-from typing import Tuple, NoReturn, List, Final, Dict  # pylint: disable=W,E
+from typing import Tuple, List, Final, Dict  # pylint: disable=W,E
 from pygame import Surface, transform  # pylint: disable=W,E
 
 path.append("main/src/flyweights")
@@ -48,7 +48,7 @@ class Icon(Menu):
         return super().pos_x
 
     @pos_x.setter
-    def pos_x(self, new_x: int) -> NoReturn:
+    def pos_x(self, new_x: int) -> None:
         """sumary_line
 
         Keyword arguments:
@@ -68,7 +68,7 @@ class Icon(Menu):
         return super().pos_y
 
     @pos_y.setter
-    def pos_y(self, new_y: int) -> NoReturn:
+    def pos_y(self, new_y: int) -> None:
         """sumary_line
 
         Keyword arguments:
@@ -104,7 +104,7 @@ class Icon(Menu):
         """
         raise NotImplementedError
 
-    def update_elements(self) -> NoReturn:
+    def update_elements(self) -> None:
         """sumary_line
 
         Keyword arguments:
@@ -113,7 +113,7 @@ class Icon(Menu):
         """
         raise NotImplementedError
 
-    def notify_states(self) -> NoReturn:
+    def notify_states(self) -> None:
         """sumary_line
 
         Keyword arguments:
@@ -167,7 +167,7 @@ class Icon(Menu):
         """
         raise NotImplementedError
 
-    def __change_color(self) -> NoReturn:  # pylint: disable=W
+    def __change_color(self) -> None:  # pylint: disable=W
         raise NotImplementedError
 
     def update_states(self):
