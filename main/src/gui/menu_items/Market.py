@@ -7,7 +7,7 @@ Return: return_description
 TODO: Update Docstring
 
 """
-from typing import NoReturn, Tuple, Dict
+from typing import Tuple, Dict
 from ..Menu import Menu
 
 
@@ -21,9 +21,9 @@ class Market(Menu):
 
     def __init__(self):
         super().__init__(self)  # pylint: disable=W,E
-        super.elements: Tuple[Tuple[object]] = ((object,),)  # pylint: disable = W,E
-        super.internal_states: Tuple[Tuple[Dict]] = ((dict,),)
-        super.external_states: Tuple[Tuple[Dict]] = ((dict,),)
+        self.elements: Tuple[Tuple[object]] = ((object,),)  # pylint: disable = W,E
+        self.internal_states: Tuple[Tuple[Dict]] = ((dict,),)
+        self.external_states: Tuple[Tuple[Dict]] = ((dict,),)
 
     def buy_level(self, skill: int):
         """sumary_line
@@ -70,7 +70,7 @@ class Market(Menu):
         """
         raise NotImplementedError
 
-    def update_elements(self) -> NoReturn:
+    def update_elements(self) -> None:
         """sumary_line
 
         Keyword arguments:
@@ -79,7 +79,7 @@ class Market(Menu):
         """
         raise NotImplementedError
 
-    def notify_states(self) -> NoReturn:
+    def notify_states(self) -> None :
         """sumary_line
 
         Keyword arguments:

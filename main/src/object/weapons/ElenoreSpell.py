@@ -8,7 +8,7 @@ TODO: Update Docstrings
 
 """
 
-from typing import NoReturn, Tuple, Dict
+from typing import Tuple, Dict
 from ..Weapon import Weapon
 
 
@@ -22,12 +22,12 @@ class ElenoreSpell(Weapon):
 
     def __init__(self):
         super().__init__(self)  # pylint: disable = W,E
-        super.elements = ((object,),)
-        super.internal_states: Tuple[Tuple[Dict]] = ((dict,),)
-        super.external_states: Tuple[Tuple[Dict]] = ((dict,),)
-        super.pos_x: int = 0
-        super.pos_y: int = 0
-        super.tetha: float = 0.0
+        self.elements = ((object,),)
+        self.internal_states: Tuple[Tuple[Dict]] = ((dict,),)
+        self.external_states: Tuple[Tuple[Dict]] = ((dict,),)
+        self.pos_x: int = 0
+        self.pos_y: int = 0
+        self.tetha: float = 0.0
 
     @property
     def pos_x(self) -> int:
@@ -40,7 +40,7 @@ class ElenoreSpell(Weapon):
         return self.pos_x
 
     @pos_x
-    def set_pos_x(self, new_x: int) -> NoReturn:
+    def set_pos_x(self, new_x: int) -> None:
         """sumary_line
 
         Keyword arguments:
@@ -60,7 +60,7 @@ class ElenoreSpell(Weapon):
         return self.pos_y
 
     @pos_y
-    def set_pos_y(self, new_y: int) -> NoReturn:
+    def set_pos_y(self, new_y: int) -> None:
         """sumary_line
 
         Keyword arguments:
@@ -89,7 +89,7 @@ class ElenoreSpell(Weapon):
         return self.pos_x
 
     @pos_x
-    def set_tetha(self, new_tetha: float) -> NoReturn:
+    def set_tetha(self, new_tetha: float) -> None:
         """sumary_line
 
         Keyword arguments:
@@ -102,7 +102,7 @@ class ElenoreSpell(Weapon):
 
     def calculate_tetha(
         self, vector_1: object, vector_2: object
-    ) -> NoReturn:  # pylint: disable = W,E
+    ) -> None:  # pylint: disable = W,E
         """sumary_line
 
         Keyword arguments:

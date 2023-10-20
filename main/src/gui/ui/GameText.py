@@ -8,7 +8,7 @@ TODO: Update Docstrings
 
 """
 from sys import path
-from typing import Tuple, NoReturn, Dict
+from typing import Tuple, Dict
 from copy import copy
 from pygame.font import Font
 
@@ -37,9 +37,9 @@ class GameText(Game):
         self.__current_font: Tuple[Font] = (  # pylint: disable=W,E
             copy(NotAnimated.data["font"]),  # pylint: disable=W,E
         )
-        super.elements: Tuple[Tuple[object]] = ((object,),)  # pylint: disable = W,E
-        super.internal_states: Tuple[Tuple[Dict]] = ((dict,),)
-        super.external_states: Tuple[Tuple[Dict]] = ((dict,),)
+        self.elements: Tuple[Tuple[object]] = ((object,),)  # pylint: disable = W,E
+        self.internal_states: Tuple[Tuple[Dict]] = ((dict,),)
+        self.external_states: Tuple[Tuple[Dict]] = ((dict,),)
         self.__current_text: str = ""  # pylint: disable=W,E
         self.__current_punto: int = 0  # pylint: disable=W,E
 
@@ -111,7 +111,7 @@ class GameText(Game):
         """
         raise NotImplementedError
 
-    def update_elements(self) -> NoReturn:
+    def update_elements(self) -> None:
         """sumary_line
 
         Keyword arguments:
@@ -120,7 +120,7 @@ class GameText(Game):
         """
         raise NotImplementedError
 
-    def notify_states(self) -> NoReturn:
+    def notify_states(self) -> None:
         """sumary_line
 
         Keyword arguments:
@@ -177,7 +177,7 @@ class GameText(Game):
         """
         raise NotImplementedError
 
-    def __change_color(self) -> NoReturn:  # pylint: disable=W
+    def __change_color(self) -> None:  # pylint: disable=W
         raise NotImplementedError
 
     def update_states(self):
