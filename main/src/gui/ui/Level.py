@@ -8,7 +8,7 @@ TODO: Update Docstrings
 
 """
 
-from typing import Tuple, NoReturn, Dict
+from typing import Tuple, Dict
 from ..Game import Game
 
 
@@ -22,9 +22,9 @@ class Level(Game):
 
     def __init__(self):
         super().__init__(self)  # pylint: disable=W,E
-        super.elements: Tuple[Tuple[object]] = ((object,),)  # pylint: disable = W,E
-        super.internal_states: Tuple[Tuple[Dict]] = ((dict,),)
-        super.external_states: Tuple[Tuple[Dict]] = ((dict,),)
+        self.elements: Tuple[Tuple[object]] = ((object,),)  # pylint: disable = W,E
+        self.internal_states: Tuple[Tuple[Dict]] = ((dict,),)
+        self.external_states: Tuple[Tuple[Dict]] = ((dict,),)
 
     def relative_pos(self) -> Tuple[int, int]:
         """sumary_line
@@ -54,7 +54,7 @@ class Level(Game):
         """
         raise NotImplementedError
 
-    def update_elements(self) -> NoReturn:
+    def update_elements(self) -> None:
         """sumary_line
 
         Keyword arguments:
@@ -63,7 +63,7 @@ class Level(Game):
         """
         raise NotImplementedError
 
-    def notify_states(self) -> NoReturn:
+    def notify_states(self) -> None:
         """sumary_line
 
         Keyword arguments:

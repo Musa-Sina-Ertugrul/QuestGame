@@ -9,7 +9,7 @@ TODO: Update Docstrings
 """
 from copy import copy
 from enum import EnumType
-from typing import Tuple, NoReturn, Callable, Dict, List
+from typing import Tuple, Callable, Dict, List
 from time import sleep
 from pygame import Surface, transform
 from src.State import ButtonStateLookUpTable
@@ -79,7 +79,7 @@ class Button(Menu):
         """
         raise NotImplementedError
 
-    def update_elements(self) -> NoReturn:
+    def update_elements(self) -> None:
         """sumary_line
 
         Keyword arguments:
@@ -88,7 +88,7 @@ class Button(Menu):
         """
         raise NotImplementedError
 
-    def notify_states(self) -> NoReturn:
+    def notify_states(self) -> None:
         """sumary_line
 
         Keyword arguments:

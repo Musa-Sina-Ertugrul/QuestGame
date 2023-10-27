@@ -1,11 +1,11 @@
 # :robot: QuestGame
-# [![CodeQL](https://github.com/Musa-Sina-Ertugrul/QuestGame/actions/workflows/github-code-scanning/codeql/badge.svg?branch=main)](https://github.com/Musa-Sina-Ertugrul/QuestGame/actions/workflows/github-code-scanning/codeql) [![Ubuntu](https://github.com/Musa-Sina-Ertugrul/QuestGame/actions/workflows/ubuntu.yml/badge.svg?branch=main)](https://github.com/Musa-Sina-Ertugrul/QuestGame/actions/workflows/ubuntu.yml) [![Windows](https://github.com/Musa-Sina-Ertugrul/QuestGame/actions/workflows/windows.yml/badge.svg?branch=main)](https://github.com/Musa-Sina-Ertugrul/QuestGame/actions/workflows/windows.yml) [![Python Linting](https://github.com/Musa-Sina-Ertugrul/QuestGame/actions/workflows/python-linting.yml/badge.svg?branch=main)](https://github.com/Musa-Sina-Ertugrul/QuestGame/actions/workflows/python-linting.yml)
+# [![CodeQL](https://github.com/Musa-Sina-Ertugrul/QuestGame/actions/workflows/github-code-scanning/codeql/badge.svg?branch=main)](https://github.com/Musa-Sina-Ertugrul/QuestGame/actions/workflows/github-code-scanning/codeql) [![Python Linting](https://github.com/Musa-Sina-Ertugrul/QuestGame/actions/workflows/python-linting.yml/badge.svg?branch=main)](https://github.com/Musa-Sina-Ertugrul/QuestGame/actions/workflows/python-linting.yml)
 
-<p align="center">
+<p allign="center">
   <img src="https://github.com/Musa-Sina-Ertugrul/QuestGame/blob/main/.img/quest_logo.png" />
 </p>
 
-# [![linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/company/quest-platform1) ![vscode](https://img.shields.io/badge/VSCode-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white) ![python](https://img.shields.io/badge/Python_3.11-FFD43B?style=for-the-badge&logo=python&logoColor=blue) ![linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black) ![windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white) ![android](https://img.shields.io/badge/Android-3DDC84.svg?style=for-the-badge&logo=Android&logoColor=white) ![ios](https://img.shields.io/badge/iOS-000000.svg?style=for-the-badge&logo=iOS&logoColor=white) ![itch.io](https://img.shields.io/badge/Itch.io-FA5C5C?style=for-the-badge&logo=itchdotio&logoColor=white) ![app_store](https://img.shields.io/badge/App%20Store-0D96F6.svg?style=for-the-badge&logo=App-Store&logoColor=white)  ![google_play](https://img.shields.io/badge/Google%20Play-414141.svg?style=for-the-badge&logo=Google-Play&logoColor=white) ![steam](https://img.shields.io/badge/Steam-000000.svg?style=for-the-badge&logo=Steam&logoColor=white) ![black](https://img.shields.io/badge/code_style_black-000?style=for-the-badge) ![docstring](https://img.shields.io/badge/Google_Doc_String-4285F4.svg?style=for-the-badge&logo=Google&logoColor=white) ![tensorflow](https://img.shields.io/badge/TensorFlow_Lite-FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white) ![pytorch](https://img.shields.io/badge/PyTorch-EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white) ![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white) ![cmake](https://img.shields.io/badge/CMake-064F8C.svg?style=for-the-badge&logo=CMake&logoColor=white)
+# [![linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/company/quest-platform1) ![vscode](https://img.shields.io/badge/VSCode-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white) ![python](https://img.shields.io/badge/Python_3.11-FFD43B?style=for-the-badge&logo=python&logoColor=blue) ![linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black) ![windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white) ![android](https://img.shields.io/badge/Android-3DDC84.svg?style=for-the-badge&logo=Android&logoColor=white) ![ios](https://img.shields.io/badge/iOS-000000.svg?style=for-the-badge&logo=iOS&logoColor=white) ![itch.io](https://img.shields.io/badge/Itch.io-FA5C5C?style=for-the-badge&logo=itchdotio&logoColor=white) ![app_store](https://img.shields.io/badge/App%20Store-0D96F6.svg?style=for-the-badge&logo=App-Store&logoColor=white)  ![google_play](https://img.shields.io/badge/Google%20Play-414141.svg?style=for-the-badge&logo=Google-Play&logoColor=white) ![steam](https://img.shields.io/badge/Steam-000000.svg?style=for-the-badge&logo=Steam&logoColor=white) ![black](https://img.shields.io/badge/code_style_black-000?style=for-the-badge) ![docstring](https://img.shields.io/badge/Google_Doc_String-4285F4.svg?style=for-the-badge&logo=Google&logoColor=white)
 Game project of [Quest Platform](https://www.linkedin.com/company/quest-platform1) Student Organization in Celal Bayar University. The main purpose of this project understanding design patterns and industrial standard code.
 
 # :round_pushpin: Contents
@@ -18,7 +18,7 @@ Game project of [Quest Platform](https://www.linkedin.com/company/quest-platform
 * [Developers](#computer-developers)
 # :bulb: Design Proposal
 
-<p align="center">
+<p allign="center">
   <img src="https://github.com/Musa-Sina-Ertugrul/QuestGame/blob/main/.img/DesignProposel.svg" />
 </p>
 
@@ -30,7 +30,7 @@ Game project of [Quest Platform](https://www.linkedin.com/company/quest-platform
 * [Anaconda](https://www.anaconda.com/download)
 
 #### :no_entry: Warning use these options on anaconda windows installation :no_entry:
-<p align="left">
+<p allign="left">
   <img src="https://github.com/Musa-Sina-Ertugrul/QuestGame/blob/main/.img/anaconda.png" />
 </p>
 
@@ -102,7 +102,6 @@ Please check [CONTRIBUTING.md](https://github.com/Musa-Sina-Ertugrul/QuestGame/b
 * [İrem DEMİR](https://github.com/Iremmd)
 * [İkram Celal KESKİN](https://github.com/icelal-kskn)
 * [Ayşe ŞAHİN](https://github.com/aysesn)
-* [Kıymet NAZLIM](https://github.com/kiymetnazlim)
 * [Yağmur ÖZLER](https://github.com/YagmurOzler)
 * [Nursena ZENGİN](https://github.com/nursenazengin)
 * [Cengizhan BAYRAM](https://github.com/CengizhanBayram)
@@ -112,6 +111,6 @@ Please check [CONTRIBUTING.md](https://github.com/Musa-Sina-Ertugrul/QuestGame/b
 * [Harun KAYA](https://github.com/harnkya)
 * [Cengizhan ÇALIŞKAN](https://github.com/cngzhn06)
 
-<p align="center">
+<p allign="center">
   <img width="500px", height="500px" src="https://github.com/Musa-Sina-Ertugrul/QuestGame/blob/main/.img/quest_catch_phrase.png" />
 </p>
