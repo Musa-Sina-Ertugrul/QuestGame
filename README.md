@@ -1,7 +1,7 @@
 # :robot: QuestGame
 # [![CodeQL](https://github.com/Musa-Sina-Ertugrul/QuestGame/actions/workflows/github-code-scanning/codeql/badge.svg?branch=main)](https://github.com/Musa-Sina-Ertugrul/QuestGame/actions/workflows/github-code-scanning/codeql) [![Python Linting](https://github.com/Musa-Sina-Ertugrul/QuestGame/actions/workflows/python-linting.yml/badge.svg?branch=main)](https://github.com/Musa-Sina-Ertugrul/QuestGame/actions/workflows/python-linting.yml)
 
-<p align="center">
+<p allign="center">
   <img src="https://github.com/Musa-Sina-Ertugrul/QuestGame/blob/main/.img/quest_logo.png" />
 </p>
 
@@ -18,7 +18,7 @@ Game project of [Quest Platform](https://www.linkedin.com/company/quest-platform
 * [Developers](#computer-developers)
 # :bulb: Design Proposal
 
-<p align="center">
+<p allign="center">
   <img src="https://github.com/Musa-Sina-Ertugrul/QuestGame/blob/main/.img/DesignProposel.svg" />
 </p>
 
@@ -30,7 +30,7 @@ Game project of [Quest Platform](https://www.linkedin.com/company/quest-platform
 * [Anaconda](https://www.anaconda.com/download)
 
 #### :no_entry: Warning use these options on anaconda windows installation :no_entry:
-<p align="left">
+<p allign="left">
   <img src="https://github.com/Musa-Sina-Ertugrul/QuestGame/blob/main/.img/anaconda.png" />
 </p>
 
@@ -111,6 +111,6 @@ Please check [CONTRIBUTING.md](https://github.com/Musa-Sina-Ertugrul/QuestGame/b
 * [Harun KAYA](https://github.com/harnkya)
 * [Cengizhan ÇALIŞKAN](https://github.com/cngzhn06)
 
-<p align="center">
+<p allign="center">
   <img width="500px", height="500px" src="https://github.com/Musa-Sina-Ertugrul/QuestGame/blob/main/.img/quest_catch_phrase.png" />
 </p>
