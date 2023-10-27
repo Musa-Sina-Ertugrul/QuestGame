@@ -352,6 +352,93 @@ class Factory:
             from src.gui.menu_items.MenuText import (  # pylint: disable=W,E, import-error, import-outside-toplevel, no-name-in-module
                 MenuText,  # pylint: disable=W,E, import-error, import-outside-toplevel, no-name-in-module
             )  # pylint: disable=W,E, import-error, import-outside-toplevel
+            from pygame import (  # pylint: disable=W,E, import-error, import-outside-toplevel, no-name-in-module
+                Surface,  # pylint: disable=W,E, import-error, import-outside-toplevel, no-name-in-module
+                HWSURFACE,  # pylint: disable=W,E, import-error, import-outside-toplevel, no-name-in-module
+            )  # pylint: disable=W,E, import-error, import-outside-toplevel, no-name-in-module
+            from src.gui.menu_items.MenuText import (  # pylint: disable=W,E, import-error, import-outside-toplevel, no-name-in-module
+                MenuText,  # pylint: disable=W,E, import-error, import-outside-toplevel, no-name-in-module
+            )  # pylint: disable=W,E, import-error, import-outside-toplevel
+            from src.gui.menu_items.Button import (  # pylint: disable=W,E, import-error, import-outside-toplevel, no-name-in-module
+                Button,  # pylint: disable=W,E, import-error, import-outside-toplevel, no-name-in-module
+            )  # pylint: disable=W,E, import-error, import-outside-toplevel
+            from src.State import (  # pylint: disable=W,E, import-error, import-outside-toplevel, no-name-in-module
+                ButtonStateLookUpTable,  # pylint: disable=W,E, import-error, import-outside-toplevel, no-name-in-module
+            )  # pylint: disable=W,E, import-error, import-outside-toplevel
+
+            #NOTE: fps_level_button start here
+
+            def create_fps_level_button() -> Tuple[object]:
+                def create_fps_text() -> MenuText:
+                    fps_text: MenuText = MenuText()
+                    fps_text.set_text = "FPS LEVEL"
+                    fps_text.init_external_states()
+                    fps_text.init_elements()
+                    fps_text.set_mouse_state = ButtonStateLookUpTable.NOT_COLLIDE
+                    fps_text.set_pos_x = 10
+                    fps_text.set_pos_y = 70
+                    return fps_text
+
+                def create_fps_magnitude_text() -> MenuText:
+                    magnitude_text: MenuText = MenuText()
+                    magnitude_text.init_elements()
+                    magnitude_text.init_external_states()
+                    magnitude_text.set_text = "60"  # Initial FPS value
+                    magnitude_text.set_mouse_state = ButtonStateLookUpTable.NOT_COLLIDE
+                    magnitude_text.set_pos_x = 190 - magnitude_text.relative_width()
+                    magnitude_text.set_pos_y = 10
+                    return magnitude_text
+
+                def create_fps_button() -> Button:
+                    fps_text = create_fps_text()
+                    magnitude_text = create_fps_magnitude_text()
+
+                    size = (
+                        20
+                        + magnitude_text.relative_pos()[0]
+                        + magnitude_text.relative_width(),
+                        fps_text.relative_height() + 20,
+                    )
+
+                    transparent_surface = Surface(size, HWSURFACE)
+
+                    fps_button = Button()
+                    command_fps_level_button(magnitude_text)
+                    fps_button.init_elements([[transparent_surface, fps_text, magnitude_text]])
+                    fps_button.init_external_states(
+                        [
+                            [
+                                ButtonStateLookUpTable.NULL,
+                                ButtonStateLookUpTable.CLICKED,
+                                ButtonStateLookUpTable.CLICKED,
+                            ]
+                        ]
+                    )
+                    fps_button.set_func = command_fps_level_button
+                    fps_button.size_nultiplier = 2.0
+
+                    return fps_button
+
+                def command_fps_level_button(instance: Optional[MenuText | None] = False):
+                    def inner_command(instance: MenuText):
+                        # NOTE:You can change FPS value here.
+                        fps_values = ["30", "60", "120"]  # FPS Level you can change
+                        current_fps = instance.get_text
+                        current_index = fps_values.index(current_fps)
+                        new_index = (current_index + 1) % len(fps_values)
+                        new_fps = fps_values[new_index]
+                        instance.set_text = new_fps
+
+                    if instance:
+                        command_fps_level_button.instance = instance
+                        return
+
+                    if mouse.get_pressed()[0]:
+                        inner_command(command_fps_level_button.instance)
+
+                return create_fps_button()
+
+         # NOTE: create_sound_level_button() starts here  
 
             def create_sound_level_button() -> Tuple[Tuple[MenuText]]:
                 """sumary_line
@@ -363,19 +450,7 @@ class Factory:
                 TODO: Adjust sizes and test image initiliazation on video card vs cpu
                 TODO: Adjust parameters
                 """
-                from pygame import (  # pylint: disable=W,E, import-error, import-outside-toplevel, no-name-in-module
-                    Surface,  # pylint: disable=W,E, import-error, import-outside-toplevel, no-name-in-module
-                    HWSURFACE,  # pylint: disable=W,E, import-error, import-outside-toplevel, no-name-in-module
-                )  # pylint: disable=W,E, import-error, import-outside-toplevel, no-name-in-module
-                from src.gui.menu_items.MenuText import (  # pylint: disable=W,E, import-error, import-outside-toplevel, no-name-in-module
-                    MenuText,  # pylint: disable=W,E, import-error, import-outside-toplevel, no-name-in-module
-                )  # pylint: disable=W,E, import-error, import-outside-toplevel
-                from src.gui.menu_items.Button import (  # pylint: disable=W,E, import-error, import-outside-toplevel, no-name-in-module
-                    Button,  # pylint: disable=W,E, import-error, import-outside-toplevel, no-name-in-module
-                )  # pylint: disable=W,E, import-error, import-outside-toplevel
-                from src.State import (  # pylint: disable=W,E, import-error, import-outside-toplevel, no-name-in-module
-                    ButtonStateLookUpTable,  # pylint: disable=W,E, import-error, import-outside-toplevel, no-name-in-module
-                )  # pylint: disable=W,E, import-error, import-outside-toplevel
+                
 
                 def create_options_text() -> MenuText:
                     """sumary_line
@@ -537,6 +612,8 @@ class Factory:
             match button_no:
                 case ButtonLookUpTable.SOUND_LEVEL_BUTTON:
                     return create_sound_level_button()
+                case ButtonLookUpTable.FPS_LEVEL_BUTTON:
+                    return create_fps_level_button()
                 case _:
                     raise TypeError(f"Undefined button type {button_no.__name__}")
 

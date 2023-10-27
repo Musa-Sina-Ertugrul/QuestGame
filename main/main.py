@@ -20,8 +20,10 @@ def main():
 
     pygame.init()  # pylint: disable=E
 
-    screen = pygame.display.set_mode((1920, 1080))
+#TODO: display.setmode((int x,int y)) 
+    screen = pygame.display.set_mode((1366, 768))
     clock = pygame.time.Clock()
+    clock_button=Factory._create_button(ButtonLookUpTable.FPS_LEVEL_BUTTON)
     tmp = Factory._create_button(ButtonLookUpTable.SOUND_LEVEL_BUTTON)
     while True:
         pygame.display.flip()
@@ -46,6 +48,7 @@ from sys import getsizeof
 from copy import copy
 
 if __name__ == "__main__":
+    main()
     obj = (1, 2, 3)
     p1 = Process(target=multi, args=(obj,))
     p2 = Process(target=multi, args=(obj,))

@@ -148,6 +148,7 @@ class ButtonLookUpTable(Enum):
     SOUND_ON_OFF_BUTTON: EnumType = 5
     STAR_BUTTON: EnumType = 6
     SOUND_LEVEL_BUTTON: EnumType = 7
+    FPS_LEVEL_BUTTON: EnumType = 8
 
 
 class ButtonStateLookUpTable(Enum):
