@@ -125,14 +125,6 @@ class MenuText(Menu):
         Return: return_description
         """
         self.__current_text = text
-    def get_text(self):
-        """sumary_line
-
-        Keyword arguments:
-        argument -- description
-        Return: return_description
-        """
-        return self.__current_text
 
     def relative_pos(self) -> Tuple[int, int]:
         """sumary_line

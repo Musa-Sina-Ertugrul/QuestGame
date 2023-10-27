@@ -376,7 +376,7 @@ class Factory:
                     fps_text.init_elements()
                     fps_text.set_mouse_state = ButtonStateLookUpTable.NOT_COLLIDE
                     fps_text.set_pos_x = 10
-                    fps_text.set_pos_y = 70
+                    fps_text.set_pos_y = 10
                     return fps_text
 
                 def create_fps_magnitude_text() -> MenuText:
@@ -423,7 +423,7 @@ class Factory:
                     def inner_command(instance: MenuText):
                         # NOTE:You can change FPS value here.
                         fps_values = ["30", "60", "120"]  # FPS Level you can change
-                        current_fps = instance.get_text
+                        current_fps = instance.current_text
                         current_index = fps_values.index(current_fps)
                         new_index = (current_index + 1) % len(fps_values)
                         new_fps = fps_values[new_index]

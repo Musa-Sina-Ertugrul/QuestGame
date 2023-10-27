@@ -20,17 +20,18 @@ def main():
 
     pygame.init()  # pylint: disable=E
 
-#TODO: display.setmode((int x,int y)) 
-    screen = pygame.display.set_mode((1366, 768))
+    screen = pygame.display.set_mode((1360, 768))
     clock = pygame.time.Clock()
-    clock_button=Factory._create_button(ButtonLookUpTable.FPS_LEVEL_BUTTON)
+    clock_button= Factory._create_button(ButtonLookUpTable.FPS_LEVEL_BUTTON)
     tmp = Factory._create_button(ButtonLookUpTable.SOUND_LEVEL_BUTTON)
     while True:
         pygame.display.flip()
         screen.fill((255, 255, 255))
         surface: pygame.Surface = tmp.run()[0][0]
+        fps_button : pygame.Surface = clock_button.run()[0][0]
         rect = surface.get_rect()
         screen.blit(surface, (540 + rect.center[0], 100))
+        screen.blit(fps_button,(540 , 300))
         clock.tick(60)
         # raise SystemExit
         for event in pygame.event.get():
